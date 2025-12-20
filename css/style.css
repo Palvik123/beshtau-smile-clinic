@@ -28,11 +28,11 @@
 
 body {
   background-image: url('../images/background.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-size: cover;        /* масштабирует картинку так, чтобы она покрывала всю область */
+  background-position: center;   /* центрирует фон по горизонтали и вертикали */
+  background-repeat: no-repeat;  /* отключает повторение */
+  background-attachment: scroll; /* фон будет прокручиваться вместе с содержимым */
 }
-
 
 a {
   color: inherit;
