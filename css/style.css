@@ -34,6 +34,18 @@ body {
   background-attachment: scroll; /* фон будет прокручиваться вместе с содержимым */
   position: relative;
 }
+/* Затемняющая маска для фона, улучшает видимость текста */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* цвет и прозрачность маски */
+  z-index: -1; /* располагаем маску под контентом, но над фоном */
+}
+
 
 a {
   color: inherit;
@@ -147,6 +159,10 @@ main {
 /* Секции */
 .section {
   padding: 60px 0;
+  background: rgba(255, 255, 255, 0.8); /* полупрозрачная белая подложка */
+  border-radius: 10px;
+}
+;
 }
 
 .section-title {
