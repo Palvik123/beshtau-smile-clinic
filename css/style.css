@@ -31,7 +31,7 @@ body {
   background-size: cover;        /* масштабирует картинку так, чтобы она покрывала всю область */
   background-position: center;   /* центрирует фон по горизонтали и вертикали */
   background-repeat: no-repeat;  /* отключает повторение */
-  background-attachment: fixed; /* фон будет прокручиваться вместе с содержимым */
+  background-attachment: scroll; /* фон будет прокручиваться вместе с содержимым */
 }
 
 a {
