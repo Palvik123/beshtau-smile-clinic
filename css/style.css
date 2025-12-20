@@ -215,22 +215,17 @@ main {
 }
 
 /* Карточки (для услуг, врачей и т.д.) */
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+.cards a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.card {
-  background-color: var(--secondary-color);
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  width: 280px;
-  display: flex;
-  flex-direction: column;
+.cards a:hover .card {
+  transform: translateY(-4px);
+  transition: 0.3s;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 }
+
 
 .card img {
   width: 100%;
