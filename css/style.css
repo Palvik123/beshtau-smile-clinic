@@ -162,15 +162,12 @@ main {
   background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
 }
-
-
 .section-title {
   text-align: center;
   margin-bottom: 40px;
   font-size: 2rem;
   color: var(--primary-color);
 }
-
 /* Герой-блок */
 .hero {
   background-color: var(--background-color);
