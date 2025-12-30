@@ -159,11 +159,10 @@ main {
 /* Секции */
 .section {
   padding: 60px 0;
-  background: rgba(255, 255, 255, 0.8); /* полупрозрачная белая подложка */
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
 }
-;
-}
+
 
 .section-title {
   text-align: center;
