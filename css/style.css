@@ -158,11 +158,11 @@ main {
 
 /* Секции */
 .section {
-  background: rgba(255, 255, 255, 0.8); /* белая подложка с 80% непрозрачности */
-  padding: 20px;
+  padding: 60px 0;
+  background: rgba(255, 255, 255, 0.8); /* полупрозрачная белая подложка */
   border-radius: 10px;
-  margin-bottom: 30px;
 }
+
 
 .section-title {
   text-align: center;
