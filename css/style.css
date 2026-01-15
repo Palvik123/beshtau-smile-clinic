@@ -42,7 +42,41 @@
   box-sizing: border-box;
 }
 
+  /* Стили заголовков */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: var(--line-height-heading);
+  color: var(--text-color);
+  margin-top: 0;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  margin-bottom: 1.2rem;
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+
 body {
+    font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  color: var(--text-color);
   background-image: url('../images/background.jpg');
   background-size: contain;        /* масштабирует картинку так, чтобы она покрывала всю область */
   background-position: center;   /* центрирует фон по горизонтали и вертикали */
@@ -218,6 +252,11 @@ main {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   padding: 15px 30px;
+  transition: all var(--transition-speed) ease;
+  box-shadow: var(--shadow);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   border-radius: 5px;
   font-size: 1rem;
   font-weight: bold;
@@ -226,12 +265,15 @@ main {
 
 .hero .cta-btn:hover {
   background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
 }
 
 /* Карточки (для услуг, врачей и т.д.) */
 .cards a {
   text-decoration: none;
   color: inherit;
+  transition: all var(--transition-speed) ease;
 }
 
 .cards a:hover .card {
