@@ -499,6 +499,11 @@ footer {
   }
   .card {
     width: 90%;
+  background: var(--secondary-color);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: all var(--transition-speed) ease;
   }
   .footer-content {
     flex-direction: column;
