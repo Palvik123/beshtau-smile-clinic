@@ -515,10 +515,7 @@ footer {
   .hero p {
     font-size: 1rem;
   }
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
+  
   .card {
     width: 90%;
   background: var(--secondary-color);
