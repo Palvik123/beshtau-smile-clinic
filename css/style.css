@@ -1,3 +1,6 @@
+/* Импорт шрифтов Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap');
+
 /*
  * Основные стили для сайта стоматологической клиники.
  *
@@ -9,24 +12,71 @@
 /* Переменные для удобства изменения цветовой схемы */
 :root {
   /* Основной цвет изменён на оттенок логотипа «Бештау Смайл Клиник» */
-  --primary-color: #92163E;   /* основной бордовый (из логотипа) */
-  --primary-dark: #731230;    /* более тёмный вариант для ховеров */
-  --secondary-color: #FFFFFF; /* белый */
-  --background-color: #F9F4F4; /* светлый фон для секций */
-  --text-color: #333333;      /* основной цвет текста */
-  --muted-text: #666666;      /* приглушённый текст */
-  --transition-speed: 0.3s;  /* единая скорость анимаций */
-  --shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* тень для карточек */
-}
-
-/* Сброс отступов и базовая настройка элементов */
+  /* Основной цвет изменён на оттенок логотипа «Бештау Смайл Клиник» */
+  --primary-color: #A9284D;     /* Тёплый бордовый (светлее предыдущего) */
+  --primary-dark: #8B1538;      /* Более тёмный вариант для ховеров */
+  --secondary-color: #FFFFFF;   /* Белый */
+  --accent-color: #D4A574;      /* Золотой акцент для премиальных элементов */
+  --background-color: #F8F5F2;  /* Тёплый бежевый фон */
+  --background-light: #FDFCFB;  /* Светлый фон для секций */
+  --mint-accent: #E8F4F2;       /* Успокаивающий мятный для вспомогательных блоков */
+  --text-color: #2C2C2C;        /* Тёмный основной текст */
+  --text-muted: #6B6B6B;        /* Приглушённый текст */
+  --transition-speed: 0.3s;     /* Единая скорость анимаций */
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Мягкая тень для карточек */
+  --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.15); /* Усиленная тень при hover */
+  
+  /* Типографика */
+  --font-heading: 'Montserrat', sans-serif;  /* Заголовки */
+  --font-body: 'Open Sans', sans-serif;      /* Основной текст */
+  --font-size-h1: 48px;
+  --font-size-h2: 36px;
+  --font-size-h3: 24px;
+  --font-size-body: 16px;
+  --font-size-small: 14px;
+  --line-height-heading: 1.3;
+  --line-height-body: 1.6;
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+  /* Стили заголовков */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: var(--line-height-heading);
+  color: var(--text-color);
+  margin-top: 0;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  margin-bottom: 1.2rem;
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+
 body {
+    font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  color: var(--text-color);
   background-image: url('../images/background.jpg');
   background-size: contain;        /* масштабирует картинку так, чтобы она покрывала всю область */
   background-position: center;   /* центрирует фон по горизонтали и вертикали */
@@ -202,6 +252,11 @@ main {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   padding: 15px 30px;
+  transition: all var(--transition-speed) ease;
+  box-shadow: var(--shadow);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   border-radius: 5px;
   font-size: 1rem;
   font-weight: bold;
@@ -210,12 +265,15 @@ main {
 
 .hero .cta-btn:hover {
   background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
 }
 
 /* Карточки (для услуг, врачей и т.д.) */
 .cards a {
   text-decoration: none;
   color: inherit;
+  transition: all var(--transition-speed) ease;
 }
 
 .cards a:hover .card {
@@ -441,6 +499,11 @@ footer {
   }
   .card {
     width: 90%;
+  background: var(--secondary-color);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: all var(--transition-speed) ease;
   }
   .footer-content {
     flex-direction: column;
