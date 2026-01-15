@@ -276,6 +276,14 @@ main {
   transition: all var(--transition-speed) ease;
 }
 
+  /* Grid-сетка для карточек на десктопе */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
 .cards a:hover .card {
   transform: translateY(-4px);
   transition: 0.3s;
