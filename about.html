@@ -9,6 +9,48 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Montserrat', sans-serif; }
+
+        /* Стили для раскрывающейся секции отзывов */
+        .reviews-toggle-section {
+                max-width: 1200px;
+                margin: 3rem auto;
+                padding: 0 2rem;
+              }
+
+        .reviews-toggle-btn {
+                width: 100%;
+                padding: 1.5rem 2rem;
+                background: var(--primary-color);
+                color: white;
+                border: none;
+                border-radius: 8px;
+                font-size: 1.2rem;
+                font-weight: 600;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                transition: all 0.3s ease;
+              }
+
+        .reviews-toggle-btn:hover {
+                background: var(--primary-dark);
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+              }
+
+        .toggle-icon {
+                font-size: 1rem;
+                transition: transform 0.3s ease;
+              }
+
+        .reviews-content {
+                margin-top: 1rem;
+                padding: 2rem;
+                background: var(--background-color);
+                border-radius: 8px;
+                border: 1px solid #e0e0e0;
+              }
   </style>
 </head>
 <body>
@@ -20,8 +62,7 @@
         <li><a href="index.html">Главная</a></li>
         <li><a href="services.html">Услуги</a></li>
         <li><a href="prices.html">Цены</a></li>
-        <li><a href="reviews.html">Отзывы</a></li>
-        <li><a href="about.html" class="active">О нас</a></li>
+нас</a></li>
         <li><a href="patient-info.html">Пациентам</a></li>
         <li><a href="corporate.html">Корпоративным клиентам</a></li>
         <li><a href="legal.html">Правовая информация</a></li>
@@ -121,7 +162,62 @@
         </div>
       </div>
     </section>
+
+        <!-- Раскрывающаяся секция с отзывами -->
+    <section class="reviews-toggle-section" style="padding: 40px 20px; text-align: center;">
+        <button id="toggleReviews" class="cta-btn" style="cursor: pointer;">
+            Отзывы пациентов ▼
+        </button>
+        
+        <div id="reviewsContent" style="display: none; margin-top: 30px; max-width: 800px; margin-left: auto; margin-right: auto;">
+            <h2 style="color: var(--primary-color); margin-bottom: 30px;">Отзывы наших пациентов</h2>
+            
+            <div style="margin-bottom: 30px; padding: 20px; background: white; border-radius: 8px; box-shadow: var(--shadow);">
+                <p style="font-style: italic; margin-bottom: 10px;">«Очень внимательные врачи и современное оборудование. Провели лечение быстро и безболезненно!»</p>
+                <p style="font-weight: bold; color: var(--primary-color);">Анна К.</p>
+            </div>
+            
+            <div style="margin-bottom: 30px; padding: 20px; background: white; border-radius: 8px; box-shadow: var(--shadow);">
+                <p style="font-style: italic; margin-bottom: 10px;">«Спасибо клинике за прекрасное отношение! Теперь посещение стоматолога не вызывает страха.»</p>
+                <p style="font-weight: bold; color: var(--primary-color);">Сергей П.</p>
+            </div>
+            
+            <div style="margin-bottom: 30px; padding: 20px; background: white; border-radius: 8px; box-shadow: var(--shadow);">
+                <p style="font-style: italic; margin-bottom: 10px;">«Профессиональный подход и доступные цены. Рекомендую всем!»</p>
+                <p style="font-weight: bold; color: var(--primary-color);">Ольга Л.</p>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+    // Скрипт для раскрытия/скрытия отзывов
+    document.getElementById('toggleReviews').addEventListener('click', function() {
+        var content = document.getElementById('reviewsContent');
+        var button = this;
+        
+        if (content.style.display === 'none') {
+            content.style.display = 'block';
+            button.innerHTML = 'Отзывы пациентов ▲';
+        } else {
+            content.style.display = 'none';
+            button.innerHTML = 'Отзывы пациентов ▼';
+        }
+    });
+    </script>
   </main>
+
+      <!-- Раскрывающаяся секция отзывов -->
+      <div class="reviews-toggle-section">
+              <button class="reviews-toggle-btn" id="reviewsToggleBtn">
+                        <span>Отзывы пациентов</span>
+                        <span class="toggle-icon">▼</span>
+                      </button>
+              <div class="reviews-content" id="reviewsContent" style="display: none;">
+                        <div class="reviews-container">
+                                    <p style="text-align: center; color: var(--muted-text); padding: 2rem;">Отзывы пациентов скоро появятся здесь.</p>
+                                  </div>
+                      </div>
+            </div>
 
   <footer>
     <div class="footer-content">
@@ -141,8 +237,7 @@
           <li><a href="index.html">Главная</a></li>
           <li><a href="services.html">Услуги</a></li>
           <li><a href="prices.html">Цены</a></li>
-          <li><a href="reviews.html">Отзывы</a></li>
-          <li><a href="about.html">О нас</a></li>
+          
           <li><a href="patient-info.html">Пациентам</a></li>
           <li><a href="corporate.html">Корпоративным клиентам</a></li>
           <li><a href="legal.html">Правовая информация</a></li>
@@ -160,5 +255,23 @@
   </footer>
 
   <script src="js/script.js"></script>
+      <script>
+              // Функциональность раскрывающейся секции отзывов
+              const reviewsToggleBtn = document.getElementById('reviewsToggleBtn');
+              const reviewsContent = document.getElementById('reviewsContent');
+              const toggleIcon = document.querySelector('.toggle-icon');
+
+              if (reviewsToggleBtn) {
+                        reviewsToggleBtn.addEventListener('click', function() {
+                                    if (reviewsContent.style.display === 'none') {
+                                                  reviewsContent.style.display = 'block';
+                                                  toggleIcon.textContent = '▲';
+                                                } else {
+                                                  reviewsContent.style.display = 'none';
+                                                  toggleIcon.textContent = '▼';
+                                                }
+                                  });
+                      }
+                    </script>
 </body>
 </html>
