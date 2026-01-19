@@ -47,10 +47,9 @@
         .reviews-content {
                 margin-top: 1rem;
                 padding: 2rem;
-                background: var(--background-color);
+                
                 border-radius: 8px;
-                border: 1px solid #e0e0e0;
-              }
+
   </style>
 </head>
 <body>
@@ -194,13 +193,14 @@
     document.getElementById('toggleReviews').addEventListener('click', function() {
         var content = document.getElementById('reviewsContent');
         var button = this;
+        var toggleIcon = document.querySelector('.toggle-icon');
         
         if (content.style.display === 'none') {
             content.style.display = 'block';
-            button.innerHTML = 'Отзывы пациентов ▲';
+        toggleIcon.textContent = '▲';
         } else {
             content.style.display = 'none';
-            button.innerHTML = 'Отзывы пациентов ▼';
+        toggleIcon.textContent = '▼';
         }
     });
     </script>
