@@ -9,47 +9,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Montserrat', sans-serif; }
-
-        /* Стили для раскрывающейся секции отзывов */
-        .reviews-toggle-section {
-                max-width: 1200px;
-                margin: 3rem auto;
-                padding: 0 2rem;
-              }
-
-        .reviews-toggle-btn {
-                width: 100%;
-                padding: 1.5rem 2rem;
-                background: var(--primary-color);
-                color: white;
-                border: none;
-                border-radius: 8px;
-                font-size: 1.2rem;
-                font-weight: 600;
-                cursor: pointer;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                transition: all 0.3s ease;
-              }
-
-        .reviews-toggle-btn:hover {
-                background: var(--primary-dark);
-                transform: translateY(-2px);
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-              }
-
-        .toggle-icon {
-                font-size: 1rem;
-                transition: transform 0.3s ease;
-              }
-
-        .reviews-content {
-                margin-top: 1rem;
-                padding: 2rem;
-                
-                border-radius: 8px;
-
+    .founders-section {
+      background-color: #f5f5f5;
+      padding: 3rem 2rem;
+    }
+    .founders-grid {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .founder-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .founder-card h3 {
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    }
+    .founder-card p {
+      color: var(--muted-text);
+      line-height: 1.6;
+    }
   </style>
 </head>
 <body>
@@ -59,19 +44,20 @@
       <div class="logo"><span>Бештау Смайл Клиник</span></div>
       <ul class="nav-links">
         <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html" class="active">О нас</a></li>
         <li><a href="services.html">Услуги</a></li>
         <li><a href="prices.html">Цены</a></li>
         <li><a href="patient-info.html">Пациентам</a></li>
         <li><a href="corporate.html">Корпоративным клиентам</a></li>
-         				 <li><a href="contact.html">Контакты</a></li>
-      <div class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+        <li><a href="contact.html">Контакты</a></li>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </ul>
     </nav>
   </header>
-
   <main>
     <section class="hero" style="background-color: var(--background-color);">
       <h1>О нашей клинике</h1>
@@ -86,12 +72,11 @@
     <section class="section">
       <h2 class="section-title">Наша команда</h2>
       <div class="cards">
-        <!-- Карточки сотрудников: только ФИО и специальность. При клике переходим на подробный профиль врача -->
         <div class="card">
           <a href="doctors/azamat-nagoev.html">
             <img src="images/doctor5.png" alt="Нагоев Азамат Хасанбиевич">
             <div class="card-content">
-              <h3>Нагоев&nbsp;Азамат&nbsp;Хасанбиевич</h3>
+              <h3>Нагоев Азамат Хасанбиевич</h3>
               <p>Стоматолог‑ортопед</p>
             </div>
           </a>
@@ -100,7 +85,7 @@
           <a href="doctors/yulia-bekisheva.html">
             <img src="images/doctor1.png" alt="Бекишева Юлия Владимировна">
             <div class="card-content">
-              <h3>Бекишева&nbsp;Юлия&nbsp;Владимировна</h3>
+              <h3>Бекишева Юлия Владимировна</h3>
               <p>Детский стоматолог</p>
             </div>
           </a>
@@ -109,7 +94,7 @@
           <a href="doctors/anzor-fatahhov.html">
             <img src="images/doctor2.png" alt="Фатахов Анзор Сулейманович">
             <div class="card-content">
-              <h3>Фатахов&nbsp;Анзор&nbsp;Сулейманович</h3>
+              <h3>Фатахов Анзор Сулейманович</h3>
               <p>Стоматолог‑хирург</p>
             </div>
           </a>
@@ -118,21 +103,43 @@
           <a href="doctors/marina-agayan.html">
             <img src="images/doctor3.png" alt="Агаян Марина Григорьевна">
             <div class="card-content">
-              <h3>Агаян&nbsp;Марина&nbsp;Григорьевна</h3>
+              <h3>Агаян Марина Григорьевна</h3>
               <p>Стоматолог‑ортодонт</p>
             </div>
           </a>
         </div>
-      <div class="card">
-  <a href="doctors/alimov-gadzhi-alisherovich.html">
-    <img src="images/doctor4.png" alt="Алимов Гаджи Алишерович">
-    <div class="card-content">
-      <h3>Алимов&nbsp;Гаджи&nbsp;Алишерович</h3>
-      <p>Стоматолог‑терапевт/ортопед</p>
-    </div>
-  </a>
-</div>
+        <div class="card">
+          <a href="doctors/alimov-gadzhi-alisherovich.html">
+            <img src="images/doctor4.png" alt="Алимов Гаджи Алишерович">
+            <div class="card-content">
+              <h3>Алимов Гаджи Алишерович</h3>
+              <p>Стоматолог‑терапевт/ортопед</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
 
+    <section class="founders-section">
+      <h2 class="section-title">Учредители клиники</h2>
+      <p style="max-width: 800px; margin: 0 auto 2rem; text-align: center; color: var(--muted-text);">"Бештау Смайл Клиник" была создана по инициативе опытных стоматологов, которые поставили перед собой цель создать современное учреждение здравоохранения, оказывающее качественные и доступные стоматологические услуги населению.</p>
+      <div class="founders-grid">
+        <div class="founder-card">
+          <h3>Нагоев Азамат Хасанбиевич</h3>
+          <p><strong>Должность:</strong> Главный врач, соучредитель</p>
+          <p>Ведущий стоматолог-ортопед с опытом более 20 лет. Специалист в области ортопедической стоматологии и имплантологии. Постоянный участник международных конференций и семинаров по стоматологии.</p>
+        </div>
+        <div class="founder-card">
+          <h3>Бекишева Юлия Владимировна</h3>
+          <p><strong>Должность:</strong> Заместитель главного врача, соучредитель</p>
+          <p>Опытный детский стоматолог с 15-летним стажем работы. Специалист по лечению зубов у детей и подростков. Автор методик безболезненного лечения в детской стоматологии.</p>
+        </div>
+        <div class="founder-card">
+          <h3>Фатахов Анзор Сулейманович</h3>
+          <p><strong>Должность:</strong> Главный хирург, соучредитель</p>
+          <p>Высокопрофессиональный стоматолог-хирург с опытом 18 лет. Специалист в области хирургической стоматологии, имплантологии и костной пластики. Владеет современными методами безболезненной хирургии.</p>
+        </div>
+      </div>
     </section>
 
     <section class="section">
@@ -158,72 +165,15 @@
         </div>
       </div>
     </section>
-
-        <!-- Раскрывающаяся секция с отзывами -->
-    <section class="reviews-toggle-section" style="padding: 40px 20px; text-align: center;">
-        <button id="toggleReviews" class="cta-btn" style="cursor: pointer;">
-            Отзывы пациентов ▼
-        </button>
-        
-        <div id="reviewsContent" style="display: none; margin-top: 30px; max-width: 800px; margin-left: auto; margin-right: auto;">
-            <h2 style="color: var(--primary-color); margin-bottom: 30px;">Отзывы наших пациентов</h2>
-            
-            <div style="margin-bottom: 30px; padding: 20px; background: white; border-radius: 8px; box-shadow: var(--shadow);">
-                <p style="font-style: italic; margin-bottom: 10px;">«Очень внимательные врачи и современное оборудование. Провели лечение быстро и безболезненно!»</p>
-                <p style="font-weight: bold; color: var(--primary-color);">Анна К.</p>
-            </div>
-            
-            <div style="margin-bottom: 30px; padding: 20px; background: white; border-radius: 8px; box-shadow: var(--shadow);">
-                <p style="font-style: italic; margin-bottom: 10px;">«Спасибо клинике за прекрасное отношение! Теперь посещение стоматолога не вызывает страха.»</p>
-                <p style="font-weight: bold; color: var(--primary-color);">Сергей П.</p>
-            </div>
-            
-            <div style="margin-bottom: 30px; padding: 20px; background: white; border-radius: 8px; box-shadow: var(--shadow);">
-                <p style="font-style: italic; margin-bottom: 10px;">«Профессиональный подход и доступные цены. Рекомендую всем!»</p>
-                <p style="font-weight: bold; color: var(--primary-color);">Ольга Л.</p>
-            </div>
-        </div>
-    </section>
-    
-    <script>
-    // Скрипт для раскрытия/скрытия отзывов
-    document.getElementById('toggleReviews').addEventListener('click', function() {
-        var content = document.getElementById('reviewsContent');
-        var button = this;
-        var toggleIcon = document.querySelector('.toggle-icon');
-        
-        if (content.style.display === 'none') {
-            content.style.display = 'block';
-        toggleIcon.textContent = '▲';
-        } else {
-            content.style.display = 'none';
-        toggleIcon.textContent = '▼';
-        }
-    });
-    </script>
   </main>
-
-      <!-- Раскрывающаяся секция отзывов -->
-      <div class="reviews-toggle-section">
-              <button class="reviews-toggle-btn" id="reviewsToggleBtn">
-                        <span>Отзывы пациентов</span>
-                        <span class="toggle-icon">▼</span>
-                      </button>
-              <div class="reviews-content" id="reviewsContent" style="display: none;">
-                        <div class="reviews-container">
-                                    <p style="text-align: center; color: var(--muted-text); padding: 2rem;">Отзывы пациентов скоро появятся здесь.</p>
-                                  </div>
-                      </div>
-            </div>
 
   <footer>
     <div class="footer-content">
       <div class="footer-section">
         <h4>Контакты</h4>
         <ul>
-          <!-- Обновлённые данные контактов -->
-          <li>Адрес: 357340, Россия, Ставропольский край, г. Лермонтов, Солнечный проезд, д. 10, корп. 1, этаж 2</li>
-          <li>Телефон: +7 (928) 355‑00‑39, +7 (909) 973‑26‑25</li>
+          <li>Адрес: 357340, Россия, Ставропольский край, г. Лермонтов, Солнечный проезд, д. 10, корп. 1, этаж 2</li>
+          <li>Телефон: +7 (928) 355‑00‑39, +7 (909) 973‑26‑25</li>
           <li>Email: beshtausmail@yandex.ru</li>
           <li>Часы работы: Пн‑Сб 09:00–20:00</li>
         </ul>
@@ -232,9 +182,9 @@
         <h4>Навигация</h4>
         <ul>
           <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
           <li><a href="services.html">Услуги</a></li>
           <li><a href="prices.html">Цены</a></li>
-          
           <li><a href="patient-info.html">Пациентам</a></li>
           <li><a href="corporate.html">Корпоративным клиентам</a></li>
           <li><a href="legal.html">Правовая информация</a></li>
@@ -247,28 +197,9 @@
       </div>
     </div>
     <div class="footer-bottom">
-      &copy; 2025 ООО «Бештау Смайл Клиник». Все права защищены.
+      © 2025 ООО «Бештау Смайл Клиник». Все права защищены.
     </div>
   </footer>
-
   <script src="js/script.js"></script>
-      <script>
-              // Функциональность раскрывающейся секции отзывов
-              const reviewsToggleBtn = document.getElementById('reviewsToggleBtn');
-              const reviewsContent = document.getElementById('reviewsContent');
-              const toggleIcon = document.querySelector('.toggle-icon');
-
-              if (reviewsToggleBtn) {
-                        reviewsToggleBtn.addEventListener('click', function() {
-                                    if (reviewsContent.style.display === 'none') {
-                                                  reviewsContent.style.display = 'block';
-                                                  toggleIcon.textContent = '▲';
-                                                } else {
-                                                  reviewsContent.style.display = 'none';
-                                                  toggleIcon.textContent = '▼';
-                                                }
-                                  });
-                      }
-                    </script>
 </body>
 </html>
