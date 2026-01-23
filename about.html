@@ -9,38 +9,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Montserrat', sans-serif; }
-    .founders-section {
-      background-color: #f5f5f5;
-      padding: 3rem 2rem;
+    .founders-table {
+      max-width: 800px;
+      margin: 2rem auto;
+      border-collapse: collapse;
+      width: 100%;
     }
-    .founders-grid {
-      max-width: 1000px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
+    .founders-table th,
+    .founders-table td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
     }
-    .founder-card {
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      text-align: center;
+    .founders-table th {
+      background-color: var(--primary-color);
+      color: white;
+      font-weight: 600;
     }
-    .founder-card h3 {
-      color: var(--primary-color);
-      margin-bottom: 0.5rem;
-    }
-    .founder-card p {
-      color: var(--muted-text);
-      line-height: 1.6;
+    .founders-table tr:nth-child(even) {
+      background-color: #f9f9f9;
     }
   </style>
 </head>
 <body>
   <header>
     <nav>
-      <!-- Обновлённый логотип: только название клиники -->
       <div class="logo"><span>Бештау Смайл Клиник</span></div>
       <ul class="nav-links">
         <li><a href="index.html">Главная</a></li>
@@ -120,26 +113,36 @@
       </div>
     </section>
 
-    <section class="founders-section">
+    <section class="section" style="background-color: #f5f5f5; padding: 3rem 2rem;">
       <h2 class="section-title">Учредители клиники</h2>
-      <p style="max-width: 800px; margin: 0 auto 2rem; text-align: center; color: var(--muted-text);">"Бештау Смайл Клиник" была создана по инициативе опытных стоматологов, которые поставили перед собой цель создать современное учреждение здравоохранения, оказывающее качественные и доступные стоматологические услуги населению.</p>
-      <div class="founders-grid">
-        <div class="founder-card">
-          <h3>Нагоев Азамат Хасанбиевич</h3>
-          <p><strong>Должность:</strong> Главный врач, соучредитель</p>
-          <p>Ведущий стоматолог-ортопед с опытом более 20 лет. Специалист в области ортопедической стоматологии и имплантологии. Постоянный участник международных конференций и семинаров по стоматологии.</p>
-        </div>
-        <div class="founder-card">
-          <h3>Бекишева Юлия Владимировна</h3>
-          <p><strong>Должность:</strong> Заместитель главного врача, соучредитель</p>
-          <p>Опытный детский стоматолог с 15-летним стажем работы. Специалист по лечению зубов у детей и подростков. Автор методик безболезненного лечения в детской стоматологии.</p>
-        </div>
-        <div class="founder-card">
-          <h3>Фатахов Анзор Сулейманович</h3>
-          <p><strong>Должность:</strong> Главный хирург, соучредитель</p>
-          <p>Высокопрофессиональный стоматолог-хирург с опытом 18 лет. Специалист в области хирургической стоматологии, имплантологии и костной пластики. Владеет современными методами безболезненной хирургии.</p>
-        </div>
-      </div>
+      <p style="max-width: 800px; margin: 0 auto 2rem; text-align: center; color: var(--muted-text);">Общество с ограниченной ответственностью "Бештау Смайл Клиник" создано на основании решения Общего собрания учредителей от 07.05.2025.</p>
+      <table class="founders-table">
+        <thead>
+          <tr>
+            <th>№</th>
+            <th>Учредитель (ФИО)</th>
+            <th>Доля в уставном капитале</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Нагоев Азамат Хасанбиевич</td>
+            <td>50%</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Фатахов Анзор Сулейманович</td>
+            <td>25%</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Бекишева Юлия Владимировна</td>
+            <td>25%</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="text-align: center; color: var(--muted-text); font-size: 0.9rem; margin-top: 1rem;">Уставный капитал: 10 000 рублей</p>
     </section>
 
     <section class="section">
