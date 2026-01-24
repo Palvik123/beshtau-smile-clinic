@@ -486,6 +486,60 @@ footer {
 /* Адаптивность */
 @media (max-width: 768px) {
   .nav-links {
+
+    /* Галерея фотографий клиники */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: all var(--transition-speed) ease;
+    background: var(--secondary-color);
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    transition: transform var(--transition-speed) ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-caption {
+    padding: 20px;
+    background: var(--secondary-color);
+}
+
+.gallery-caption h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.gallery-caption p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
     position: absolute;
     top: 60px;
     left: 0;
@@ -509,7 +563,29 @@ footer {
   }
 }
 
-@media (max-width: 500px) {
+
+  /* Адаптивность для планшетов */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        padding: 15px;
+    }
+    
+    .gallery-item img {
+        height: 280px;
+    }
+    
+    .gallery-caption {
+        padding: 15px;
+    }
+    
+    .gallery-caption h3 {
+        font-size: 1.2rem;
+    }
+}
+
+  @media (max-width: 500px) {
   .hero h1 {
     font-size: 2rem;
   }
@@ -529,4 +605,28 @@ footer {
     flex-direction: column;
     gap: 20px;
   }
+
+        /* Галерея для мобильных */
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 10px;
+    }
+    
+    .gallery-item img {
+        height: 240px;
+    }
+    
+    .gallery-caption {
+        padding: 12px;
+    }
+    
+    .gallery-caption h3 {
+        font-size: 1.1rem;
+    }
+    
+    .gallery-caption p {
+        font-size: 0.9rem;
+    }
+
 }
