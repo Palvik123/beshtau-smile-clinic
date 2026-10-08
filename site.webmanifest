@@ -1,0 +1,21 @@
+{
+  "name": "Бештау Смайл Клиник",
+  "short_name": "Бештау Смайл",
+  "description": "Стоматологическая клиника в Лермонтове и регионе КМВ",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#A9284D",
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/sitemap.xml
+Host: https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai
