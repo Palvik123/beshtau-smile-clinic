@@ -54,7 +54,6 @@ function initBookingModal() {
 
   const closeBtn = modal.querySelector('.modal-close-btn');
   const modalTitle = modal.querySelector('#modal-title');
-  const bookingBtns = document.querySelectorAll('[data-open-modal="booking"], .cta-booking-btn');
 
   const openModal = (contextTitle) => {
     if (contextTitle && modalTitle) {
@@ -73,14 +72,16 @@ function initBookingModal() {
     document.body.style.overflow = '';
   };
 
-  bookingBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
+  // Надежное делегирование клика для любых кнопок и ссылок записи
+  document.addEventListener('click', (e) => {
+    const trigger = e.target.closest('[data-open-modal="booking"], .cta-booking-btn, a[href="#booking-modal"]');
+    if (trigger) {
       e.preventDefault();
-      const targetDoctor = btn.getAttribute('data-doctor');
-      const targetService = btn.getAttribute('data-service');
+      const targetDoctor = trigger.getAttribute('data-doctor');
+      const targetService = trigger.getAttribute('data-service');
       const context = targetDoctor || targetService || '';
       openModal(context);
-    });
+    }
   });
 
   if (closeBtn) {

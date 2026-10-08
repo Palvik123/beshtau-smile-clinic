@@ -17,17 +17,17 @@
       <div class="top-bar-left">
         <span class="top-bar-item">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Ставропольский край, г. Лермонтов, Солнечный проезд, 10, корп. 1, этаж 2
+          г. Лермонтов, Солнечный проезд, 10, корп. 1
         </span>
         <span class="top-bar-item">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          Режим работы: Пн-Сб 09:00-20:00
+          Пн–Сб 09:00–20:00 (Вс: выходной)
         </span>
       </div>
       <div class="top-bar-right">
         <button class="btn-a11y-toggle" type="button" aria-pressed="false">Версия для слабовидящих</button>
         <span class="top-bar-item">
-          <a href="tel:+79669873802">+7 (966) 987-38-02</a>
+          <a href="tel:+79019314759">+7 (901) 931-47-59</a>
         </span>
       </div>
     </div>
@@ -37,10 +37,10 @@
   <header class="site-header">
     <div class="container navbar">
       <a href="index.html" class="brand-logo">
-        <div class="brand-logo-mark">БС</div>
+        <img src="images/logo-icon.png" alt="Бештау Смайл Клиник" class="brand-logo-img">
         <div class="brand-logo-text">
-          <span>Бештау Смайл</span>
-          <span class="brand-logo-sub">Клиника эстетической стоматологии</span>
+          <span class="brand-name">Бештау Смайл</span>
+          <span class="brand-logo-sub">Стоматологическая клиника</span>
         </div>
       </a>
 
@@ -55,9 +55,9 @@
       </nav>
 
       <div class="nav-actions">
-        <div class="nav-phone-direct">
-          <a href="tel:+79669873802" class="nav-phone-number">+7 (966) 987-38-02</a>
-          <span class="nav-phone-hint">Ежедневно 09:00-20:00</span>
+        <div class="nav-contact-block">
+          <a href="tel:+79019314759" class="nav-phone-number">+7 (901) 931-47-59</a>
+          <span class="nav-hours">Пн–Сб 09:00–20:00</span>
         </div>
         <button class="btn btn-primary btn-sm cta-booking-btn">Записаться на прием</button>
         <button class="menu-burger" aria-label="Открыть навигационное меню" aria-expanded="false">
@@ -86,6 +86,7 @@
             <button class="tab-btn" data-category="hygiene" type="button">Гигиена</button>
             <button class="tab-btn" data-category="periodontics" type="button">Пародонтология</button>
             <button class="tab-btn" data-category="surgery" type="button">Хирургия</button>
+            <button class="tab-btn" data-category="implantology" type="button">Имплантология</button>
             <button class="tab-btn" data-category="orthopedics" type="button">Ортопедия</button>
             <button class="tab-btn" data-category="orthodontics" type="button">Ортодонтия</button>
             <button class="tab-btn" data-category="pediatric" type="button">Детское отделение</button>
@@ -97,10 +98,10 @@
           </div>
         </div>
 
-        <!-- 1. Терапия -->
+                <!-- Категория: Терапевтическая стоматология и эндодонтия -->
         <div class="price-table-card" data-category="therapy">
           <div class="price-table-header">
-            <h3>Терапевтическая стоматология</h3>
+            <h3>Терапевтическая стоматология и эндодонтия</h3>
             <span class="badge badge-mint">Терапия</span>
           </div>
           <table class="price-table">
@@ -113,58 +114,248 @@
             </thead>
             <tbody>
               <tr>
-                <td>Первичная консультация врача-стоматолога с осмотром полости рта</td>
+                <td>Воздействие лазерным низкоинтенсивным излучением на область десен</td>
                 <td class="col-cost">500 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Консультация стоматолога">Записаться</button></td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Воздействие лазерным низкоинтенсивным излучением на область десен">Записаться</button></td>
               </tr>
               <tr>
-                <td>Лечение неосложненного кариеса (включая анестезию и постановку световой пломбы)</td>
-                <td class="col-cost">от 4 500 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение кариеса">Записаться</button></td>
+                <td>Восстановление зуба пломбировочными материалами с использованием анкерных штифтов</td>
+                <td class="col-cost">6 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Восстановление зуба пломбировочными материалами с использованием анкерных штифтов">Записаться</button></td>
               </tr>
               <tr>
-                <td>Лечение глубокого кариеса с наложением лечебной и изолирующей прокладки</td>
-                <td class="col-cost">от 6 000 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение глубокого кариеса">Записаться</button></td>
+                <td>Восстановление зуба пломбой I, V, VI класс (1 пов-ть), кариес дентина</td>
+                <td class="col-cost">4 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Восстановление зуба пломбой I, V, VI класс (1 пов-ть), кариес дентина">Записаться</button></td>
               </tr>
               <tr>
-                <td>Снятие старой пломбы и повторная антисептическая обработка</td>
-                <td class="col-cost">от 5 000 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Замена старой пломбы">Записаться</button></td>
+                <td>Восстановление зуба пломбой I, V, VI класс по Блэку (1 поверхность)</td>
+                <td class="col-cost">5 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Восстановление зуба пломбой I, V, VI класс по Блэку (1 поверхность)">Записаться</button></td>
               </tr>
               <tr>
-                <td>Анатомическая эстетическая реставрация зуба светоотверждаемым композитом</td>
-                <td class="col-cost">от 8 000 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Эстетическая реставрация">Записаться</button></td>
+                <td>Восстановление зуба пломбой I, V, VI класс по Блэку с использованием материалов из фотополимеров(2 поверхности )</td>
+                <td class="col-cost">6 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Восстановление зуба пломбой I, V, VI класс по Блэку с использованием материалов из фотополимеров(2 поверхности )">Записаться</button></td>
               </tr>
               <tr>
-                <td>Эндодонтическое лечение пульпита (инструментальная и медикаментозная обработка каналов)</td>
-                <td class="col-cost">от 8 000 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение пульпита">Записаться</button></td>
+                <td>Восстановление зуба пломбой IV класс по Блэку с использованием материалов из фотополимеров</td>
+                <td class="col-cost">6 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Восстановление зуба пломбой IV класс по Блэку с использованием материалов из фотополимеров">Записаться</button></td>
               </tr>
               <tr>
-                <td>Комплексное лечение периодонтита (за 1 зуб)</td>
-                <td class="col-cost">от 9 500 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение периодонтита">Записаться</button></td>
+                <td>Восстановление зуба пломбой(Замена старой пломбы)</td>
+                <td class="col-cost">5 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Восстановление зуба пломбой(Замена старой пломбы)">Записаться</button></td>
               </tr>
               <tr>
-                <td>Восстановление коронковой части зуба под коронку (стекловолоконный штифт + композит)</td>
-                <td class="col-cost">от 7 000 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Восстановление зуба">Записаться</button></td>
+                <td>Восстановление зуба пломбой не инвазивным методом ICON</td>
+                <td class="col-cost">4 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Восстановление зуба пломбой не инвазивным методом ICON">Записаться</button></td>
               </tr>
               <tr>
-                <td>Микроинвазивное лечение кариеса в стадии пятна препаратом ICON (без сверления)</td>
-                <td class="col-cost">от 6 000 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="ICON-лечение">Записаться</button></td>
+                <td>восстановление зуба пломбой с использованием стеклоиономерных цементов</td>
+                <td class="col-cost">1 900 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="восстановление зуба пломбой с использованием стеклоиономерных цементов">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Восстановление зуба пломбой с нарушением контактного пункта II, III класс по Блэку с использованием материалов из фотополимеров</td>
+                <td class="col-cost">5 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Восстановление зуба пломбой с нарушением контактного пункта II, III класс по Блэку с использованием материалов из фотополимеров">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Восстановление зуба пломбой Эстетическая реставрация зуба 1-го зуба фронтальной группы</td>
+                <td class="col-cost">7 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Восстановление зуба пломбой Эстетическая реставрация зуба 1-го зуба фронтальной группы">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Восстановление зуба (штифт + пломба)</td>
+                <td class="col-cost">6 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Восстановление зуба (штифт + пломба)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>восстановление зубной пломбы с использованием жидкотекучих композитов</td>
+                <td class="col-cost">700 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="восстановление зубной пломбы с использованием жидкотекучих композитов">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Временное пломбирование канала лекарственным препаратом(кальцием )</td>
+                <td class="col-cost">2 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Временное пломбирование канала лекарственным препаратом(кальцием )">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Временное шинирование при заболеваниях пародонта</td>
+                <td class="col-cost">1 800 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Временное шинирование при заболеваниях пародонта">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Закрытие перфорации стенки корневого канала зуба</td>
+                <td class="col-cost">1 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Закрытие перфорации стенки корневого канала зуба">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Инструментальная и медикаментозная обработка плохо проходимого корневого канала</td>
+                <td class="col-cost">1 100 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Инструментальная и медикаментозная обработка плохо проходимого корневого канала">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Инструментальная и медикаментозная обработка хорошо проходимого корневого канала</td>
+                <td class="col-cost">1 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Инструментальная и медикаментозная обработка хорошо проходимого корневого канала">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Лечение клиновидного дефекта (реставрация )</td>
+                <td class="col-cost">4 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение клиновидного дефекта (реставрация )">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Лечение периодонтита (1-одноканального)</td>
+                <td class="col-cost">9 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение периодонтита (1-одноканального)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Лечение периодонтита (2х-двухканального)</td>
+                <td class="col-cost">13 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение периодонтита (2х-двухканального)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Лечение периодонтита (3х-трехканального)</td>
+                <td class="col-cost">16 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение периодонтита (3х-трехканального)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Лечение пульпита 1-канал (пломбирование корневого канала зуба)</td>
+                <td class="col-cost">2 650 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение пульпита 1-канал (пломбирование корневого канала зуба)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Мех./мед. обработка полости при кариесе дентина</td>
+                <td class="col-cost">450 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Мех./мед. обработка полости при кариесе дентина">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Наложение временной пломбы</td>
+                <td class="col-cost">300 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Наложение временной пломбы">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Наложение коффердама (изоляция рабочего поля)</td>
+                <td class="col-cost">500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Наложение коффердама (изоляция рабочего поля)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Наложение лечебной/изолирующей прокладки</td>
+                <td class="col-cost">550 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Наложение лечебной/изолирующей прокладки">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Пломбирование 1 корневого канала гуттаперчей методом вертикальной компрессии</td>
+                <td class="col-cost">1 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Пломбирование 1 корневого канала гуттаперчей методом вертикальной компрессии">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Пломбирование канала гуттаперчей (метод горячей вертикальной конденсации)</td>
+                <td class="col-cost">1 350 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Пломбирование канала гуттаперчей (метод горячей вертикальной конденсации)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Пломбирование канала гуттаперчей (метод латеральной конденсации, 1 кан.)</td>
+                <td class="col-cost">800 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Пломбирование канала гуттаперчей (метод латеральной конденсации, 1 кан.)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Покрытие дентима &quot; Tokuyama Shield force plusl&quot; лечение гиперчувствительности зубов</td>
+                <td class="col-cost">6 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Покрытие дентима &quot; Tokuyama Shield force plusl&quot; лечение гиперчувствительности зубов">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Прием (осмотр, консультация) врача-стоматолога первичный</td>
+                <td class="col-cost">500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Прием (осмотр, консультация) врача-стоматолога первичный">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Проводниковая анестезия (ультракаин)</td>
+                <td class="col-cost">1 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Проводниковая анестезия (ультракаин)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Пульпотомия (ампутация коронковой пульпы)</td>
+                <td class="col-cost">500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Пульпотомия (ампутация коронковой пульпы)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Радиовизиография (прицельный рентген-снимок 1 зуба)</td>
+                <td class="col-cost">450 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Радиовизиография (прицельный рентген-снимок 1 зуба)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Распломбировка канала, запломбированного гуттаперчей</td>
+                <td class="col-cost">1 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Распломбировка канала, запломбированного гуттаперчей">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Распломбировка канала, ранее леченного пастой</td>
+                <td class="col-cost">750 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Распломбировка канала, ранее леченного пастой">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Распломбировка корневого канала ранее леченного фосфат-цементом/ резорцин-формальдегидным методом</td>
+                <td class="col-cost">1 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Распломбировка корневого канала ранее леченного фосфат-цементом/ резорцин-формальдегидным методом">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Ретракция десны (отодвигание десны для слепка)</td>
+                <td class="col-cost">400 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Ретракция десны (отодвигание десны для слепка)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Сошлифовывание твердых тканей зуба</td>
+                <td class="col-cost">1 600 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Сошлифовывание твердых тканей зуба">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Трепанация зуба, искусственной коронки (создание доступа)</td>
+                <td class="col-cost">500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Трепанация зуба, искусственной коронки (создание доступа)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Удаление внутриканального штифта/ вкладки Извлечение анкерного штифта</td>
+                <td class="col-cost">1 200 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Удаление внутриканального штифта/ вкладки Извлечение анкерного штифта">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Удаление внутриканального штифта/ вкладки Извлечение стекловолоконного штифта</td>
+                <td class="col-cost">1 900 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Удаление внутриканального штифта/ вкладки Извлечение стекловолоконного штифта">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Удаление внутриканального штифта/ вкладки инородного тела</td>
+                <td class="col-cost">4 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Удаление внутриканального штифта/ вкладки инородного тела">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Ультразвуковое расширение корневого канала зуба</td>
+                <td class="col-cost">300 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Ультразвуковое расширение корневого канала зуба">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Фиксация внутриканального штифта/ вкладки стекловолоконного штифта</td>
+                <td class="col-cost">1 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Фиксация внутриканального штифта/ вкладки стекловолоконного штифта">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Экстирпация пульпы</td>
+                <td class="col-cost">550 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Экстирпация пульпы">Записаться</button></td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <!-- 2. Профилактика и гигиена -->
+        <!-- Категория: Профилактика и профессиональная гигиена -->
         <div class="price-table-card" data-category="hygiene">
           <div class="price-table-header">
-            <h3>Профилактика и гигиена полости рта</h3>
+            <h3>Профилактика и профессиональная гигиена</h3>
             <span class="badge badge-mint">Гигиена</span>
           </div>
           <table class="price-table">
@@ -177,30 +368,25 @@
             </thead>
             <tbody>
               <tr>
-                <td>Комплексная профессиональная гигиена полости рта (УЗ-скейлинг + Air Flow + полировка)</td>
-                <td class="col-cost">от 5 000 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Профгигиена комплекс">Записаться</button></td>
+                <td>Глубокое фторирование эмали зуба</td>
+                <td class="col-cost">120 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Глубокое фторирование эмали зуба">Записаться</button></td>
               </tr>
               <tr>
-                <td>Воздушно-абразивная обработка зубов аппаратом Air Flow (отдельно)</td>
-                <td class="col-cost">от 4 000 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Air Flow">Записаться</button></td>
+                <td>Полировка и реминерализация эмали</td>
+                <td class="col-cost">2 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Полировка и реминерализация эмали">Записаться</button></td>
               </tr>
               <tr>
-                <td>Глубокое фторирование, полировка пастами и реминерализация эмали</td>
-                <td class="col-cost">от 2 500 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Реминерализация эмали">Записаться</button></td>
-              </tr>
-              <tr>
-                <td>Индивидуальный подбор средств домашней гигиены и обучение технике чистки</td>
-                <td class="col-cost">от 500 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Консультация по гигиене">Записаться</button></td>
+                <td>Профессиональная гигиена полости рта и зубов</td>
+                <td class="col-cost">5 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Профессиональная гигиена полости рта и зубов">Записаться</button></td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <!-- 3. Пародонтология -->
+        <!-- Категория: Пародонтология и лечение десен -->
         <div class="price-table-card" data-category="periodontics">
           <div class="price-table-header">
             <h3>Пародонтология и лечение десен</h3>
@@ -216,53 +402,148 @@
             </thead>
             <tbody>
               <tr>
-                <td>Инструментальная и антисептическая обработка 1 пародонтального кармана</td>
-                <td class="col-cost">от 900 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Обработка кармана">Записаться</button></td>
+                <td>M-Chip (1 челюсть) Электрофорез лекарственных препаратов</td>
+                <td class="col-cost">3 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="M-Chip (1 челюсть) Электрофорез лекарственных препаратов">Записаться</button></td>
               </tr>
               <tr>
-                <td>Хирургическое закрытие рецессии десны (1 зуб)</td>
-                <td class="col-cost">от 1 100 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Закрытие рецессии">Записаться</button></td>
+                <td>M-Chip (локально 1-2 сегмента) Электрофорез лекарственных препаратов</td>
+                <td class="col-cost">1 800 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="M-Chip (локально 1-2 сегмента) Электрофорез лекарственных препаратов">Записаться</button></td>
               </tr>
               <tr>
-                <td>Вестибулопластика мягких тканей (1 зона)</td>
-                <td class="col-cost">от 1 300 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Вестибулопластика">Записаться</button></td>
+                <td>Антисептическая повязка (1 челюсть)</td>
+                <td class="col-cost">400 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Антисептическая повязка (1 челюсть)">Записаться</button></td>
               </tr>
               <tr>
-                <td>Пластика уздечки с применением PRP-терапии (1 зона)</td>
-                <td class="col-cost">от 4 500 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Пластика уздечки PRP">Записаться</button></td>
+                <td>Аппликация лекарственного препарата на слизистую оболочку полости рта</td>
+                <td class="col-cost">500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Аппликация лекарственного препарата на слизистую оболочку полости рта">Записаться</button></td>
               </tr>
               <tr>
-                <td>Биоревитализация десны препаратом Revidnt (1 шприц)</td>
-                <td class="col-cost">от 4 500 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Биоревитализация Revidnt">Записаться</button></td>
+                <td>Закрытый кюретаж при заболеваниях пародонта в области зуба (1 сегмент)</td>
+                <td class="col-cost">1 100 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Закрытый кюретаж при заболеваниях пародонта в области зуба (1 сегмент)">Записаться</button></td>
               </tr>
               <tr>
-                <td>Биоревитализация десны препаратом Hyalrepair (1 шприц)</td>
-                <td class="col-cost">от 7 500 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Биоревитализация Hyalrepair">Записаться</button></td>
+                <td>Инъекционное введение лекарственных препаратов в челюстно-лицевую область(Hyalrepair)</td>
+                <td class="col-cost">7 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Инъекционное введение лекарственных препаратов в челюстно-лицевую область(Hyalrepair)">Записаться</button></td>
               </tr>
               <tr>
-                <td>Закрытый кюретаж пародонтальных карманов (1 зуб)</td>
-                <td class="col-cost">от 4 500 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Закрытый кюретаж">Записаться</button></td>
+                <td>Инъекционное введение лекарственных препаратов в челюстно-лицевую область(Revident)</td>
+                <td class="col-cost">6 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Инъекционное введение лекарственных препаратов в челюстно-лицевую область(Revident)">Записаться</button></td>
               </tr>
               <tr>
-                <td>Шинирование подвижных зубов стекловолоконной лентой (1 зуб)</td>
-                <td class="col-cost">от 400 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Шинирование зуба">Записаться</button></td>
+                <td>Кюретаж пародонтального кармана</td>
+                <td class="col-cost">6 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Кюретаж пародонтального кармана">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Лечение гингивита (1 челюсть консервативно)</td>
+                <td class="col-cost">1 300 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение гингивита (1 челюсть консервативно)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Лечение пародонтита (1 сеанс комплекс)</td>
+                <td class="col-cost">4 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение пародонтита (1 сеанс комплекс)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Локальная пародонтологическая чистка (за 1 зуб)</td>
+                <td class="col-cost">400 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Локальная пародонтологическая чистка (за 1 зуб)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Наноматрицы Mashup (1 карман 1 матрица)</td>
+                <td class="col-cost">500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Наноматрицы Mashup (1 карман 1 матрица)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Нехирургическая пластика десны (1 зуб)</td>
+                <td class="col-cost">900 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Нехирургическая пластика десны (1 зуб)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>ПАКЕТ Анти-Воспаление+ (Профгигиена + ФДТ 1 челюсть + Hyalrepair)</td>
+                <td class="col-cost">15 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="ПАКЕТ Анти-Воспаление+ (Профгигиена + ФДТ 1 челюсть + Hyalrepair)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>ПАКЕТ Комплекс Пародонтит (Лечение пародонтита + Revidеnt полный + Плазмолифтинг)</td>
+                <td class="col-cost">17 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="ПАКЕТ Комплекс Пародонтит (Лечение пародонтита + Revidеnt полный + Плазмолифтинг)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>ПАКЕТ Наноматрицы Комплекс (Кюретаж + M-Chip 1 челюсть + ФДТ)</td>
+                <td class="col-cost">8 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="ПАКЕТ Наноматрицы Комплекс (Кюретаж + M-Chip 1 челюсть + ФДТ)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>ПАКЕТ Регенерация Десен (Кюретаж + Revidеnt 0.5 мл + Плазмолифтинг)</td>
+                <td class="col-cost">11 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="ПАКЕТ Регенерация Десен (Кюретаж + Revidеnt 0.5 мл + Плазмолифтинг)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>ПАКЕТ Старт Пародонт (Профгигиена + ФДТ 1 челюсть + Антисептическая повязка)</td>
+                <td class="col-cost">9 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="ПАКЕТ Старт Пародонт (Профгигиена + ФДТ 1 челюсть + Антисептическая повязка)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Плазмолифтинг PRP десен (1 челюсть)</td>
+                <td class="col-cost">3 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Плазмолифтинг PRP десен (1 челюсть)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Плазмолифтинг PRP десен (1 челюсть расширенный)</td>
+                <td class="col-cost">4 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Плазмолифтинг PRP десен (1 челюсть расширенный)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Повязка Хлорофиллипт масляный</td>
+                <td class="col-cost">350 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Повязка Хлорофиллипт масляный">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Полная профгигиена (ультразвук + AirFlow + полировка обе челюсти)</td>
+                <td class="col-cost">5 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Полная профгигиена (ультразвук + AirFlow + полировка обе челюсти)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Прием консультация врача-пародонтолога первичный</td>
+                <td class="col-cost">1 200 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Прием консультация врача-пародонтолога первичный">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Прием (осмотр, консультация) врача-стоматолога повторный</td>
+                <td class="col-cost">1 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Прием (осмотр, консультация) врача-стоматолога повторный">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Траумель инъекция</td>
+                <td class="col-cost">1 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Траумель инъекция">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Удаление наддесневых и поддесневых зубных отложений</td>
+                <td class="col-cost">700 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Удаление наддесневых и поддесневых зубных отложений">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>ФДТ пародонта (1 сегмент)</td>
+                <td class="col-cost">1 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="ФДТ пародонта (1 сегмент)">Записаться</button></td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <!-- 4. Хирургия -->
+        <!-- Категория: Хирургическая стоматология и удаление зубов -->
         <div class="price-table-card" data-category="surgery">
           <div class="price-table-header">
-            <h3>Хирургическая стоматология</h3>
+            <h3>Хирургическая стоматология и удаление зубов</h3>
             <span class="badge badge-primary">Хирургия</span>
           </div>
           <table class="price-table">
@@ -275,43 +556,372 @@
             </thead>
             <tbody>
               <tr>
-                <td>Атравматичное простое удаление зуба (включая анестезию)</td>
-                <td class="col-cost">от 5 500 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Удаление зуба">Записаться</button></td>
+                <td>Апикальная хирургия однокорневого зуба</td>
+                <td class="col-cost">15 700 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Апикальная хирургия однокорневого зуба">Записаться</button></td>
               </tr>
               <tr>
-                <td>Удаление зуба мудрости (третьего моляра)</td>
-                <td class="col-cost">от 6 500 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Удаление зуба мудрости">Записаться</button></td>
+                <td>Аутотрансплантация зуба ( пересадка зуба)</td>
+                <td class="col-cost">25 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Аутотрансплантация зуба ( пересадка зуба)">Записаться</button></td>
               </tr>
               <tr>
-                <td>Сложное хирургическое удаление зуба с разъединением корней</td>
-                <td class="col-cost">от 7 500 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Сложное удаление">Записаться</button></td>
+                <td>Взятие образца биологического материала из очагов поражения органов рта</td>
+                <td class="col-cost">2 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Взятие образца биологического материала из очагов поражения органов рта">Записаться</button></td>
               </tr>
               <tr>
-                <td>Удаление ретинированного или дистопированного зуба</td>
-                <td class="col-cost">от 8 500 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Удаление ретинированного зуба">Записаться</button></td>
+                <td>Вправление вывиха нижней челюсти</td>
+                <td class="col-cost">1 200 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Вправление вывиха нижней челюсти">Записаться</button></td>
               </tr>
               <tr>
-                <td>Вскрытие и дренирование поднадкостничного абсцесса (периостит)</td>
-                <td class="col-cost">от 1 500 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Вскрытие абсцесса">Записаться</button></td>
+                <td>Вскрытие и дренирование абсцесса полости рта</td>
+                <td class="col-cost">2 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Вскрытие и дренирование абсцесса полости рта">Записаться</button></td>
               </tr>
               <tr>
-                <td>Пластика уздечки губы или языка лазером / скальпелем</td>
-                <td class="col-cost">от 5 000 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Пластика уздечки">Записаться</button></td>
+                <td>Вскрытие подслизистого или поднадкостничного очага воспаления в полости рта</td>
+                <td class="col-cost">3 200 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Вскрытие подслизистого или поднадкостничного очага воспаления в полости рта">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Гингивопластика</td>
+                <td class="col-cost">10 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Гингивопластика">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Забор мягкотканного аутотрансплантата</td>
+                <td class="col-cost">10 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Забор мягкотканного аутотрансплантата">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Закрытие рецессии</td>
+                <td class="col-cost">12 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Закрытие рецессии">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Инфильтрационная анестезия (Ультракаин)</td>
+                <td class="col-cost">800 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Инфильтрационная анестезия (Ультракаин)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Иссечение новообразования мягких тканей</td>
+                <td class="col-cost">10 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Иссечение новообразования мягких тканей">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Коррекция объема и формы альвеолярного отростка</td>
+                <td class="col-cost">12 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Коррекция объема и формы альвеолярного отростка">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Лечение перикоронита (промывание, рассечение и/или иссечение капюшона)</td>
+                <td class="col-cost">2 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение перикоронита (промывание, рассечение и/или иссечение капюшона)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Наложение шва на слизистую оболочку рта</td>
+                <td class="col-cost">500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Наложение шва на слизистую оболочку рта">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Остановка луночного кровотечения с наложением швов</td>
+                <td class="col-cost">2 200 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Остановка луночного кровотечения с наложением швов">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Пластика альвеолярного отростка</td>
+                <td class="col-cost">8 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Пластика альвеолярного отростка">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Пластика мягких тканей в области 1-го импланта</td>
+                <td class="col-cost">8 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Пластика мягких тканей в области 1-го импланта">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Пластика мягкого неба</td>
+                <td class="col-cost">4 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Пластика мягкого неба">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Пластика перфорации верхнечелюстной пазухи</td>
+                <td class="col-cost">18 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Пластика перфорации верхнечелюстной пазухи">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Пластика уздечки верхней губы</td>
+                <td class="col-cost">3 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Пластика уздечки верхней губы">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Пластика уздечки нижней губы</td>
+                <td class="col-cost">3 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Пластика уздечки нижней губы">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Пластика уздечки языка</td>
+                <td class="col-cost">2 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Пластика уздечки языка">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Прием (осмотр, консультация) врача-стоматолога-хирурга первичный</td>
+                <td class="col-cost">1 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Прием (осмотр, консультация) врача-стоматолога-хирурга первичный">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Прием (осмотр, консультация) врача-стоматолога-хирурга повторный</td>
+                <td class="col-cost">500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Прием (осмотр, консультация) врача-стоматолога-хирурга повторный">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Проводниковая анестезия (ултракаин)</td>
+                <td class="col-cost">1 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Проводниковая анестезия (ултракаин)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Резекция верхушки корня</td>
+                <td class="col-cost">10 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Резекция верхушки корня">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Репозиция вывихнутых зубов с фиксацией гладкой лентой (без фиксации в прикусе) 7000</td>
+                <td class="col-cost">7 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Репозиция вывихнутых зубов с фиксацией гладкой лентой (без фиксации в прикусе) 7000">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Репозиция вывихнутых зубов с фиксацией гладкой лентой (с фиксацией в прикусе)</td>
+                <td class="col-cost">7 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Репозиция вывихнутых зубов с фиксацией гладкой лентой (с фиксацией в прикусе)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Удаление временного зуба</td>
+                <td class="col-cost">2 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Удаление временного зуба">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Удаление временного зуба (простое)</td>
+                <td class="col-cost">2 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Удаление временного зуба (простое)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Удаление зуба сложное с разъединением корней</td>
+                <td class="col-cost">6 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Удаление зуба сложное с разъединением корней">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Удаление инородного тела кости</td>
+                <td class="col-cost">4 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Удаление инородного тела кости">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Удаление постоянного зуба (простое)</td>
+                <td class="col-cost">3 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Удаление постоянного зуба (простое)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Удаление ретинированного, дистопированного зуба (1 степени сложности)</td>
+                <td class="col-cost">8 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Удаление ретинированного, дистопированного зуба (1 степени сложности)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Удаление ретинированного, дистопированного зуба 2 степени сложности</td>
+                <td class="col-cost">12 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Удаление ретинированного, дистопированного зуба 2 степени сложности">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Цистотомия</td>
+                <td class="col-cost">2 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Цистотомия">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Цистотомия или цистэктомия</td>
+                <td class="col-cost">4 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Цистотомия или цистэктомия">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Цистэктомия</td>
+                <td class="col-cost">4 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Цистэктомия">Записаться</button></td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <!-- 5. Ортопедия -->
+        <!-- Категория: Дентальная имплантация и костная пластика -->
+        <div class="price-table-card" data-category="implantology">
+          <div class="price-table-header">
+            <h3>Дентальная имплантация и костная пластика</h3>
+            <span class="badge badge-primary">Имплантология</span>
+          </div>
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Наименование медицинской услуги</th>
+                <th class="col-cost">Стоимость</th>
+                <th class="col-action">Действие</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Вестибулопластика</td>
+                <td class="col-cost">8 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Вестибулопластика">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Внутрикостная дентальная имплантация (Osstem)</td>
+                <td class="col-cost">30 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Внутрикостная дентальная имплантация (Osstem)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Использование мембраны</td>
+                <td class="col-cost">12 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Использование мембраны">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Консервация лунки (запечатывание лунки)</td>
+                <td class="col-cost">5 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Консервация лунки (запечатывание лунки)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Консультация хирурга-имплантолога</td>
+                <td class="col-cost">1 200 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Консультация хирурга-имплантолога">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Контурная аугментация в области одного имплантата</td>
+                <td class="col-cost">25 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Контурная аугментация в области одного имплантата">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>костная аугментация в области одного импланта</td>
+                <td class="col-cost">25 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="костная аугментация в области одного импланта">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>костная пластика альвеолярного гребя по высоте с использованием титанового каркаса 1 зуба</td>
+                <td class="col-cost">100 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="костная пластика альвеолярного гребя по высоте с использованием титанового каркаса 1 зуба">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Костная пластика альвеолярного гребя по высоте с использованием титанового каркаса 2-х зубов</td>
+                <td class="col-cost">120 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Костная пластика альвеолярного гребя по высоте с использованием титанового каркаса 2-х зубов">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>костная пластика альвеолярного гребя по горезонтали в области 2х зубов</td>
+                <td class="col-cost">60 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="костная пластика альвеолярного гребя по горезонтали в области 2х зубов">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Костная пластика в области одного зуба методикой IDR, B2C</td>
+                <td class="col-cost">25 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Костная пластика в области одного зуба методикой IDR, B2C">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Костная пластика лицевой области (направленная костная регенерация)</td>
+                <td class="col-cost">45 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Костная пластика лицевой области (направленная костная регенерация)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Лоскутная операция в полости рта</td>
+                <td class="col-cost">8 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лоскутная операция в полости рта">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Оперция на 4-х имплантах</td>
+                <td class="col-cost">100 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Оперция на 4-х имплантах">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Оперция на 6-х имплантах</td>
+                <td class="col-cost">150 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Оперция на 6-х имплантах">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Оперция на 8-х имплантах</td>
+                <td class="col-cost">300 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Оперция на 8-х имплантах">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Расщепление гребня кости</td>
+                <td class="col-cost">25 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Расщепление гребня кости">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Редукция альвеолярного гребня</td>
+                <td class="col-cost">15 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Редукция альвеолярного гребня">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Синус-лифтинг закрытый</td>
+                <td class="col-cost">15 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Синус-лифтинг закрытый">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Синус-лифтинг открытый</td>
+                <td class="col-cost">30 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Синус-лифтинг открытый">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Удаление внутреннего дентального импланта</td>
+                <td class="col-cost">7 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Удаление внутреннего дентального импланта">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Установка миниимплантата для фиксации ортодонтического аппарата MARPE</td>
+                <td class="col-cost">20 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Установка миниимплантата для фиксации ортодонтического аппарата MARPE">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Установка мультиюнита Osstem прямого</td>
+                <td class="col-cost">7 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Установка мультиюнита Osstem прямого">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Установка мультиюнита Osstem углового</td>
+                <td class="col-cost">8 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Установка мультиюнита Osstem углового">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Установка ортодонтического мини-винта Bio-Ray</td>
+                <td class="col-cost">20 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Установка ортодонтического мини-винта Bio-Ray">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Установка ортодонтического мини-винта Osstem</td>
+                <td class="col-cost">10 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Установка ортодонтического мини-винта Osstem">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Установка формирователя десны Osstem</td>
+                <td class="col-cost">5 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Установка формирователя десны Osstem">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Хирургический навигационный набор 1 имплант</td>
+                <td class="col-cost">5 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Хирургический навигационный набор 1 имплант">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Хирургический навигационный набор 2-4 импланта</td>
+                <td class="col-cost">10 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Хирургический навигационный набор 2-4 импланта">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Хирургический навигационный набор 5-8 имплантов</td>
+                <td class="col-cost">15 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Хирургический навигационный набор 5-8 имплантов">Записаться</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Категория: Ортопедическая стоматология (коронки, виниры, протезы) -->
         <div class="price-table-card" data-category="orthopedics">
           <div class="price-table-header">
-            <h3>Ортопедическая стоматология и протезирование</h3>
+            <h3>Ортопедическая стоматология (коронки, виниры, протезы)</h3>
             <span class="badge badge-gold">Ортопедия</span>
           </div>
           <table class="price-table">
@@ -324,39 +934,379 @@
             </thead>
             <tbody>
               <tr>
-                <td>Коронка из диоксида циркония (монолитная / с нанесением керамики)</td>
-                <td class="col-cost">от 15 000 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Циркониевая коронка">Записаться</button></td>
+                <td>Безметалловая вкладка, накладка E-max</td>
+                <td class="col-cost">19 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Безметалловая вкладка, накладка E-max">Записаться</button></td>
               </tr>
               <tr>
-                <td>Керамический винир E.max (высокоэстетичный)</td>
-                <td class="col-cost">от 22 000 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Керамический винир">Записаться</button></td>
+                <td>Восковое моделирование (диагностическая постановка зубов)</td>
+                <td class="col-cost">1 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Восковое моделирование (диагностическая постановка зубов)">Записаться</button></td>
               </tr>
               <tr>
-                <td>Металлокерамическая коронка стандартная</td>
-                <td class="col-cost">от 8 000 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Металлокерамическая коронка">Записаться</button></td>
+                <td>Восстановление зуба виниром,вкладками,</td>
+                <td class="col-cost">30 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Восстановление зуба виниром,вкладками,">Записаться</button></td>
               </tr>
               <tr>
-                <td>Коронка на дентальном имплантате (включая абатмент)</td>
-                <td class="col-cost">от 25 000 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Протезирование на импланте">Записаться</button></td>
+                <td>Временная коронка</td>
+                <td class="col-cost">4 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Временная коронка">Записаться</button></td>
               </tr>
               <tr>
-                <td>Съемный бюгельный протез с кламмерной фиксацией</td>
-                <td class="col-cost">от 30 000 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Бюгельный протез">Записаться</button></td>
+                <td>Временная коронка на имплантатах</td>
+                <td class="col-cost">7 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Временная коронка на имплантатах">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Детская металлическая коронка</td>
+                <td class="col-cost">3 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Детская металлическая коронка">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Замена винта на имплантате</td>
+                <td class="col-cost">2 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Замена винта на имплантате">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Изготовление диагностических моделей челюстей (1 челюсть)</td>
+                <td class="col-cost">2 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Изготовление диагностических моделей челюстей (1 челюсть)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Изготовление диагностического композитного макета реставрации</td>
+                <td class="col-cost">3 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Изготовление диагностического композитного макета реставрации">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Изготовление прикусного валика</td>
+                <td class="col-cost">2 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Изготовление прикусного валика">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Индивидуальная ложка</td>
+                <td class="col-cost">3 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Индивидуальная ложка">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Коронка временная (прямой/непрямой метод)</td>
+                <td class="col-cost">1 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Коронка временная (прямой/непрямой метод)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Коронка из Диоксида циркония</td>
+                <td class="col-cost">22 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Коронка из Диоксида циркония">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Коронка из диоксида циркония (CAD/CAM)</td>
+                <td class="col-cost">25 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Коронка из диоксида циркония (CAD/CAM)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Коронка из прессованной керамики (E-max)</td>
+                <td class="col-cost">23 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Коронка из прессованной керамики (E-max)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Коронка металлическая (штампованная/цельнолитая)</td>
+                <td class="col-cost">8 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Коронка металлическая (штампованная/цельнолитая)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Коронка металлокерамическая</td>
+                <td class="col-cost">13 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Коронка металлокерамическая">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Коронка на импланте диоксид циркония</td>
+                <td class="col-cost">30 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Коронка на импланте диоксид циркония">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Коронка цельнолитая (укрепленная)</td>
+                <td class="col-cost">10 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Коронка цельнолитая (укрепленная)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Культевая штифтовая вкладка из диоксида циркония</td>
+                <td class="col-cost">9 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Культевая штифтовая вкладка из диоксида циркония">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Культевая штифтовая вкладка из металическая</td>
+                <td class="col-cost">6 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Культевая штифтовая вкладка из металическая">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Металлокерамическая коронка на импланте</td>
+                <td class="col-cost">19 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Металлокерамическая коронка на импланте">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Непрямая реставрация из композита</td>
+                <td class="col-cost">7 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Непрямая реставрация из композита">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Опорная супраструктура на имплантате</td>
+                <td class="col-cost">18 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Опорная супраструктура на имплантате">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Определение вида смыкания зубных рядов с помощью лицевой дуги</td>
+                <td class="col-cost">2 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Определение вида смыкания зубных рядов с помощью лицевой дуги">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Определение прикуса (силиконовый регистратрация)</td>
+                <td class="col-cost">700 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Определение прикуса (силиконовый регистратрация)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Определение центральной окклюзии (регистрация прикуса)</td>
+                <td class="col-cost">700 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Определение центральной окклюзии (регистрация прикуса)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Перебазировка съемного протеза</td>
+                <td class="col-cost">5 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Перебазировка съемного протеза">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Починка перелома базиса самотвердеющей пластмассой</td>
+                <td class="col-cost">4 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Починка перелома базиса самотвердеющей пластмассой">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Приварка кламмера</td>
+                <td class="col-cost">4 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Приварка кламмера">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Прием (осмотр, консультация) врача-стоматолога-ортопеда первичный</td>
+                <td class="col-cost">500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Прием (осмотр, консультация) врача-стоматолога-ортопеда первичный">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Прием (осмотр, консультация) врача-стоматолога-ортопеда повторный</td>
+                <td class="col-cost">300 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Прием (осмотр, консультация) врача-стоматолога-ортопеда повторный">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Провизорная композитная коронка</td>
+                <td class="col-cost">3 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Провизорная композитная коронка">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Промежуточная единица (зуб) в металлокерамическом мосту на имплантатах</td>
+                <td class="col-cost">18 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Промежуточная единица (зуб) в металлокерамическом мосту на имплантатах">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Промежуточная единица на диоксиде циркония в мосту на имплантатах</td>
+                <td class="col-cost">25 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Промежуточная единица на диоксиде циркония в мосту на имплантатах">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Реставрация скола керамики на металлокерамическом протезе (1 ед.)</td>
+                <td class="col-cost">3 800 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Реставрация скола керамики на металлокерамическом протезе (1 ед.)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Снятие коронки</td>
+                <td class="col-cost">1 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Снятие коронки">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Снятие культевых вкладок ( простые)</td>
+                <td class="col-cost">3 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Снятие культевых вкладок ( простые)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Снятие культевых вкладок (сложное )</td>
+                <td class="col-cost">5 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Снятие культевых вкладок (сложное )">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>снятие оттиска одной челюсти Альгинатного</td>
+                <td class="col-cost">800 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="снятие оттиска одной челюсти Альгинатного">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>снятие оттиска одной челюсти А-силиконового</td>
+                <td class="col-cost">1 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="снятие оттиска одной челюсти А-силиконового">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>снятие оттиска одной челюсти С-силиконового</td>
+                <td class="col-cost">1 200 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="снятие оттиска одной челюсти С-силиконового">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Установка абатмента (формирователя десны)</td>
+                <td class="col-cost">4 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Установка абатмента (формирователя десны)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Установка индивидуального абатмента (CAD/CAM)</td>
+                <td class="col-cost">5 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Установка индивидуального абатмента (CAD/CAM)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Фиксация конструкции на адгезивный цемент</td>
+                <td class="col-cost">1 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Фиксация конструкции на адгезивный цемент">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Фиксация культевой вкладки (литой / цельнокерамической)</td>
+                <td class="col-cost">2 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Фиксация культевой вкладки (литой / цельнокерамической)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Фиксация ортопедической конструкции на адгезивный цемент</td>
+                <td class="col-cost">1 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Фиксация ортопедической конструкции на адгезивный цемент">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Фиксация ортопедической конструкции на временный цемент (1 ед.)</td>
+                <td class="col-cost">700 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Фиксация ортопедической конструкции на временный цемент (1 ед.)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Фиксация ортопедической конструкции на постоянный цемент (1 ед.)</td>
+                <td class="col-cost">800 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Фиксация ортопедической конструкции на постоянный цемент (1 ед.)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Формирование уступа под безметалловую коронку (керамика/цирконий)</td>
+                <td class="col-cost">1 350 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Формирование уступа под безметалловую коронку (керамика/цирконий)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Фрезерованный винир E-max</td>
+                <td class="col-cost">23 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Фрезерованный винир E-max">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Ацеталовый протез (частичный )</td>
+                <td class="col-cost">47 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Ацеталовый протез (частичный )">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Бюгельный протез с замковой фиксацией на (2 замка)</td>
+                <td class="col-cost">45 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Бюгельный протез с замковой фиксацией на (2 замка)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Бюгельный протез с кламмерной фиксацией (2 кламмера)</td>
+                <td class="col-cost">45 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Бюгельный протез с кламмерной фиксацией (2 кламмера)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Бюгельный протез с опорой на имплантаты</td>
+                <td class="col-cost">35 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Бюгельный протез с опорой на имплантаты">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Восстановление зуба культевой вкладкой (литье/фрезеровка)</td>
+                <td class="col-cost">5 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Восстановление зуба культевой вкладкой (литье/фрезеровка)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Временная усилиная конструкция на 4-х имплантатах</td>
+                <td class="col-cost">80 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Временная усилиная конструкция на 4-х имплантатах">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Дополнительный замок к бюгельному протезу</td>
+                <td class="col-cost">4 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Дополнительный замок к бюгельному протезу">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Замена матрицы замкового крепления бюгельного протеза</td>
+                <td class="col-cost">3 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Замена матрицы замкового крепления бюгельного протеза">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Клиническая перебазировка съемного протеза</td>
+                <td class="col-cost">900 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Клиническая перебазировка съемного протеза">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Комбинированный протез на имплантатах, I кат. сложности</td>
+                <td class="col-cost">50 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Комбинированный протез на имплантатах, I кат. сложности">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Металлопластмассовая конструкция на имплантатах (титан-акрил, титан-РМА)</td>
+                <td class="col-cost">50 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Металлопластмассовая конструкция на имплантатах (титан-акрил, титан-РМА)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Микропротез Съемный</td>
+                <td class="col-cost">10 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Микропротез Съемный">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Полный съемный протез с опорой на 2 имплантата</td>
+                <td class="col-cost">75 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Полный съемный протез с опорой на 2 имплантата">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Починка съемного протеза</td>
+                <td class="col-cost">5 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Починка съемного протеза">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Приварка зуба</td>
+                <td class="col-cost">2 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Приварка зуба">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Протезирование полными съемными пластиночными протезами</td>
+                <td class="col-cost">36 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Протезирование полными съемными пластиночными протезами">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Протезирование съемными бюгельными протезами</td>
+                <td class="col-cost">3 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Протезирование съемными бюгельными протезами">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Протезирование частичным съемным пластиночным протезом (1 челюсть)</td>
+                <td class="col-cost">13 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Протезирование частичным съемным пластиночным протезом (1 челюсть)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Система фиксации с использованием ФГП</td>
+                <td class="col-cost">1 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Система фиксации с использованием ФГП">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Съемная шина (Защитная каппа)</td>
+                <td class="col-cost">10 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Съемная шина (Защитная каппа)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Телескопическая система фиксации (1 цилиндр)</td>
+                <td class="col-cost">8 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Телескопическая система фиксации (1 цилиндр)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Фрезеровка</td>
+                <td class="col-cost">2 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Фрезеровка">Записаться</button></td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <!-- 6. Ортодонтия -->
+        <!-- Категория: Ортодонтия и исправление прикуса -->
         <div class="price-table-card" data-category="orthodontics">
           <div class="price-table-header">
-            <h3>Ортодонтия (исправление прикуса)</h3>
-            <span class="badge badge-mint">Ортодонтия</span>
+            <h3>Ортодонтия и исправление прикуса</h3>
+            <span class="badge badge-gold">Ортодонтия</span>
           </div>
           <table class="price-table">
             <thead>
@@ -368,39 +1318,189 @@
             </thead>
             <tbody>
               <tr>
-                <td>Консультация врача-ортодонта и составление 3D-плана лечения</td>
-                <td class="col-cost">от 1 500 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Консультация ортодонта">Записаться</button></td>
+                <td>Аппарат Twin Block</td>
+                <td class="col-cost">40 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Аппарат Twin Block">Записаться</button></td>
               </tr>
               <tr>
-                <td>Металлическая самолигирующая брекет-система (1 челюсть)</td>
-                <td class="col-cost">от 35 000 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Металлические брекеты">Записаться</button></td>
+                <td>Аппарат Марко-Росса</td>
+                <td class="col-cost">40 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Аппарат Марко-Росса">Записаться</button></td>
               </tr>
               <tr>
-                <td>Керамическая / сапфировая брекет-система Damon Clear (1 челюсть)</td>
-                <td class="col-cost">от 55 000 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Брекеты Damon Clear">Записаться</button></td>
+                <td>Аппарат Хасс с опорой на винты</td>
+                <td class="col-cost">50 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Аппарат Хасс с опорой на винты">Записаться</button></td>
               </tr>
               <tr>
-                <td>Лечение прозрачными элайнерами (индивидуальный набор капп)</td>
-                <td class="col-cost">от 120 000 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Элайнеры">Записаться</button></td>
+                <td>Замена брекета (повторная фиксация)</td>
+                <td class="col-cost">1 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Замена брекета (повторная фиксация)">Записаться</button></td>
               </tr>
               <tr>
-                <td>Плановый прием и активация брекет-системы</td>
-                <td class="col-cost">от 2 500 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Активация брекетов">Записаться</button></td>
+                <td>Замена лигатуры (эластическая/металлическая)</td>
+                <td class="col-cost">40 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Замена лигатуры (эластическая/металлическая)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Изготовление вестибулярная пластина</td>
+                <td class="col-cost">22 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Изготовление вестибулярная пластина">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Изготовление контрольной модели</td>
+                <td class="col-cost">1 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Изготовление контрольной модели">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Изготовление рабочей и диагностической модели (1 челюсть)</td>
+                <td class="col-cost">1 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Изготовление рабочей и диагностической модели (1 челюсть)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Консультация ортодонта для детей</td>
+                <td class="col-cost">1 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Консультация ортодонта для детей">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Лечение на элайнерах на 1 зубную дугу (13-26 кап)</td>
+                <td class="col-cost">50 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение на элайнерах на 1 зубную дугу (13-26 кап)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Лечение на элайнерах на 1 зубную дугу (27 и более кап)</td>
+                <td class="col-cost">70 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение на элайнерах на 1 зубную дугу (27 и более кап)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Лечение на элайнерах на 2 зубные дуги (13-26 кап)</td>
+                <td class="col-cost">65 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение на элайнерах на 2 зубные дуги (13-26 кап)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Лечение на элайнерах на 2 зубные дуги (27 и более кап)</td>
+                <td class="col-cost">75 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение на элайнерах на 2 зубные дуги (27 и более кап)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Лечение на элайнерах на 2 зубные дуги (до 12 кап)</td>
+                <td class="col-cost">50 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение на элайнерах на 2 зубные дуги (до 12 кап)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Ортодонтическая коррекция с применением лигатурной брекет-системы</td>
+                <td class="col-cost">50 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Ортодонтическая коррекция с применением лигатурной брекет-системы">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Ортодонтическая коррекция съемным ортодонтическим аппаратом</td>
+                <td class="col-cost">10 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Ортодонтическая коррекция съемным ортодонтическим аппаратом">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Ортодонтическая лицевая маска Диляра</td>
+                <td class="col-cost">20 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Ортодонтическая лицевая маска Диляра">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Ортодонтическое скрепление металлической проволокой</td>
+                <td class="col-cost">5 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Ортодонтическое скрепление металлической проволокой">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Ортопантомография</td>
+                <td class="col-cost">800 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Ортопантомография">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Повторный прием на брекет-системе</td>
+                <td class="col-cost">5 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Повторный прием на брекет-системе">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Полирование ортодонтической конструкции</td>
+                <td class="col-cost">2 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Полирование ортодонтической конструкции">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Прием (осмотр, консультация) врача-ортодонта первичный</td>
+                <td class="col-cost">1 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Прием (осмотр, консультация) врача-ортодонта первичный">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Простая ортодонтическая пластинка (с одним винтом)(Элайнеры)</td>
+                <td class="col-cost">6 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Простая ортодонтическая пластинка (с одним винтом)(Элайнеры)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Ремонт ортодонического аппарата</td>
+                <td class="col-cost">2 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Ремонт ортодонического аппарата">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Ретенционная каппа (1 челюсть)</td>
+                <td class="col-cost">6 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Ретенционная каппа (1 челюсть)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Снятие брекетов + полировка</td>
+                <td class="col-cost">3 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Снятие брекетов + полировка">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Снятие оттиска с одной челюсти</td>
+                <td class="col-cost">1 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Снятие оттиска с одной челюсти">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>снятие распорки с зуба</td>
+                <td class="col-cost">3 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="снятие распорки с зуба">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Телерентгенография челюстей</td>
+                <td class="col-cost">1 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Телерентгенография челюстей">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Установка брекет-системы на 1 челюсть (безлигатурные/самолигирующие брекеты) Damon clear</td>
+                <td class="col-cost">90 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Установка брекет-системы на 1 челюсть (безлигатурные/самолигирующие брекеты) Damon clear">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Установка брекет-системы на 1 челюсть (керамические/сапфировые брекеты) Damon Q2</td>
+                <td class="col-cost">75 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Установка брекет-системы на 1 челюсть (керамические/сапфировые брекеты) Damon Q2">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Установка брекет-системы на 1 челюсть (лингвальные брекеты)</td>
+                <td class="col-cost">12 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Установка брекет-системы на 1 челюсть (лингвальные брекеты)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Установка брекет-системы на 1 челюсть (металлические лигатурные брекеты)</td>
+                <td class="col-cost">60 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Установка брекет-системы на 1 челюсть (металлические лигатурные брекеты)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Установка ретейнеров</td>
+                <td class="col-cost">6 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Установка ретейнеров">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Хранитель места (устанавливается при преждевременной потери молочного зуба)</td>
+                <td class="col-cost">8 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Хранитель места (устанавливается при преждевременной потери молочного зуба)">Записаться</button></td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <!-- 7. Детское отделение -->
+        <!-- Категория: Детская стоматология -->
         <div class="price-table-card" data-category="pediatric">
           <div class="price-table-header">
             <h3>Детская стоматология</h3>
-            <span class="badge badge-primary">Детское</span>
+            <span class="badge badge-mint">Детское отделение</span>
           </div>
           <table class="price-table">
             <thead>
@@ -412,24 +1512,159 @@
             </thead>
             <tbody>
               <tr>
-                <td>Адаптационный прием и осмотр детского стоматолога</td>
-                <td class="col-cost">от 1 500 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Детский осмотр">Записаться</button></td>
+                <td>ICON-лечение кариеса у детей</td>
+                <td class="col-cost">4 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="ICON-лечение кариеса у детей">Записаться</button></td>
               </tr>
               <tr>
-                <td>Лечение кариеса молочного зуба с пломбированием световым материалом</td>
-                <td class="col-cost">от 3 500 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение молочного зуба">Записаться</button></td>
+                <td>Адаптация (повторная) Психологическая подготовка ребенка к лечению</td>
+                <td class="col-cost">750 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Адаптация (повторная) Психологическая подготовка ребенка к лечению">Записаться</button></td>
               </tr>
               <tr>
-                <td>Герметизация фиссур постоянных зубов (1 зуб)</td>
-                <td class="col-cost">от 2 000 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Герметизация фиссур">Записаться</button></td>
+                <td>Адаптация Психологическая подготовка ребенка к лечению</td>
+                <td class="col-cost">1 400 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Адаптация Психологическая подготовка ребенка к лечению">Записаться</button></td>
               </tr>
               <tr>
-                <td>Удаление подвижного молочного зуба с аппликационной анестезией</td>
-                <td class="col-cost">от 1 800 руб.</td>
-                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Удаление молочного зуба">Записаться</button></td>
+                <td>Билдап (преэндодонтическая подготовка зуба)</td>
+                <td class="col-cost">1 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Билдап (преэндодонтическая подготовка зуба)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Восстановление зуба после лечения витальным методом</td>
+                <td class="col-cost">3 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Восстановление зуба после лечения витальным методом">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Временного пломбирования корневых каналов (Кальций)</td>
+                <td class="col-cost">2 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Временного пломбирования корневых каналов (Кальций)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Временное пломбирование лекарственным препаратом корневого канала(1 посещение)</td>
+                <td class="col-cost">4 200 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Временное пломбирование лекарственным препаратом корневого канала(1 посещение)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Временное пломбирование лекарственным препаратом корневого канала(2 посещение)</td>
+                <td class="col-cost">4 200 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Временное пломбирование лекарственным препаратом корневого канала(2 посещение)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Детская проф-гигиена полости рта</td>
+                <td class="col-cost">2 850 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Детская проф-гигиена полости рта">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Запечатывание фиссуры зуба герметиком (инвазивная)</td>
+                <td class="col-cost">2 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Запечатывание фиссуры зуба герметиком (инвазивная)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Запечатывание фиссуры зуба герметиком (не ивазивная)</td>
+                <td class="col-cost">2 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Запечатывание фиссуры зуба герметиком (не ивазивная)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Лечение кариеса молочного зуба II, III IV класс (1 пов-ть), кариес дентина</td>
+                <td class="col-cost">3 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение кариеса молочного зуба II, III IV класс (1 пов-ть), кариес дентина">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Лечение кариеса молочного зуба I, класс (1 пов-ть), кариес дентина</td>
+                <td class="col-cost">3 300 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение кариеса молочного зуба I, класс (1 пов-ть), кариес дентина">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Лечение периодонтита (1 посещение)</td>
+                <td class="col-cost">2 750 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение периодонтита (1 посещение)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Лечение пульпита девитальным методом (1 Посещение )</td>
+                <td class="col-cost">2 750 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение пульпита девитальным методом (1 Посещение )">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Лечение пульпита девитальным методом (2 Посещение )</td>
+                <td class="col-cost">1 900 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение пульпита девитальным методом (2 Посещение )">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Лечение пульпита девитальным методом (3 Посещение )</td>
+                <td class="col-cost">3 300 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение пульпита девитальным методом (3 Посещение )">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Пломбирование корневого канала временного зуба</td>
+                <td class="col-cost">600 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Пломбирование корневого канала временного зуба">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Пломбирование отсроченное</td>
+                <td class="col-cost">2 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Пломбирование отсроченное">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Прием (осмотр, консультация) врача-стоматолога детского первичный</td>
+                <td class="col-cost">1 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Прием (осмотр, консультация) врача-стоматолога детского первичный">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Прием (осмотр, консультация) врача-стоматолога детского повторный</td>
+                <td class="col-cost">500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Прием (осмотр, консультация) врача-стоматолога детского повторный">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Прием (осмотр, консультация) врача-стоматолога детского с составлением плана лечения</td>
+                <td class="col-cost">1 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Прием (осмотр, консультация) врача-стоматолога детского с составлением плана лечения">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Простое удаление молочного зуба</td>
+                <td class="col-cost">2 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Простое удаление молочного зуба">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Пульпосептин (лекарство)</td>
+                <td class="col-cost">2 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Пульпосептин (лекарство)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Пульпотомия витальная</td>
+                <td class="col-cost">3 200 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Пульпотомия витальная">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Распломбировка корневого канала ранее леченного пастой</td>
+                <td class="col-cost">500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Распломбировка корневого канала ранее леченного пастой">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Реминерализация (фторирование)</td>
+                <td class="col-cost">1 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Реминерализация (фторирование)">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Сложное удаление молочного зуба</td>
+                <td class="col-cost">2 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Сложное удаление молочного зуба">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Снятие временной пломбы</td>
+                <td class="col-cost">300 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Снятие временной пломбы">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Трепанация зуба, искусственной коронки</td>
+                <td class="col-cost">500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Трепанация зуба, искусственной коронки">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Химическая пломба</td>
+                <td class="col-cost">2 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Химическая пломба">Записаться</button></td>
               </tr>
             </tbody>
           </table>
@@ -472,9 +1707,9 @@
       <div class="footer-col">
         <h4>Контакты</h4>
         <p>357340, Ставропольский край, г. Лермонтов, Солнечный проезд, д. 10, корп. 1, этаж 2</p>
-        <p>Телефон: <a href="tel:+79669873802" style="color: #FFFFFF; font-weight: 600;">+7 (966) 987-38-02</a></p>
+        <p>Телефон: <a href="tel:+79019314759" style="color: #FFFFFF; font-weight: 600;">+7 (901) 931-47-59</a></p>
         <p>Email: beshtausmail@yandex.ru</p>
-        <p>Режим работы: Пн-Сб 09:00-20:00, Вс — выходной</p>
+        <p>Режим работы: Пн–Сб 09:00–20:00, Вс — выходной</p>
       </div>
     </div>
 
@@ -486,19 +1721,24 @@
     </div>
   </footer>
 
-  <!-- Модальное окно онлайн-записи через Яндекс.Форму -->
+      <!-- Модальное окно онлайн-записи через Яндекс.Форму -->
   <div id="booking-modal" class="modal-overlay" aria-hidden="true">
     <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
       <div class="modal-header">
-        <h3 id="modal-title">Запись на прием</h3>
+        <h3 id="modal-title">Запись на прием к стоматологу</h3>
         <button class="modal-close-btn" type="button" aria-label="Закрыть окно">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
         </button>
       </div>
       <div class="modal-body">
-        <iframe src="https://forms.yandex.ru/cloud/694e59d1f47e73e9d3954df8/?iframe=1" frameborder="0" name="ya-form-booking" width="100%" height="480"></iframe>
+        <script src="https://forms.yandex.ru/_static/embed.js"></script>
+        <iframe src="https://forms.yandex.ru/u/694634f584227c1a95d3866f/?iframe=1" frameborder="0" name="ya-form-694634f584227c1a95d3866f" width="100%" height="520"></iframe>
+        <div class="modal-fallback-note">
+          <a href="https://forms.yandex.ru/u/694634f584227c1a95d3866f/" target="_blank" rel="noopener">Если форма не отображается, нажмите здесь для открытия в новой вкладке</a>
+        </div>
       </div>
     </div>
+  </div>
   </div>
 
   <script src="js/script.js"></script>
