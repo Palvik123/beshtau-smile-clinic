@@ -3,184 +3,271 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>О нас – Бештау Смайл Клиник</title>
+  <title>О клинике — Бештау Смайл Клиник в Лермонтове</title>
+  <meta name="description" content="О клинике Бештау Смайл Клиник: наша миссия, стандарты качества, оборудование и команда врачей. Лицензированная медицинская помощь в г. Лермонтов.">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Montserrat', sans-serif; }
-    .founders-section {
-      background-color: #f5f5f5;
-      padding: 3rem 2rem;
-    }
-    .founders-grid {
-      max-width: 1000px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-    }
-    .founder-card {
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      
-    }
-    .founder-card h3 {
-      color: var(--primary-color);
-      margin-bottom: 0.5rem;
-    }
-    .founder-card p {
-      color: var(--muted-text);
-      line-height: 1.6;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo"><span>Бештау Смайл Клиник</span></div>
-      <ul class="nav-links">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="about.html" class="active">О нас</a></li>
-        <li><a href="services.html">Услуги</a></li>
-        <li><a href="prices.html">Цены</a></li>
-        <li><a href="patient-info.html">Пациентам</a></li>
-        <li><a href="corporate.html">Корпоративным клиентам</a></li>
-        <li><a href="contact.html">Контакты</a></li>
-        			<li><a href="gallery.html">Галерея</a></li>
-        <div class="menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="hero" style="background-color: var(--background-color);">
-      <h1>О нашей клинике</h1>
-      <p>Мы заботимся о здоровье и красоте вашей улыбки уже много лет.</p>
-    </section>
-
-    <section class="section">
-      <h2 class="section-title">Наша миссия</h2>
-      <p style="max-width: 900px; margin: 0 auto; text-align: center; color: var(--muted-text); font-size: 1rem;">Главная цель Бештау Смайл Клиник – предоставление высококачественных стоматологических услуг в комфортной и дружелюбной атмосфере. Мы стремимся обеспечить каждому пациенту индивидуальный подход и лучшее решение его стоматологических проблем, используя современные технологии и материалы.</p>
-    </section>
-
-    <section class="section">
-      <h2 class="section-title">Наша команда</h2>
-      <div class="cards">
-        <div class="card">
-          <a href="doctors/azamat-nagoev.html">
-            <img src="images/doctor5.png" alt="Нагоев Азамат Хасанбиевич">
-            <div class="card-content">
-              <h3>Нагоев Азамат Хасанбиевич</h3>
-              <p>Стоматолог‑ортопед</p>
-            </div>
-          </a>
-        </div>
-        <div class="card">
-          <a href="doctors/yulia-bekisheva.html">
-            <img src="images/doctor1.png" alt="Бекишева Юлия Владимировна">
-            <div class="card-content">
-              <h3>Бекишева Юлия Владимировна</h3>
-              <p>Детский стоматолог</p>
-            </div>
-          </a>
-        </div>
-        <div class="card">
-          <a href="doctors/anzor-fatahhov.html">
-            <img src="images/doctor2.png" alt="Фатахов Анзор Сулейманович">
-            <div class="card-content">
-              <h3>Фатахов Анзор Сулейманович</h3>
-              <p>Стоматолог‑хирург</p>
-            </div>
-          </a>
-        </div>
-        <div class="card">
-          <a href="doctors/marina-agayan.html">
-            <img src="images/doctor3.png" alt="Агаян Марина Григорьевна">
-            <div class="card-content">
-              <h3>Агаян Марина Григорьевна</h3>
-              <p>Стоматолог‑ортодонт</p>
-            </div>
-          </a>
-        </div>
-        <div class="card">
-          <a href="doctors/alimov-gadzhi-alisherovich.html">
-            <img src="images/doctor4.png" alt="Алимов Гаджи Алишерович">
-            <div class="card-content">
-              <h3>Алимов Гаджи Алишерович</h3>
-              <p>Стоматолог‑терапевт/ортопед</p>
-            </div>
-          </a>
-        </div>
+  <!-- Верхняя панель -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span class="top-bar-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Ставропольский край, г. Лермонтов, Солнечный проезд, 10, корп. 1, этаж 2
+        </span>
+        <span class="top-bar-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Режим работы: Пн-Сб 09:00-20:00
+        </span>
       </div>
-    </section>
+      <div class="top-bar-right">
+        <button class="btn-a11y-toggle" type="button" aria-pressed="false">Версия для слабовидящих</button>
+        <span class="top-bar-item">
+          <a href="tel:+79669873802">+7 (966) 987-38-02</a>
+        </span>
+      </div>
+    </div>
+  </div>
 
-    
+  <!-- Шапка сайта -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-logo-mark">БС</div>
+        <div class="brand-logo-text">
+          <span>Бештау Смайл</span>
+          <span class="brand-logo-sub">Клиника эстетической стоматологии</span>
+        </div>
+      </a>
 
-    <section class="section">
-      <h2 class="section-title">Наши преимущества</h2>
-      <div class="cards">
-        <div class="card">
-          <div class="card-content">
-            <h3>Современное оборудование</h3>
-            <p>Мы используем новейшие технологии и оборудование, чтобы обеспечить точную диагностику и эффективное лечение.</p>
+      <nav class="nav-menu" aria-label="Основное меню">
+        <a href="index.html" class="nav-link">Главная</a>
+        <a href="services.html" class="nav-link">Услуги</a>
+        <a href="prices.html" class="nav-link">Цены</a>
+        <a href="about.html" class="nav-link active">О клинике</a>
+        <a href="patient-info.html" class="nav-link">Пациентам</a>
+        <a href="gallery.html" class="nav-link">Галерея</a>
+        <a href="contact.html" class="nav-link">Контакты</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="nav-phone-direct">
+          <a href="tel:+79669873802" class="nav-phone-number">+7 (966) 987-38-02</a>
+          <span class="nav-phone-hint">Ежедневно 09:00-20:00</span>
+        </div>
+        <button class="btn btn-primary btn-sm cta-booking-btn">Записаться на прием</button>
+        <button class="menu-burger" aria-label="Открыть навигационное меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section-surface">
+      <div class="container">
+        <div class="section-header" style="text-align: left; max-width: 100%;">
+          <span class="section-tag">О клинике</span>
+          <h1 style="margin-bottom: 16px;">Философия клинического превосходства и заботы</h1>
+          <p class="section-subtitle" style="max-width: 760px;">
+            «Бештау Смайл Клиник» объединяет доказательную медицину, передовые технологии цифровой стоматологии и внимательное человеческое отношение к каждому пациенту.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 36px; margin-bottom: 50px;">
+          <div class="legal-card" style="margin-bottom: 0;">
+            <h3>Наша миссия</h3>
+            <p>Предоставлять жителям и гостям региона Кавказских Минеральных Вод доступ к стоматологической помощи мирового уровня. Мы не просто лечим зубы — мы восстанавливаем уверенность в себе, сохраняем естественную анатомию и создаем здоровые гармоничные улыбки на десятилетия.</p>
+          </div>
+
+          <div class="legal-card" style="margin-bottom: 0;">
+            <h3>Клинические стандарты</h3>
+            <p>В основе нашей практики лежит принцип «Никаких компромиссов в стерильности и материалах». Все лечебные кабинеты оснащены автономными системами вентиляции и дезинфекции воздуха, а инструментарий проходит трехэтапный контроль стерилизации по стандартам СанПиН.</p>
           </div>
         </div>
-        <div class="card">
-          <div class="card-content">
-            <h3>Опытные специалисты</h3>
-            <p>Наши врачи проходят постоянное обучение и повышения квалификации, чтобы предлагать лучшие решения для ваших зубов.</p>
+
+        <!-- Команда врачей -->
+        <div class="section-header" style="text-align: left; margin-bottom: 30px;">
+          <span class="section-tag">Врачи клиники</span>
+          <h2 class="section-title">Врачебная коллегия</h2>
+          <p class="section-subtitle">
+            Все специалисты клиники имеют профильное высшее образование, регулярные сертификации и многолетний стаж работы.
+          </p>
+        </div>
+
+        <div class="doctors-grid" style="margin-bottom: 50px;">
+          <!-- 1. Фатахов Анзор Сулейманович -->
+          <div class="doctor-card">
+            <div class="doctor-photo-wrap">
+              <div class="doctor-avatar-fallback">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <span class="doctor-badge-exp">Стаж 14 лет</span>
+            </div>
+            <div class="doctor-info">
+              <span class="doctor-specialty">Стоматолог-хирург, имплантолог</span>
+              <h3 class="doctor-name">Фатахов Анзор Сулейманович</h3>
+              <p class="doctor-desc">Дентальная имплантация, костная пластика, синус-лифтинг и сложное удаление зубов.</p>
+              <div class="doctor-card-actions">
+                <a href="doctors/anzor-fatahhov.html" class="btn btn-secondary btn-sm" style="flex: 1;">Профиль</a>
+                <button class="btn btn-primary btn-sm cta-booking-btn" data-doctor="Фатахов Анзор Сулейманович" style="flex: 1;">Запись</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Геворкян Арут Эдикович -->
+          <div class="doctor-card">
+            <div class="doctor-photo-wrap">
+              <div class="doctor-avatar-fallback">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <span class="doctor-badge-exp">Стаж 16 лет</span>
+            </div>
+            <div class="doctor-info">
+              <span class="doctor-specialty">Стоматолог-ортопед, имплантолог</span>
+              <h3 class="doctor-name">Геворкян Арут Эдикович</h3>
+              <p class="doctor-desc">Тотальная ортопедическая реабилитация, виниры E.max, циркониевые коронки и мосты.</p>
+              <div class="doctor-card-actions">
+                <a href="doctors/gevorkyan-arut-edikovich.html" class="btn btn-secondary btn-sm" style="flex: 1;">Профиль</a>
+                <button class="btn btn-primary btn-sm cta-booking-btn" data-doctor="Геворкян Арут Эдикович" style="flex: 1;">Запись</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Бекишова Юлия Владимировна -->
+          <div class="doctor-card">
+            <div class="doctor-photo-wrap">
+              <div class="doctor-avatar-fallback">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <span class="doctor-badge-exp">Стаж 10 лет</span>
+            </div>
+            <div class="doctor-info">
+              <span class="doctor-specialty">Детский стоматолог, пародонтолог</span>
+              <h3 class="doctor-name">Бекишова Юлия Владимировна</h3>
+              <p class="doctor-desc">Бережная детская стоматология, адаптационные визиты, терапия кариеса без бормашины (ICON).</p>
+              <div class="doctor-card-actions">
+                <a href="doctors/yulia-bekisheva.html" class="btn btn-secondary btn-sm" style="flex: 1;">Профиль</a>
+                <button class="btn btn-primary btn-sm cta-booking-btn" data-doctor="Бекишова Юлия Владимировна" style="flex: 1;">Запись</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Королев Дмитрий Александрович -->
+          <div class="doctor-card">
+            <div class="doctor-photo-wrap">
+              <div class="doctor-avatar-fallback">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <span class="doctor-badge-exp">Стаж 11 лет</span>
+            </div>
+            <div class="doctor-info">
+              <span class="doctor-specialty">Стоматолог-терапевт, эндодонтист</span>
+              <h3 class="doctor-name">Королев Дмитрий Александрович</h3>
+              <p class="doctor-desc">Микроскопная эндодонтия, перелечивание труднопроходимых каналов, эстетическая реставрация.</p>
+              <div class="doctor-card-actions">
+                <a href="doctors/dmitriy-korolev.html" class="btn btn-secondary btn-sm" style="flex: 1;">Профиль</a>
+                <button class="btn btn-primary btn-sm cta-booking-btn" data-doctor="Королев Дмитрий Александрович" style="flex: 1;">Запись</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Аветикова Анна Геннадьевна -->
+          <div class="doctor-card">
+            <div class="doctor-photo-wrap">
+              <div class="doctor-avatar-fallback">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <span class="doctor-badge-exp">Стаж 8 лет</span>
+            </div>
+            <div class="doctor-info">
+              <span class="doctor-specialty">Стоматолог-ортодонт, детский ортодонт</span>
+              <h3 class="doctor-name">Аветикова Анна Геннадьевна</h3>
+              <p class="doctor-desc">Исправление прикуса на брекетах Damon и прозрачных элайнерах, детская ортодонтия.</p>
+              <div class="doctor-card-actions">
+                <a href="doctors/avetikova-anna-gennadievna.html" class="btn btn-secondary btn-sm" style="flex: 1;">Профиль</a>
+                <button class="btn btn-primary btn-sm cta-booking-btn" data-doctor="Аветикова Анна Геннадьевна" style="flex: 1;">Запись</button>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-content">
-            <h3>Комфорт и забота</h3>
-            <p>Мы уделяем внимание каждому пациенту, создаём уютную атмосферу и минимизируем возможный дискомфорт при процедурах.</p>
-          </div>
+
+        <!-- Руководство и реквизиты -->
+        <div class="legal-card">
+          <h3>Руководство организации</h3>
+          <p style="margin-bottom: 16px;"><strong>Генеральный директор:</strong> Мустафаев Вадим Русланович</p>
+          <p style="color: var(--text-muted); font-size: 0.92rem;">Прием граждан по личным вопросам осуществляется по предварительной записи через администратора клиники каждый четверг с 15:00 до 17:00.</p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="footer-content">
-      <div class="footer-section">
-        <h4>Контакты</h4>
-        <ul>
-          <li>Адрес: 357340, Россия, Ставропольский край, г. Лермонтов, Солнечный проезд, д. 10, корп. 1, этаж 2</li>
-          <li>Телефон: +7 (928) 355‑00‑39, +7 (909) 973‑26‑25</li>
-          <li>Email: beshtausmail@yandex.ru</li>
-          <li>Часы работы: Пн‑Сб 09:00–20:00</li>
+  <!-- Подвал сайта -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Бештау Смайл Клиник</h4>
+        <p>Современный медицинский центр эстетической и функциональной стоматологии. Комплексный подход к здоровью улыбки для взрослых и детей.</p>
+        <p style="font-size: 0.8rem; color: #6B7280;">Лицензия на осуществление медицинской деятельности выдана Министерством здравоохранения Ставропольского края.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Навигация</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">Услуги клиники</a></li>
+          <li><a href="prices.html">Прайс-лист</a></li>
+          <li><a href="about.html">Врачи и руководство</a></li>
+          <li><a href="patient-info.html">Информация пациентам</a></li>
+          <li><a href="gallery.html">Галерея клиники</a></li>
         </ul>
       </div>
-      <div class="footer-section">
-        <h4>Навигация</h4>
-        <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="about.html">О нас</a></li>
-          <li><a href="services.html">Услуги</a></li>
-          <li><a href="prices.html">Цены</a></li>
-          <li><a href="patient-info.html">Пациентам</a></li>
+
+      <div class="footer-col">
+        <h4>Пациентам</h4>
+        <ul class="footer-links">
           <li><a href="corporate.html">Корпоративным клиентам</a></li>
           <li><a href="legal.html">Правовая информация</a></li>
-          <li><a href="contact.html">Контакты</a></li>
+          <li><a href="Licence.pdf" target="_blank">Лицензия (PDF)</a></li>
+          <li><a href="contact.html">Контакты и схема проезда</a></li>
         </ul>
       </div>
-      <div class="footer-section">
-        <h4>О клинике</h4>
-        <p style="font-size:0.9rem;">«Бештау Смайл Клиник» – это современная стоматологическая клиника, предлагающая полный спектр услуг для здоровья вашей улыбки. Мы используем передовые технологии и индивидуальный подход к каждому пациенту.</p>
+
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <p>357340, Ставропольский край, г. Лермонтов, Солнечный проезд, д. 10, корп. 1, этаж 2</p>
+        <p>Телефон: <a href="tel:+79669873802" style="color: #FFFFFF; font-weight: 600;">+7 (966) 987-38-02</a></p>
+        <p>Email: beshtausmail@yandex.ru</p>
+        <p>Режим работы: Пн-Сб 09:00-20:00, Вс — выходной</p>
       </div>
     </div>
-    <div class="footer-bottom">
-      © 2025 ООО «Бештау Смайл Клиник». Все права защищены.
+
+    <div class="container footer-bottom">
+      <div>&copy; 2026 ООО «Бештау Смайл Клиник». Все права защищены.</div>
+      <div>
+        <a href="legal.html">Политика конфиденциальности (152-ФЗ)</a>
+      </div>
     </div>
   </footer>
+
+  <!-- Модальное окно онлайн-записи через Яндекс.Форму -->
+  <div id="booking-modal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-header">
+        <h3 id="modal-title">Запись на прием к стоматологу</h3>
+        <button class="modal-close-btn" type="button" aria-label="Закрыть окно">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://forms.yandex.ru/cloud/694e59d1f47e73e9d3954df8/?iframe=1" frameborder="0" name="ya-form-booking" width="100%" height="480"></iframe>
+      </div>
+    </div>
+  </div>
+
   <script src="js/script.js"></script>
 </body>
 </html>

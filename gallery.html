@@ -1,101 +1,198 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Галерея Клиники – Бештау Смайл Клиник</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фотогалерея клиники и оборудования — Бештау Смайл Клиник</title>
+  <meta name="description" content="Фотографии стоматологической клиники Бештау Смайл Клиник в Лермонтове: фасад, зона ресепшен, лечебные кабинеты и передовое диагностическое оборудование.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Шапка с навигацией -->
-    <header>
-        <nav>
-            <a href="/index.html" class="logo"><span>Бештау Смайл Клиник</span></a>
-            <ul class="nav-links">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="services.html">Услуги</a></li>
-                <li><a href="prices.html">Цены</a></li>
-                <li><a href="patient-info.html">Пациентам</a></li>
-                <li><a href="corporate.html">Корпоративным клиентам</a></li>
-                <li><a href="contact.html">Контакты</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
+  <!-- Верхняя панель -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span class="top-bar-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Ставропольский край, г. Лермонтов, Солнечный проезд, 10, корп. 1, этаж 2
+        </span>
+        <span class="top-bar-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Режим работы: Пн-Сб 09:00-20:00
+        </span>
+      </div>
+      <div class="top-bar-right">
+        <button class="btn-a11y-toggle" type="button" aria-pressed="false">Версия для слабовидящих</button>
+        <span class="top-bar-item">
+          <a href="tel:+79669873802">+7 (966) 987-38-02</a>
+        </span>
+      </div>
+    </div>
+  </div>
 
-    <!-- Основной контент -->
-    <main>
-        <!-- Галерея фотографий клиники -->
-        <section class="section" id="clinic-gallery">
-            <h1 style="text-align: center; color: var(--primary-color); margin-bottom: 15px;">Галерея Работ</h1>
-            <p style="text-align: center; margin-bottom: 50px; color: var(--text-muted); font-size: 1.1rem; max-width: 700px; margin-left: auto; margin-right: auto;">Посмотрите нашу современную клинику исзутри. Мы гордимысь нашим современным оборудованием и уютной атмосферой.</p>
-            
-            <div class="gallery">
-                <div class="gallery-item">
-                    <img src="images/entrance.jpg" alt="Внешний вид клиники Бештау Смайл Клиник">
-                    <div class="gallery-caption">
-                        <h3>Фасад клиники</h3>
-                        <p>Современное здание с удобной парковкой</p>
-                    </div>
-                </div>
-                
-                <div class="gallery-item">
-                    <img src="images/hall.jpg" alt="Холл клиники Бештау Смайл Клиник">
-                    <div class="gallery-caption">
-                        <h3>Холл клиники</h3>
-                        <p>Светлые и просторные помещения</p>
-                    </div>
-                </div>
-                
-                <div class="gallery-item">
-                    <img src="images/cabinet.jpg" alt="Стоматологический кабинет">
-                    <div class="gallery-caption">
-                        <h3>Лечебные кабинеты</h3>
-                        <p>Новейшее стоматологическое оборудование</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div style="text-align: center; margin-top: 50px;">
-                <a href="index.html" class="cta-btn" style="background-color: var(--primary-color); color: var(--secondary-color); padding: 15px 40px; border-radius: 5px; display: inline-block;">Вернуться на главную</a>
-            </div>
-        </section>
-    </main>
+  <!-- Шапка сайта -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-logo-mark">БС</div>
+        <div class="brand-logo-text">
+          <span>Бештау Смайл</span>
+          <span class="brand-logo-sub">Клиника эстетической стоматологии</span>
+        </div>
+      </a>
 
-    <!-- Подвал -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>Бештау Смайл Клиник</h4>
-                <p>Современная стоматологическая клиника с авсоритом ослуг.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Контакты</h4>
-                <ul>
-                    <li>Под +7 (928) 355-00-39</li>
-                    <li>Эмайл: beshtausmail@yandex.ru</li>
-                    <li>Г. Лермонтов</li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Режим работы</h4>
-                <ul>
-                    <li>Пн-сб: 09:00 – 20:00</li>
-                    <li>Вс</li>
-                </ul>
-            </div>
+      <nav class="nav-menu" aria-label="Основное меню">
+        <a href="index.html" class="nav-link">Главная</a>
+        <a href="services.html" class="nav-link">Услуги</a>
+        <a href="prices.html" class="nav-link">Цены</a>
+        <a href="about.html" class="nav-link">О клинике</a>
+        <a href="patient-info.html" class="nav-link">Пациентам</a>
+        <a href="gallery.html" class="nav-link active">Галерея</a>
+        <a href="contact.html" class="nav-link">Контакты</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="nav-phone-direct">
+          <a href="tel:+79669873802" class="nav-phone-number">+7 (966) 987-38-02</a>
+          <span class="nav-phone-hint">Ежедневно 09:00-20:00</span>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 ООО "Бештау Смайл Клиник". Все права защищены.</p>
+        <button class="btn btn-primary btn-sm cta-booking-btn">Записаться на прием</button>
+        <button class="menu-burger" aria-label="Открыть навигационное меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section-surface">
+      <div class="container">
+        <div class="section-header" style="text-align: left; max-width: 100%;">
+          <span class="section-tag">Пространство клиники</span>
+          <h1 style="margin-bottom: 16px;">Фотогалерея «Бештау Смайл Клиник»</h1>
+          <p class="section-subtitle" style="max-width: 760px;">
+            Оцените оснащение нашей клиники: современная входная группа, просторный холл с комфортной зоной ожидания и специализированные лечебные кабинеты.
+          </p>
         </div>
-    </footer>
+
+        <div class="gallery-grid" style="margin-bottom: 40px;">
+          <!-- Фасад -->
+          <div class="gallery-card">
+            <div class="gallery-card-img" style="height: 280px;">
+              <img src="images/entrance.jpg" alt="Входная группа и здание клиники Бештау Смайл Клиник в Лермонтове">
+            </div>
+            <div class="gallery-card-body">
+              <h4>Входная группа и здание клиники</h4>
+              <p>Современное здание с удобным подъездом и выделенными парковочными местами для пациентов.</p>
+            </div>
+          </div>
+
+          <!-- Холл -->
+          <div class="gallery-card">
+            <div class="gallery-card-img" style="height: 280px;">
+              <img src="images/hall.jpg" alt="Зона ожидания и ресепшен клиники">
+            </div>
+            <div class="gallery-card-body">
+              <h4>Зона ресепшен и ожидания</h4>
+              <p>Светлое, просторное пространство, комфортные зоны отдыха и внимательные координаторы лечения.</p>
+            </div>
+          </div>
+
+          <!-- Кабинет -->
+          <div class="gallery-card">
+            <div class="gallery-card-img" style="height: 280px;">
+              <img src="images/cabinet.jpg" alt="Стоматологический кабинет с лечебной установкой">
+            </div>
+            <div class="gallery-card-body">
+              <h4>Лечебные кабинеты</h4>
+              <p>Эргономичные стоматологические установки, бестеневое освещение и индивидуальные наборы стерильных инструментов.</p>
+            </div>
+          </div>
+
+          <!-- Лечебный процесс -->
+          <div class="gallery-card">
+            <div class="gallery-card-img" style="height: 280px;">
+              <img src="images/image5.jpeg" alt="Лечебный процесс и соблюдение стерильности">
+            </div>
+            <div class="gallery-card-body">
+              <h4>Клинический процесс</h4>
+              <p>Работа в 4 руки с ассистентом, соблюдение протокола стерильности и бережная анестезия.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center;">
+          <button class="btn btn-primary cta-booking-btn">Записаться на экскурсию и консультацию</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал сайта -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Бештау Смайл Клиник</h4>
+        <p>Современный медицинский центр эстетической и функциональной стоматологии. Комплексный подход к здоровью улыбки для взрослых и детей.</p>
+        <p style="font-size: 0.8rem; color: #6B7280;">Лицензия на осуществление медицинской деятельности выдана Министерством здравоохранения Ставропольского края.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Навигация</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">Услуги клиники</a></li>
+          <li><a href="prices.html">Прайс-лист</a></li>
+          <li><a href="about.html">Врачи и руководство</a></li>
+          <li><a href="patient-info.html">Информация пациентам</a></li>
+          <li><a href="gallery.html">Галерея клиники</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Пациентам</h4>
+        <ul class="footer-links">
+          <li><a href="corporate.html">Корпоративным клиентам</a></li>
+          <li><a href="legal.html">Правовая информация</a></li>
+          <li><a href="Licence.pdf" target="_blank">Лицензия (PDF)</a></li>
+          <li><a href="contact.html">Контакты и схема проезда</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <p>357340, Ставропольский край, г. Лермонтов, Солнечный проезд, д. 10, корп. 1, этаж 2</p>
+        <p>Телефон: <a href="tel:+79669873802" style="color: #FFFFFF; font-weight: 600;">+7 (966) 987-38-02</a></p>
+        <p>Email: beshtausmail@yandex.ru</p>
+        <p>Режим работы: Пн-Сб 09:00-20:00, Вс — выходной</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>&copy; 2026 ООО «Бештау Смайл Клиник». Все права защищены.</div>
+      <div>
+        <a href="legal.html">Политика конфиденциальности (152-ФЗ)</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Модальное окно онлайн-записи через Яндекс.Форму -->
+  <div id="booking-modal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-header">
+        <h3 id="modal-title">Запись на прием к стоматологу</h3>
+        <button class="modal-close-btn" type="button" aria-label="Закрыть окно">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://forms.yandex.ru/cloud/694e59d1f47e73e9d3954df8/?iframe=1" frameborder="0" name="ya-form-booking" width="100%" height="480"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

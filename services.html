@@ -3,163 +3,289 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Наши услуги – Бештау Смайл Клиник</title>
+  <title>Услуги стоматологии — Бештау Смайл Клиник в Лермонтове</title>
+  <meta name="description" content="Полный спектр стоматологических услуг в Бештау Смайл Клиник: лечение кариеса и пульпита, имплантация зубов, исправление прикуса брекетами и элайнерами, протезирование и детская стоматология.">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Montserrat', sans-serif; }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav>
-      <!-- Обновлённый логотип: только название клиники -->
-      <a href="/index.html" class="logo"><span>Бештау Смайл Клиник</span></div>
-      <ul class="nav-links">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="services.html" class="active">Услуги</a></li>
-        <li><a href="prices.html">Цены</a</a>
-        <li><a href="patient-info.html">Пациентам</a></li>
-        <li><a href="corporate.html">Корпоративным клиентам</a></li>
-      			<li><a href="gallery.html">Галерея</a></li>
-
-      </ul>
-      <div class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
+  <!-- Верхняя панель -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span class="top-bar-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Ставропольский край, г. Лермонтов, Солнечный проезд, 10, корп. 1, этаж 2
+        </span>
+        <span class="top-bar-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Режим работы: Пн-Сб 09:00-20:00
+        </span>
       </div>
-    </nav>
+      <div class="top-bar-right">
+        <button class="btn-a11y-toggle" type="button" aria-pressed="false">Версия для слабовидящих</button>
+        <span class="top-bar-item">
+          <a href="tel:+79669873802">+7 (966) 987-38-02</a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Шапка сайта -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-logo-mark">БС</div>
+        <div class="brand-logo-text">
+          <span>Бештау Смайл</span>
+          <span class="brand-logo-sub">Клиника эстетической стоматологии</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Основное меню">
+        <a href="index.html" class="nav-link">Главная</a>
+        <a href="services.html" class="nav-link active">Услуги</a>
+        <a href="prices.html" class="nav-link">Цены</a>
+        <a href="about.html" class="nav-link">О клинике</a>
+        <a href="patient-info.html" class="nav-link">Пациентам</a>
+        <a href="gallery.html" class="nav-link">Галерея</a>
+        <a href="contact.html" class="nav-link">Контакты</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="nav-phone-direct">
+          <a href="tel:+79669873802" class="nav-phone-number">+7 (966) 987-38-02</a>
+          <span class="nav-phone-hint">Ежедневно 09:00-20:00</span>
+        </div>
+        <button class="btn btn-primary btn-sm cta-booking-btn">Записаться на прием</button>
+        <button class="menu-burger" aria-label="Открыть навигационное меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section class="hero" style="background-color: var(--background-color);">
-      <h1>Наши услуги</h1>
-      <p>Полный спектр стоматологических услуг для всей семьи.</p>
-    </section>
+    <section class="section section-surface">
+      <div class="container">
+        <div class="section-header" style="text-align: left; max-width: 100%;">
+          <span class="section-tag">Медицинские направления</span>
+          <h1 style="margin-bottom: 16px;">Комплексные услуги стоматологии</h1>
+          <p class="section-subtitle" style="max-width: 760px;">
+            В «Бештау Смайл Клиник» реализован полный цикл стоматологической помощи: от первичной профилактики и детской адаптации до сложных хирургических и тотальных ортопедических операций.
+          </p>
+        </div>
 
-    <section class="section">
-      <h2 class="section-title">Основные направления</h2>
-      <div class="cards">
-        <!-- Терапия -->
-        <a href="prices.html">
-        <div class="card" id="therapy">
-  <img src="images/image4.png" alt="Терапия">
-  <div class="card-content">
-    <h3>Терапевтическая стоматология</h3>
-    <p>Диагностика и лечение кариеса и его осложнений, пломбирование, эстетическая реставрация зубов.</p>
-  </div>
-</div>
-          </a>
-        <!-- Ортодонтия -->
-          <a href="prices.html">
-       <div class="card" id="orthodontics">
-  <img src="images/image2.png" alt="Ортодонтия">
-  <div class="card-content">
-    <h3>Ортодонтия</h3>
-    <p>Исправление прикуса у детей и взрослых: металлические и керамические брекеты, элайнеры.</p>
-  </div>
-</div>
-          </a>
-        <!-- Имплантация -->
-            <a href="prices.html">
-        <div class="card" id="implantation">
-          <img src="images/image7.jpg" alt="Имплантация">
-          <div class="card-content">
-            <h3>Имплантация</h3>
-            <p>Восстановление утраченных зубов с использованием современных имплантационных систем.</p>
+        <div style="display: flex; flex-direction: column; gap: 40px;">
+          <!-- 1. Терапия -->
+          <div class="legal-card" id="therapy" style="margin-bottom: 0;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;">
+              <div>
+                <span class="badge badge-mint" style="margin-bottom: 8px;">Терапевтическое отделение</span>
+                <h2 style="font-size: 1.6rem;">Терапевтическая стоматология</h2>
+              </div>
+              <button class="btn btn-primary btn-sm cta-booking-btn" data-service="Терапевтическая стоматология">Записаться на прием</button>
+            </div>
+            <p style="margin-bottom: 16px;">Направление включает лечение кариеса любой локализации, пульпита, периодонтита, а также художественную реставрацию зубов. В нашей клинике терапевтическое лечение осуществляется с обязательной изоляцией коффердамом, что исключает контакт слюны с рабочей зоной и обеспечивает долговечность реставраций.</p>
+            <h4 style="margin-bottom: 10px;">Ключевые манипуляции:</h4>
+            <ul style="list-style: disc; padding-left: 20px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px;">
+              <li>Лечение поверхностного, среднего и глубокого кариеса</li>
+              <li>Инструментальная обработка и трехмерная обтурация каналов при пульпите</li>
+              <li>Консервативная терапия околоверхушечных очагов (периодонтит)</li>
+              <li>Художественное восстановление анатомической формы и окклюзионной поверхности зуба</li>
+              <li>Лечение начальных форм кариеса методом инфильтрации ICON (без бормашины)</li>
+            </ul>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-light); padding-top: 16px;">
+              <span style="font-size: 0.95rem; font-weight: 600; color: var(--primary);">Стоимость: от 4 500 руб.</span>
+              <a href="prices.html" class="service-link">Смотреть цены в прайсе &rarr;</a>
+            </div>
+          </div>
+
+          <!-- 2. Хирургия и имплантация -->
+          <div class="legal-card" id="surgery" style="margin-bottom: 0;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;">
+              <div>
+                <span class="badge badge-primary" style="margin-bottom: 8px;">Хирургическое отделение</span>
+                <h2 style="font-size: 1.6rem;">Хирургическая стоматология и имплантация</h2>
+              </div>
+              <button class="btn btn-primary btn-sm cta-booking-btn" data-service="Хирургия и имплантация">Записаться к хирургу</button>
+            </div>
+            <p style="margin-bottom: 16px;">Хирургические вмешательства проводятся врачами с опытом от 14 лет с максимальным сохранением окружающих тканей. Дентальная имплантация позволяет восстановить утраченные зубы без обтачивания соседних здоровых единиц.</p>
+            <h4 style="margin-bottom: 10px;">Ключевые манипуляции:</h4>
+            <ul style="list-style: disc; padding-left: 20px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px;">
+              <li>Атравматичное удаление зубов, дистопированных и ретинированных моляров («зубов мудрости»)</li>
+              <li>Установка дентальных имплантатов ведущих мировых систем</li>
+              <li>Костная пластика (аугментация) при дефиците костной ткани</li>
+              <li>Открытый и закрытый синус-лифтинг верхнечелюстных пазух</li>
+              <li>Пластика уздечек языка и губ, мягкотканная пластика десневого края</li>
+            </ul>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-light); padding-top: 16px;">
+              <span style="font-size: 0.95rem; font-weight: 600; color: var(--primary);">Удаление: от 5 500 руб. / Имплантация: от 25 000 руб.</span>
+              <a href="prices.html" class="service-link">Смотреть цены в прайсе &rarr;</a>
+            </div>
+          </div>
+
+          <!-- 3. Ортопедия -->
+          <div class="legal-card" id="orthopedics" style="margin-bottom: 0;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;">
+              <div>
+                <span class="badge badge-gold" style="margin-bottom: 8px;">Ортопедическое отделение</span>
+                <h2 style="font-size: 1.6rem;">Ортопедия и восстановление зубных рядов</h2>
+              </div>
+              <button class="btn btn-primary btn-sm cta-booking-btn" data-service="Ортопедия и протезирование">Записаться к ортопеду</button>
+            </div>
+            <p style="margin-bottom: 16px;">Ортопедическое лечение восстанавливает как функцию пережевывания пищи, так и гармонию улыбки. Мы работаем с безметалловыми циркониевыми каркасами и керамикой E.max, которые полностью имитируют оптические свойства живой эмали.</p>
+            <h4 style="margin-bottom: 10px;">Ключевые манипуляции:</h4>
+            <ul style="list-style: disc; padding-left: 20px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px;">
+              <li>Керамические виниры и накладки E.max для зоны улыбки</li>
+              <li>Коронки из диоксида циркония с высокой прочностью и биосовместимостью</li>
+              <li>Протезирование на имплантатах (одиночные коронки, мосты, протоколы All-on-4 / All-on-6)</li>
+              <li>Бюгельные протезы с замковой и кламмерной фиксацией</li>
+            </ul>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-light); padding-top: 16px;">
+              <span style="font-size: 0.95rem; font-weight: 600; color: var(--primary);">Коронка цирконий: от 15 000 руб. / Винир: от 22 000 руб.</span>
+              <a href="prices.html" class="service-link">Смотреть цены в прайсе &rarr;</a>
+            </div>
+          </div>
+
+          <!-- 4. Ортодонтия -->
+          <div class="legal-card" id="orthodontics" style="margin-bottom: 0;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;">
+              <div>
+                <span class="badge badge-mint" style="margin-bottom: 8px;">Ортодонтическое отделение</span>
+                <h2 style="font-size: 1.6rem;">Ортодонтия и исправление прикуса</h2>
+              </div>
+              <button class="btn btn-primary btn-sm cta-booking-btn" data-service="Ортодонтия">Записаться к ортодонту</button>
+            </div>
+            <p style="margin-bottom: 16px;">Правильный прикус — залог здоровья зубов, височно-нижнечелюстного сустава и ровной осанки. Мы подбираем ортодонтические аппараты с учетом возраста, клинической картины и эстетических пожеланий пациента.</p>
+            <h4 style="margin-bottom: 10px;">Ключевые манипуляции:</h4>
+            <ul style="list-style: disc; padding-left: 20px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px;">
+              <li>Самолигирующие брекет-системы Damon (металлические и эстетические)</li>
+              <li>Лечение прозрачными ортодонтическими капами (элайнерами)</li>
+              <li>Ранняя ортодонтическая коррекция у детей функциональными пластинками</li>
+              <li>Установка несъемных ретейнеров после завершения перемещения зубов</li>
+            </ul>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-light); padding-top: 16px;">
+              <span style="font-size: 0.95rem; font-weight: 600; color: var(--primary);">Брекет-система: от 35 000 руб. / Консультация: 1 500 руб.</span>
+              <a href="prices.html" class="service-link">Смотреть цены в прайсе &rarr;</a>
+            </div>
+          </div>
+
+          <!-- 5. Детская стоматология -->
+          <div class="legal-card" id="pediatric" style="margin-bottom: 0;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;">
+              <div>
+                <span class="badge badge-primary" style="margin-bottom: 8px;">Детское отделение</span>
+                <h2 style="font-size: 1.6rem;">Детская стоматология</h2>
+              </div>
+              <button class="btn btn-primary btn-sm cta-booking-btn" data-service="Детская стоматология">Записаться к детскому врачу</button>
+            </div>
+            <p style="margin-bottom: 16px;">Особое внимание в нашей клинике уделяется психологическому комфорту ребенка. Первый визит проходит в форме спокойного знакомства, без принуждения и боли. Мы сохраняем здоровье молочных зубов, формируя основу для правильного прорезывания постоянных.</p>
+            <h4 style="margin-bottom: 10px;">Ключевые манипуляции:</h4>
+            <ul style="list-style: disc; padding-left: 20px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px;">
+              <li>Психологическая адаптация ребенка к приему стоматолога</li>
+              <li>Лечение кариеса молочных и постоянных зубов безопасными биоматериалами</li>
+              <li>Неинвазивная терапия кариеса без сверления (ICON)</li>
+              <li>Герметизация естественных углублений (фиссур) для защиты от бактерий</li>
+              <li>Обучение гигиене и бережное удаление подвижных молочных зубов</li>
+            </ul>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-light); padding-top: 16px;">
+              <span style="font-size: 0.95rem; font-weight: 600; color: var(--primary);">Прием детского врача: от 1 500 руб. / Лечение: от 3 500 руб.</span>
+              <a href="prices.html" class="service-link">Смотреть цены в прайсе &rarr;</a>
+            </div>
+          </div>
+
+          <!-- 6. Пародонтология и гигиена -->
+          <div class="legal-card" id="hygiene" style="margin-bottom: 0;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;">
+              <div>
+                <span class="badge badge-mint" style="margin-bottom: 8px;">Профилактическое отделение</span>
+                <h2 style="font-size: 1.6rem;">Пародонтология и профессиональная гигиена</h2>
+              </div>
+              <button class="btn btn-primary btn-sm cta-booking-btn" data-service="Профессиональная гигиена">Записаться на гигиену</button>
+            </div>
+            <p style="margin-bottom: 16px;">Регулярная профессиональная гигиена раз в 6 месяцев предотвращает 90% заболеваний зубов и десен. Мы используем швейцарский протокол GBT (Guided Biofilm Therapy) с минимальной абразивностью для эмали.</p>
+            <h4 style="margin-bottom: 10px;">Ключевые манипуляции:</h4>
+            <ul style="list-style: disc; padding-left: 20px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px;">
+              <li>Снятие твердых зубных отложений ультразвуком</li>
+              <li>Удаление пигментированного налета порошком Air Flow на основе глицина</li>
+              <li>Полировка поверхности эмали и межзубных контактов</li>
+              <li>Реминерализация и глубокое фторирование зубов</li>
+              <li>Медикаментозное лечение десен (гингивит, пародонтит)</li>
+            </ul>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-light); padding-top: 16px;">
+              <span style="font-size: 0.95rem; font-weight: 600; color: var(--primary);">Комплекс гигиены: от 5 000 руб.</span>
+              <a href="prices.html" class="service-link">Смотреть цены в прайсе &rarr;</a>
+            </div>
           </div>
         </div>
-      </a>
-        <!-- Пародонтология -->
-            <a href="prices.html">
-        <div class="card" id="periodontics">
-          <img src="images/image5.jpeg" alt="Пародонтология">
-          <div class="card-content">
-            <h3>Пародонтология</h3>
-            <p>Профилактика и лечение заболеваний дёсен, комплексная программа ухода за полостью рта.</p>
-          </div>
-        </div>
-      </a>
-        <!-- Детская стоматология -->
-            <a href="prices.html">
-        <div class="card" id="child">
-          <img src="images/image6.jpg" alt="Детская стоматология">
-          <div class="card-content">
-            <h3>Детская стоматология</h3>
-            <p>Деликатный подход к юным пациентам: профилактика, лечение молочных и постоянных зубов.</p>
-          </div>
-        </div>
-      </a>
-        <!-- Хирургия -->
-        <a href="prices.html">
-  <div class="card" id="surgery">
-    <img src="images/image1.jpg" alt="Хирургия">
-    <div class="card-content">
-      <h3>Хирургическая стоматология</h3>
-      <p>Удаление зубов любой сложности, пластика уздечек, подготовка к протезированию и имплантации.</p>
-    </div>
-  </div>
-</a>
-
-        <!-- Ортопедия -->
-<a href="prices.html">
-  <div class="card" id="orthopedics">
-    <img src="images/image3.jpg" alt="Ортопедия">
-    <div class="card-content">
-      <h3>Ортопедия</h3>
-      <p>Протезирование зубов: коронки, мосты, съёмные и несъёмные конструкции.</p>
-    </div>
-  </div>
-</a>
-
-        <!-- Эстетика -->
-        <a href="prices.html">
-        <div class="card" id="aesthetics">
-          <img src="images/image8.jpg" alt="Эстетическая стоматология">
-          <div class="card-content">
-            <h3>Эстетическая стоматология</h3>
-            <p>Профессиональное отбеливание, виниры, художественная реставрация – всё для красивой улыбки.</p>
-          </div>
       </div>
-      </a>
     </section>
   </main>
 
-  <footer>
-    <div class="footer-content">
-      <div class="footer-section">
-        <h4>Контакты</h4>
-        <ul>
-          <!-- Обновлённые контактные данные -->
-          <li>Адрес: 357340, Россия, Ставропольский край, г. Лермонтов, Солнечный проезд, д. 10, корп. 1, этаж 2</li>
-          <li>Телефон: +7 (928) 355‑00‑39, +7 (909) 973‑26‑25</li>
-          <li>Email: beshtausmail@yandex.ru</li>
-          <li>Часы работы: Пн‑Сб 09:00–20:00</li>
-        </ul>
+  <!-- Подвал сайта -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Бештау Смайл Клиник</h4>
+        <p>Современный медицинский центр эстетической и функциональной стоматологии. Комплексный подход к здоровью улыбки для взрослых и детей.</p>
+        <p style="font-size: 0.8rem; color: #6B7280;">Лицензия на осуществление медицинской деятельности выдана Министерством здравоохранения Ставропольского края.</p>
       </div>
-      <div class="footer-section">
+
+      <div class="footer-col">
         <h4>Навигация</h4>
-        <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="services.html">Услуги</a></li>
-          <li><a href="prices.html">Цены</a></li>
-          
-          <li><a href="patient-info.html">Пациентам</a></li>
-          <li><a href="corporate.html">Корпоративным клиентам</a></li>
-          
+        <ul class="footer-links">
+          <li><a href="services.html">Услуги клиники</a></li>
+          <li><a href="prices.html">Прайс-лист</a></li>
+          <li><a href="about.html">Врачи и руководство</a></li>
+          <li><a href="patient-info.html">Информация пациентам</a></li>
+          <li><a href="gallery.html">Галерея клиники</a></li>
         </ul>
       </div>
-      <div class="footer-section">
-        <h4>О клинике</h4>
-        <p style="font-size:0.9rem;">«Бештау Смайл Клиник» – это современная стоматологическая клиника, предлагающая полный спектр услуг для здоровья вашей улыбки. Мы используем передовые технологии и индивидуальный подход к каждому пациенту.</p>
+
+      <div class="footer-col">
+        <h4>Пациентам</h4>
+        <ul class="footer-links">
+          <li><a href="corporate.html">Корпоративным клиентам</a></li>
+          <li><a href="legal.html">Правовая информация</a></li>
+          <li><a href="Licence.pdf" target="_blank">Лицензия (PDF)</a></li>
+          <li><a href="contact.html">Контакты и схема проезда</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <p>357340, Ставропольский край, г. Лермонтов, Солнечный проезд, д. 10, корп. 1, этаж 2</p>
+        <p>Телефон: <a href="tel:+79669873802" style="color: #FFFFFF; font-weight: 600;">+7 (966) 987-38-02</a></p>
+        <p>Email: beshtausmail@yandex.ru</p>
+        <p>Режим работы: Пн-Сб 09:00-20:00, Вс — выходной</p>
       </div>
     </div>
-    <div class="footer-bottom">
-      &copy; 2025 ООО «Бештау Смайл Клиник». Все права защищены.
+
+    <div class="container footer-bottom">
+      <div>&copy; 2026 ООО «Бештау Смайл Клиник». Все права защищены.</div>
+      <div>
+        <a href="legal.html">Политика конфиденциальности (152-ФЗ)</a>
+      </div>
     </div>
   </footer>
+
+  <!-- Модальное окно онлайн-записи через Яндекс.Форму -->
+  <div id="booking-modal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-header">
+        <h3 id="modal-title">Запись на прием к стоматологу</h3>
+        <button class="modal-close-btn" type="button" aria-label="Закрыть окно">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://forms.yandex.ru/cloud/694e59d1f47e73e9d3954df8/?iframe=1" frameborder="0" name="ya-form-booking" width="100%" height="480"></iframe>
+      </div>
+    </div>
+  </div>
 
   <script src="js/script.js"></script>
 </body>

@@ -3,189 +3,503 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Цены – Бештау Смайл Клиник</title>
+  <title>Прайс-лист и цены на стоматологические услуги — Бештау Смайл Клиник</title>
+  <meta name="description" content="Честные фиксированные цены на стоматологические услуги в клинике Бештау Смайл Клиник (г. Лермонтов). Прайс-лист на терапию, хирургию, имплантацию, ортодонтию, ортопедию и гигиену.">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Montserrat', sans-serif; }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav>
-      <!-- Обновлённый логотип: только название клиники -->
-                  <a href="/index.html" class="logo"><span>Бештау Смайл Клиник</span></a>
-      <ul class="nav-links">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="services.html">Услуги</a></li>
-        <li><a href="prices.html" class="active">Цены</a></li>
-        <li><a href="patient-info.html">Пациентам</a></li>
-        <li><a href="corporate.html">Корпоративным клиентам</a></li>
-        			<li><a href="gallery.html">Галерея</a></li>
-      </ul>
-      <div class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
+  <!-- Верхняя панель -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span class="top-bar-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Ставропольский край, г. Лермонтов, Солнечный проезд, 10, корп. 1, этаж 2
+        </span>
+        <span class="top-bar-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Режим работы: Пн-Сб 09:00-20:00
+        </span>
       </div>
-    </nav>
+      <div class="top-bar-right">
+        <button class="btn-a11y-toggle" type="button" aria-pressed="false">Версия для слабовидящих</button>
+        <span class="top-bar-item">
+          <a href="tel:+79669873802">+7 (966) 987-38-02</a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Шапка сайта -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-logo-mark">БС</div>
+        <div class="brand-logo-text">
+          <span>Бештау Смайл</span>
+          <span class="brand-logo-sub">Клиника эстетической стоматологии</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Основное меню">
+        <a href="index.html" class="nav-link">Главная</a>
+        <a href="services.html" class="nav-link">Услуги</a>
+        <a href="prices.html" class="nav-link active">Цены</a>
+        <a href="about.html" class="nav-link">О клинике</a>
+        <a href="patient-info.html" class="nav-link">Пациентам</a>
+        <a href="gallery.html" class="nav-link">Галерея</a>
+        <a href="contact.html" class="nav-link">Контакты</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="nav-phone-direct">
+          <a href="tel:+79669873802" class="nav-phone-number">+7 (966) 987-38-02</a>
+          <span class="nav-phone-hint">Ежедневно 09:00-20:00</span>
+        </div>
+        <button class="btn btn-primary btn-sm cta-booking-btn">Записаться на прием</button>
+        <button class="menu-burger" aria-label="Открыть навигационное меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section class="hero" style="background-color: var(--background-color);">
-      <h1>Цены на услуги</h1>
-      <p>Мы придерживаемся прозрачной ценовой политики и предлагаем оптимальные условия для наших пациентов.</p>
+    <section class="section section-surface">
+      <div class="container">
+        <div class="section-header" style="text-align: left; max-width: 100%;">
+          <span class="section-tag">Прозрачная ценовая политика</span>
+          <h1 style="margin-bottom: 16px;">Цены на медицинские услуги</h1>
+          <p class="section-subtitle" style="max-width: 760px;">
+            Стоимость процедур фиксируется в плане лечения после консультации и очного осмотра. Никаких скрытых надбавок за материалы и анестезию.
+          </p>
+        </div>
+
+        <!-- Панель управления: табы категорий и живой поиск -->
+        <div class="price-controls">
+          <div class="price-tabs">
+            <button class="tab-btn active" data-category="all" type="button">Все направления</button>
+            <button class="tab-btn" data-category="therapy" type="button">Терапия</button>
+            <button class="tab-btn" data-category="hygiene" type="button">Гигиена</button>
+            <button class="tab-btn" data-category="periodontics" type="button">Пародонтология</button>
+            <button class="tab-btn" data-category="surgery" type="button">Хирургия</button>
+            <button class="tab-btn" data-category="orthopedics" type="button">Ортопедия</button>
+            <button class="tab-btn" data-category="orthodontics" type="button">Ортодонтия</button>
+            <button class="tab-btn" data-category="pediatric" type="button">Детское отделение</button>
+          </div>
+
+          <div class="price-search-box">
+            <input type="text" class="price-search-input" placeholder="Поиск услуги или процедуры..." aria-label="Поиск по прайс-листу">
+            <svg class="price-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+        </div>
+
+        <!-- 1. Терапия -->
+        <div class="price-table-card" data-category="therapy">
+          <div class="price-table-header">
+            <h3>Терапевтическая стоматология</h3>
+            <span class="badge badge-mint">Терапия</span>
+          </div>
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Наименование медицинской услуги</th>
+                <th class="col-cost">Стоимость</th>
+                <th class="col-action">Действие</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Первичная консультация врача-стоматолога с осмотром полости рта</td>
+                <td class="col-cost">500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Консультация стоматолога">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Лечение неосложненного кариеса (включая анестезию и постановку световой пломбы)</td>
+                <td class="col-cost">от 4 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение кариеса">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Лечение глубокого кариеса с наложением лечебной и изолирующей прокладки</td>
+                <td class="col-cost">от 6 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение глубокого кариеса">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Снятие старой пломбы и повторная антисептическая обработка</td>
+                <td class="col-cost">от 5 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Замена старой пломбы">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Анатомическая эстетическая реставрация зуба светоотверждаемым композитом</td>
+                <td class="col-cost">от 8 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Эстетическая реставрация">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Эндодонтическое лечение пульпита (инструментальная и медикаментозная обработка каналов)</td>
+                <td class="col-cost">от 8 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение пульпита">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Комплексное лечение периодонтита (за 1 зуб)</td>
+                <td class="col-cost">от 9 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение периодонтита">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Восстановление коронковой части зуба под коронку (стекловолоконный штифт + композит)</td>
+                <td class="col-cost">от 7 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Восстановление зуба">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Микроинвазивное лечение кариеса в стадии пятна препаратом ICON (без сверления)</td>
+                <td class="col-cost">от 6 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="ICON-лечение">Записаться</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 2. Профилактика и гигиена -->
+        <div class="price-table-card" data-category="hygiene">
+          <div class="price-table-header">
+            <h3>Профилактика и гигиена полости рта</h3>
+            <span class="badge badge-mint">Гигиена</span>
+          </div>
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Наименование медицинской услуги</th>
+                <th class="col-cost">Стоимость</th>
+                <th class="col-action">Действие</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Комплексная профессиональная гигиена полости рта (УЗ-скейлинг + Air Flow + полировка)</td>
+                <td class="col-cost">от 5 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Профгигиена комплекс">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Воздушно-абразивная обработка зубов аппаратом Air Flow (отдельно)</td>
+                <td class="col-cost">от 4 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Air Flow">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Глубокое фторирование, полировка пастами и реминерализация эмали</td>
+                <td class="col-cost">от 2 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Реминерализация эмали">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Индивидуальный подбор средств домашней гигиены и обучение технике чистки</td>
+                <td class="col-cost">от 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Консультация по гигиене">Записаться</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 3. Пародонтология -->
+        <div class="price-table-card" data-category="periodontics">
+          <div class="price-table-header">
+            <h3>Пародонтология и лечение десен</h3>
+            <span class="badge badge-primary">Пародонтология</span>
+          </div>
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Наименование медицинской услуги</th>
+                <th class="col-cost">Стоимость</th>
+                <th class="col-action">Действие</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Инструментальная и антисептическая обработка 1 пародонтального кармана</td>
+                <td class="col-cost">от 900 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Обработка кармана">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Хирургическое закрытие рецессии десны (1 зуб)</td>
+                <td class="col-cost">от 1 100 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Закрытие рецессии">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Вестибулопластика мягких тканей (1 зона)</td>
+                <td class="col-cost">от 1 300 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Вестибулопластика">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Пластика уздечки с применением PRP-терапии (1 зона)</td>
+                <td class="col-cost">от 4 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Пластика уздечки PRP">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Биоревитализация десны препаратом Revidnt (1 шприц)</td>
+                <td class="col-cost">от 4 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Биоревитализация Revidnt">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Биоревитализация десны препаратом Hyalrepair (1 шприц)</td>
+                <td class="col-cost">от 7 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Биоревитализация Hyalrepair">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Закрытый кюретаж пародонтальных карманов (1 зуб)</td>
+                <td class="col-cost">от 4 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Закрытый кюретаж">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Шинирование подвижных зубов стекловолоконной лентой (1 зуб)</td>
+                <td class="col-cost">от 400 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Шинирование зуба">Записаться</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 4. Хирургия -->
+        <div class="price-table-card" data-category="surgery">
+          <div class="price-table-header">
+            <h3>Хирургическая стоматология</h3>
+            <span class="badge badge-primary">Хирургия</span>
+          </div>
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Наименование медицинской услуги</th>
+                <th class="col-cost">Стоимость</th>
+                <th class="col-action">Действие</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Атравматичное простое удаление зуба (включая анестезию)</td>
+                <td class="col-cost">от 5 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Удаление зуба">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Удаление зуба мудрости (третьего моляра)</td>
+                <td class="col-cost">от 6 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Удаление зуба мудрости">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Сложное хирургическое удаление зуба с разъединением корней</td>
+                <td class="col-cost">от 7 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Сложное удаление">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Удаление ретинированного или дистопированного зуба</td>
+                <td class="col-cost">от 8 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Удаление ретинированного зуба">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Вскрытие и дренирование поднадкостничного абсцесса (периостит)</td>
+                <td class="col-cost">от 1 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Вскрытие абсцесса">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Пластика уздечки губы или языка лазером / скальпелем</td>
+                <td class="col-cost">от 5 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Пластика уздечки">Записаться</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 5. Ортопедия -->
+        <div class="price-table-card" data-category="orthopedics">
+          <div class="price-table-header">
+            <h3>Ортопедическая стоматология и протезирование</h3>
+            <span class="badge badge-gold">Ортопедия</span>
+          </div>
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Наименование медицинской услуги</th>
+                <th class="col-cost">Стоимость</th>
+                <th class="col-action">Действие</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Коронка из диоксида циркония (монолитная / с нанесением керамики)</td>
+                <td class="col-cost">от 15 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Циркониевая коронка">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Керамический винир E.max (высокоэстетичный)</td>
+                <td class="col-cost">от 22 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Керамический винир">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Металлокерамическая коронка стандартная</td>
+                <td class="col-cost">от 8 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Металлокерамическая коронка">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Коронка на дентальном имплантате (включая абатмент)</td>
+                <td class="col-cost">от 25 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Протезирование на импланте">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Съемный бюгельный протез с кламмерной фиксацией</td>
+                <td class="col-cost">от 30 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Бюгельный протез">Записаться</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 6. Ортодонтия -->
+        <div class="price-table-card" data-category="orthodontics">
+          <div class="price-table-header">
+            <h3>Ортодонтия (исправление прикуса)</h3>
+            <span class="badge badge-mint">Ортодонтия</span>
+          </div>
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Наименование медицинской услуги</th>
+                <th class="col-cost">Стоимость</th>
+                <th class="col-action">Действие</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Консультация врача-ортодонта и составление 3D-плана лечения</td>
+                <td class="col-cost">от 1 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Консультация ортодонта">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Металлическая самолигирующая брекет-система (1 челюсть)</td>
+                <td class="col-cost">от 35 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Металлические брекеты">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Керамическая / сапфировая брекет-система Damon Clear (1 челюсть)</td>
+                <td class="col-cost">от 55 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Брекеты Damon Clear">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Лечение прозрачными элайнерами (индивидуальный набор капп)</td>
+                <td class="col-cost">от 120 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Элайнеры">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Плановый прием и активация брекет-системы</td>
+                <td class="col-cost">от 2 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Активация брекетов">Записаться</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 7. Детское отделение -->
+        <div class="price-table-card" data-category="pediatric">
+          <div class="price-table-header">
+            <h3>Детская стоматология</h3>
+            <span class="badge badge-primary">Детское</span>
+          </div>
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Наименование медицинской услуги</th>
+                <th class="col-cost">Стоимость</th>
+                <th class="col-action">Действие</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Адаптационный прием и осмотр детского стоматолога</td>
+                <td class="col-cost">от 1 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Детский осмотр">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Лечение кариеса молочного зуба с пломбированием световым материалом</td>
+                <td class="col-cost">от 3 500 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Лечение молочного зуба">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Герметизация фиссур постоянных зубов (1 зуб)</td>
+                <td class="col-cost">от 2 000 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Герметизация фиссур">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Удаление подвижного молочного зуба с аппликационной анестезией</td>
+                <td class="col-cost">от 1 800 руб.</td>
+                <td class="col-action"><button class="btn btn-outline btn-sm cta-booking-btn" data-service="Удаление молочного зуба">Записаться</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
     </section>
-
-    <section class="section">
-  <h2 class="section-title">Прайс-лист</h2>
-
-  <h3>Терапевтическая стоматология</h3>
-  <table class="price-table">
-    <tr><td>Консультация стоматолога</td><td>500 ₽</td></tr>
-    <tr><td>Лечение кариеса</td><td>от 4 500 ₽</td></tr>
-    <tr><td>Лечение глубокого кариеса</td><td>от 6 000 ₽</td></tr>
-    <tr><td>Замена старой пломбы</td><td>от 5 000 ₽</td></tr>
-    <tr><td>Эстетическая реставрация зуба</td><td>от 8 000 ₽</td></tr>
-    <tr><td>Лечение пульпита</td><td>от 8 000 ₽</td></tr>
-    <tr><td>Лечение периодонтита</td><td>от 9 500 ₽</td></tr>
-    <tr><td>Восстановление зуба (штифт + пломба)</td><td>от 7 000 ₽</td></tr>
-    <tr><td>ICON‑лечение кариеса</td><td>от 6 000 ₽</td></tr>
-  </table>
-
-  <h3>Профилактика и гигиена</h3>
-  <table class="price-table">
-    <tr><td>Проф. гигиена (ультразвук + Air Flow)</td><td>от 5 000 ₽</td></tr>
-        <tr><td>Проф. гигиена (Air Flow отдельно)</td><td>от&nbsp;4&nbsp;000&nbsp;₽</td></tr>    <tr><td>Полировка и реминерализация эмали</td><td>от 2 500 ₽</td></tr>
-    <tr><td>Подбор средств домашней гигиены</td><td>от 500 ₽</td></tr>
-  </table>
-             <h3>Пародонтология</h3>
-        <table class="price-table">
-            <tr><td>Чистка 1 пародонтального кармана</td><td>от&nbsp;900&nbsp;₽</td></tr>
-            <tr><td>Аппликация AirFlow 1 зуб</td><td>от&nbsp;400&nbsp;₽</td></tr>
-            <tr><td>Закрытие рецессии 1 зуб</td><td>от&nbsp;1&nbsp;100&nbsp;₽</td></tr>
-            <tr><td>Вестибулопластика 1 зоны</td><td>от&nbsp;1&nbsp;300&nbsp;₽</td></tr>
-            <tr><td>Пластика уздечки PRP 1 зона</td><td>от&nbsp;4&nbsp;500&nbsp;₽</td></tr>
-            <tr><td>Пластика уздечки PRP 1-2 зоны</td><td>от&nbsp;3&nbsp;000&nbsp;₽</td></tr>
-            <tr><td>Биоревитализация Revidnt 1 шприц</td><td>от&nbsp;4&nbsp;500&nbsp;₽</td></tr>
-            <tr><td>Биоревитализация Revidnt 1 шприц</td><td>от&nbsp;11&nbsp;000&nbsp;₽</td></tr>
-            <tr><td>Биоревитализация Revidnt 0.5 шприца</td><td>от&nbsp;6&nbsp;500&nbsp;₽</td></tr>
-            <tr><td>Биоревитализация Hyalrepair 1 шприц</td><td>от&nbsp;7&nbsp;500&nbsp;₽</td></tr>
-            <tr><td>Биоревитализация Mashup 1 процедура</td><td>от&nbsp;500&nbsp;₽</td></tr>
-            <tr><td>Биоревитализация M-Chip 1 процедура</td><td>от&nbsp;3&nbsp;500&nbsp;₽</td></tr>
-            <tr><td>Пластика десны M-Chip 1-2 зоны</td><td>от&nbsp;1&nbsp;800&nbsp;₽</td></tr>
-            <tr><td>Коррекция формы десны 1 зуб</td><td>от&nbsp;1&nbsp;500&nbsp;₽</td></tr>
-            <tr><td>Закрытый кюретаж 1 зуб</td><td>от&nbsp;4&nbsp;500&nbsp;₽</td></tr>
-            <tr><td>Открытый кюретаж 1 сегмент</td><td>от&nbsp;900&nbsp;₽</td></tr>
-            <tr><td>Шинирование 1 зуб</td><td>от&nbsp;400&nbsp;₽</td></tr>
-            <tr><td>Наращивание кости Revidnt 0.5</td><td>от&nbsp;350&nbsp;₽</td></tr>
-            <tr><td>Наращивание кости Straumann 1</td><td>от&nbsp;300&nbsp;₽</td></tr>
-            <tr><td>Наращивание десны Revidnt 0.5</td><td>от&nbsp;9&nbsp;000&nbsp;₽</td></tr>
-            <tr><td>Формирование десневого контура Revidnt 0.5</td><td>от&nbsp;11&nbsp;500&nbsp;₽</td></tr>
-            <tr><td>Реконструкция сосочка M-Chip 1 процедура</td><td>от&nbsp;15&nbsp;000&nbsp;₽</td></tr>
-            <tr><td>Формирование десневого контура M-Chip 1</td><td>от&nbsp;8&nbsp;500&nbsp;₽</td></tr>
-            <tr><td>Формирование десневого контура Revidnt</td><td>от&nbsp;17&nbsp;500&nbsp;₽</td></tr>
-        </table>
-
-
-  <h3>Хирургическая стоматология</h3>
-  <table class="price-table">
-    <tr><td>Удаление зуба</td><td>от&nbsp;5&nbsp;500&nbsp;₽</td></tr>
-    <tr><td>Удаление зуба мудрости</td><td>от 6 500 ₽</td></tr>
-    <tr><td>Удаление зуба сложное</td><td>от 7 500 ₽</td></tr>
-    <tr><td>Удаление ретинированного зуба</td><td>от 8 500 ₽</td></tr>
-    <tr><td>Вскрытие и дренирование абсцесса</td><td>от 1 500 ₽</td></tr>
-    <tr><td>Пластика уздечки губы / языка</td><td>от 5 000 ₽</td></tr>
-    <tr><td>Закрытый кюретаж (1 зуб)</td><td>от 800 ₽</td></tr>
-    <tr><td>Открытый кюретаж (1 зуб)</td><td>от 2 700 ₽</td></tr>
-  </table>
-
-  <h3>Имплантология</h3>
-  <table class="price-table">
-    <tr><td>Установка дентального импланта</td><td>от 20 000 ₽</td></tr>
-    <tr><td>Установка формирователя десны</td><td>от 2 000 ₽</td></tr>
-    <tr><td>Синус‑лифтинг закрытый</td><td>от 15 000 ₽</td></tr>
-    <tr><td>Синус‑лифтинг открытый</td><td>от 25 000 ₽</td></tr>
-            <tr><td>Установка абатмента</td><td>от&nbsp;2&nbsp;000&nbsp;₽</td></tr>
-  </table>
-
-  <h3>Ортодонтия</h3>
-  <table class="price-table">
-    <tr><td>Консультация ортодонта для детей</td><td>от 500 ₽</td></tr>
-    <tr><td>Консультация ортодонта для взрослых</td><td>от 1 000 ₽</td></tr>
-    <tr><td>Брекеты Damon Q2 (1 челюсть)</td><td>от 60 000 ₽</td></tr>
-    <tr><td>Брекеты Damon Q2 (2 челюсти)</td><td>от 120 000 ₽</td></tr>
-    <tr><td>Повторный приём на брекет‑системе</td><td>от 4 500 ₽</td></tr>
-    <tr><td>Снятие брекетов + полировка</td><td>от 3 500 ₽</td></tr>
-    <tr><td>Ретейнер</td><td>6 500 ₽</td></tr>
-    <tr><td>Ретенционная каппа</td><td>от 6 000 ₽</td></tr>
-    <tr><td>Пластина детская с вестибулярной дугой</td><td>от 22 000 ₽</td></tr>
-    <tr><td>Аппарат Twin Block</td><td>от 45 000 ₽</td></tr>
-    <tr><td>Аппарат Марко Росса</td><td>от 48 000 ₽</td></tr>
-    <tr><td>Лицевая маска</td><td>от 20 000 ₽</td></tr>
-    <tr><td>Хранитель места</td><td>от 8 000 ₽</td></tr>
-  </table>
-
-  <h3>Детская стоматология</h3>
-  <table class="price-table">
-    <tr><td>Консультация детского стоматолога</td><td>500&nbsp;₽</td></tr>
-    <tr><td>Лечение кариеса молочного зуба</td><td>от 3 000 ₽</td></tr>
-    <tr><td>Герметизация фиссур у детей</td><td>от 2 500 ₽</td></tr>
-    <tr><td>ICON‑лечение кариеса у детей</td><td>от 4 000 ₽</td></tr>
-    <tr><td>Лечение пульпита молочного зуба</td><td>от 5 000 ₽</td></tr>
-  </table>
-
-  <h3>Ортопедия</h3>
-  <table class="price-table">
-    <tr><td>Коронка керамическая (E‑max)</td><td>от 28 000 ₽</td></tr>
-    <tr><td>Коронка циркониевая</td><td>от 30 000 ₽</td></tr>
-    <tr><td>Временная коронка</td><td>от 4 000 ₽</td></tr>
-    <tr><td>Мостовидный протез</td><td>от 30 000 ₽</td></tr>
-    <tr><td>Виниры керамические</td><td>от 20 000 ₽</td></tr>
-    <tr><td>Бюгельный / частичный протез</td><td>от 20 000 ₽</td></tr>
-  </table>
-
-  <p style="text-align:center; color: var(--muted-text); font-size:0.9rem;">
-    Цены указаны ориентировочно. Окончательная стоимость лечения определяется врачом после осмотра и составления плана лечения.
-  </p>
-</section>
-
   </main>
 
-  <footer>
-    <div class="footer-content">
-      <div class="footer-section">
-        <h4>Контакты</h4>
-        <ul>
-          <!-- Обновлённые контактные данные -->
-          <li>Адрес: 357340, Россия, Ставропольский край, г. Лермонтов, Солнечный проезд, д. 10, корп. 1, этаж 2</li>
-          <li>Телефон: +7 (928) 355‑00‑39, +7 (909) 973‑26‑25</li>
-          <li>Email: beshtausmail@yandex.ru</li>
-          <li>Часы работы: Пн‑Сб 09:00–20:00</li>
-        </ul>
+  <!-- Подвал сайта -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Бештау Смайл Клиник</h4>
+        <p>Современный медицинский центр эстетической и функциональной стоматологии. Комплексный подход к здоровью улыбки для взрослых и детей.</p>
+        <p style="font-size: 0.8rem; color: #6B7280;">Лицензия на осуществление медицинской деятельности выдана Министерством здравоохранения Ставропольского края.</p>
       </div>
-      <div class="footer-section">
+
+      <div class="footer-col">
         <h4>Навигация</h4>
-        <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="services.html">Услуги</a></li>
-          <li><a href="prices.html">Цены</a></li>
-          
-          <li><a href="patient-info.html">Пациентам</a></li>
-          <li><a href="corporate.html">Корпоративным клиентам</a></li>
-          
+        <ul class="footer-links">
+          <li><a href="services.html">Услуги клиники</a></li>
+          <li><a href="prices.html">Прайс-лист</a></li>
+          <li><a href="about.html">Врачи и руководство</a></li>
+          <li><a href="patient-info.html">Информация пациентам</a></li>
+          <li><a href="gallery.html">Галерея клиники</a></li>
         </ul>
       </div>
-      <div class="footer-section">
-        <h4>О клинике</h4>
-        <p style="font-size:0.9rem;">«Бештау Смайл Клиник» – это современная стоматологическая клиника, предлагающая полный спектр услуг для здоровья вашей улыбки. Мы используем передовые технологии и индивидуальный подход к каждому пациенту.</p>
+
+      <div class="footer-col">
+        <h4>Пациентам</h4>
+        <ul class="footer-links">
+          <li><a href="corporate.html">Корпоративным клиентам</a></li>
+          <li><a href="legal.html">Правовая информация</a></li>
+          <li><a href="Licence.pdf" target="_blank">Лицензия (PDF)</a></li>
+          <li><a href="contact.html">Контакты и схема проезда</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <p>357340, Ставропольский край, г. Лермонтов, Солнечный проезд, д. 10, корп. 1, этаж 2</p>
+        <p>Телефон: <a href="tel:+79669873802" style="color: #FFFFFF; font-weight: 600;">+7 (966) 987-38-02</a></p>
+        <p>Email: beshtausmail@yandex.ru</p>
+        <p>Режим работы: Пн-Сб 09:00-20:00, Вс — выходной</p>
       </div>
     </div>
-    <div class="footer-bottom">
-      &copy; 2025 ООО «Бештау Смайл Клиник». Все права защищены.
+
+    <div class="container footer-bottom">
+      <div>&copy; 2026 ООО «Бештау Смайл Клиник». Все права защищены.</div>
+      <div>
+        <a href="legal.html">Политика конфиденциальности (152-ФЗ)</a>
+      </div>
     </div>
   </footer>
+
+  <!-- Модальное окно онлайн-записи через Яндекс.Форму -->
+  <div id="booking-modal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-header">
+        <h3 id="modal-title">Запись на прием</h3>
+        <button class="modal-close-btn" type="button" aria-label="Закрыть окно">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://forms.yandex.ru/cloud/694e59d1f47e73e9d3954df8/?iframe=1" frameborder="0" name="ya-form-booking" width="100%" height="480"></iframe>
+      </div>
+    </div>
+  </div>
 
   <script src="js/script.js"></script>
 </body>
