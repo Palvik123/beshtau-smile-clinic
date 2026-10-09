@@ -563,21 +563,136 @@ header.site-header {
   position: relative;
 }
 
-.hero-image-wrapper {
+/* ==========================================================================
+   СЛАЙД-ШОУ НА ГЛАВНОМ ЭКРАНЕ (HERO SLIDESHOW)
+   ========================================================================== */
+
+.hero-slider-wrapper {
   position: relative;
-  height: 420px;
+  height: 440px;
   overflow: hidden;
+  background-color: #111827;
 }
 
-.hero-image-wrapper img {
+.hero-slides-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.8s ease;
+  z-index: 1;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+.hero-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.6s ease;
+  transition: transform 6s ease;
+  transform: scale(1);
 }
 
-.hero-card-main:hover .hero-image-wrapper img {
-  transform: scale(1.03);
+.hero-slide.active img {
+  transform: scale(1.04);
+}
+
+.hero-slide::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(17, 24, 39, 0.15) 0%, rgba(17, 24, 39, 0.05) 50%, rgba(17, 24, 39, 0.65) 100%);
+  pointer-events: none;
+}
+
+.hero-slide-caption {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  color: var(--primary);
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  z-index: 4;
+}
+
+.hero-slider-controls {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 4;
+  background: rgba(17, 24, 39, 0.45);
+  backdrop-filter: blur(8px);
+  padding: 4px 8px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.hero-slider-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  padding: 0;
+}
+
+.hero-slider-btn:hover {
+  background: var(--primary);
+  transform: scale(1.08);
+}
+
+.hero-slider-dots {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 4px;
+}
+
+.hero-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.45);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all var(--transition-fast);
+}
+
+.hero-dot.active {
+  width: 18px;
+  border-radius: 4px;
+  background: #FFFFFF;
 }
 
 .hero-floating-card {
@@ -594,6 +709,7 @@ header.site-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 5;
 }
 
 .hero-floating-info h4 {
@@ -604,6 +720,271 @@ header.site-header {
 .hero-floating-info p {
   font-size: 0.8rem;
   color: var(--text-muted);
+}
+
+/* ==========================================================================
+   СЕКЦИЯ ПРОМО-АКЦИЙ В СТИЛИСТИКЕ DENTA KELLER (PROMO CAROUSEL)
+   ========================================================================== */
+
+.promo-section {
+  background: linear-gradient(180deg, var(--bg-surface) 0%, #FFFFFF 100%);
+  padding: 80px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.promo-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 36px;
+}
+
+.promo-header-left {
+  max-width: 740px;
+}
+
+.promo-slider-arrows {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.promo-nav-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition);
+  box-shadow: var(--shadow-sm);
+  padding: 0;
+}
+
+.promo-nav-btn:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(169, 40, 77, 0.25);
+}
+
+.promo-counter {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  min-width: 52px;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.promo-slider-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.07);
+  border: 1px solid var(--border-light);
+  background: var(--bg-card);
+}
+
+.promo-slider-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
+  width: 100%;
+}
+
+.promo-slide {
+  min-width: 100%;
+  flex: 0 0 100%;
+  background: var(--bg-card);
+}
+
+.promo-card {
+  display: grid;
+  grid-template-columns: 1.18fr 0.82fr;
+  min-height: 490px;
+}
+
+.promo-card-content {
+  padding: 44px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.promo-badge-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.promo-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 13px;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.pill-primary {
+  background: rgba(169, 40, 77, 0.1);
+  color: var(--primary);
+}
+
+.pill-gold {
+  background: rgba(212, 165, 116, 0.2);
+  color: #8A5A18;
+}
+
+.pill-teal {
+  background: rgba(39, 174, 96, 0.12);
+  color: #1E8449;
+}
+
+.promo-tag {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.promo-title {
+  font-family: var(--font-heading);
+  font-size: 1.7rem;
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+  letter-spacing: -0.02em;
+}
+
+.promo-lead {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 22px;
+}
+
+.promo-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 26px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.promo-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.promo-features li svg {
+  color: var(--primary);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.promo-price-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+  margin-top: auto;
+}
+
+.promo-price-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-price-label {
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.promo-price-value {
+  font-family: var(--font-heading);
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: var(--primary);
+  letter-spacing: -0.02em;
+}
+
+.promo-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.promo-card-visual {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo-card-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.6s ease;
+}
+
+.promo-slide:hover .promo-card-visual img {
+  transform: scale(1.03);
+}
+
+.promo-dots-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 18px 0 16px 0;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-light);
+}
+
+.promo-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--border);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all var(--transition);
+}
+
+.promo-dot.active {
+  width: 28px;
+  border-radius: 6px;
+  background: var(--primary);
 }
 
 /* ==========================================================================
@@ -1403,6 +1784,23 @@ body.a11y-active a {
     opacity: 1;
     visibility: visible;
   }
+  .promo-card {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  .promo-card-content {
+    padding: 34px 28px;
+    order: 2;
+  }
+  .promo-card-visual {
+    order: 1;
+    height: 320px;
+  }
+  .promo-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1419,12 +1817,54 @@ body.a11y-active a {
     grid-template-columns: 1fr;
     gap: 14px;
   }
+  .hero-slider-wrapper {
+    height: 380px;
+  }
+  .hero-floating-card {
+    padding: 12px 16px;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+  }
+  .hero-floating-info h4 {
+    font-size: 0.88rem;
+  }
+  .hero-floating-info p {
+    font-size: 0.74rem;
+  }
+  .promo-title {
+    font-size: 1.35rem;
+  }
+  .promo-lead {
+    font-size: 0.9rem;
+  }
+  .promo-price-block {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .promo-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+  .promo-actions .btn {
+    width: 100%;
+  }
   .section {
     padding: 60px 0;
   }
 }
 
 @media (max-width: 580px) {
+  .hero-slider-wrapper {
+    height: 330px;
+  }
+  .promo-card-visual {
+    height: 230px;
+  }
+  .promo-card-content {
+    padding: 24px 18px;
+  }
   .footer-grid {
     grid-template-columns: 1fr;
   }

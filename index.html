@@ -140,6 +140,7 @@
 
       <nav class="nav-menu" aria-label="Основное меню">
         <a href="index.html" class="nav-link active">Главная</a>
+        <a href="#promotions" class="nav-link">Акции</a>
         <a href="services.html" class="nav-link">Услуги</a>
         <a href="prices.html" class="nav-link">Цены</a>
         <a href="about.html" class="nav-link">О клинике</a>
@@ -195,9 +196,53 @@
 
         <div class="hero-visual">
           <div class="hero-card-main">
-            <div class="hero-image-wrapper">
-              <img src="images/image5.jpeg" alt="Лечебный процесс в клинике Бештау Смайл Клиник">
+            <div class="hero-slider-wrapper" id="hero-slider">
+              <div class="hero-slides-track">
+                <div class="hero-slide active">
+                  <img src="images/gallery-treatment-room.jpg" alt="Современный лечебный кабинет стоматологии Бештау Смайл" loading="eager">
+                  <div class="hero-slide-caption">Лечебный кабинет экспертного уровня</div>
+                </div>
+                <div class="hero-slide">
+                  <img src="images/gallery-microscope-room.jpg" alt="Кабинет высокоточной микроскопической эндодонтии" loading="lazy">
+                  <div class="hero-slide-caption">Высокоточная микроскопическая стоматология</div>
+                </div>
+                <div class="hero-slide">
+                  <img src="images/gallery-reception-lounge.jpg" alt="Комфортная зона ожидания и ресепшн клиники" loading="lazy">
+                  <div class="hero-slide-caption">Комфортная зона ожидания и заботливый сервис</div>
+                </div>
+                <div class="hero-slide">
+                  <img src="images/gallery-ct-scan.jpg" alt="Кабинет цифровой 3D-томографии и конусно-лучевой КТ" loading="lazy">
+                  <div class="hero-slide-caption">Цифровая 3D-диагностика и томография</div>
+                </div>
+                <div class="hero-slide">
+                  <img src="images/gallery-pediatric-room.jpg" alt="Детский стоматологический кабинет с адаптационным приемом" loading="lazy">
+                  <div class="hero-slide-caption">Адаптационный прием для маленьких пациентов</div>
+                </div>
+                <div class="hero-slide">
+                  <img src="images/gallery-sterilization-zone.jpg" alt="Зона стерилизации медицинского инструментария СанПиН" loading="lazy">
+                  <div class="hero-slide-caption">Стерилизационный блок по стандартам СанПиН</div>
+                </div>
+              </div>
+
+              <!-- Навигация слайд-шоу Hero -->
+              <div class="hero-slider-controls">
+                <button type="button" class="hero-slider-btn prev" aria-label="Предыдущее фото">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+                </button>
+                <div class="hero-slider-dots">
+                  <button type="button" class="hero-dot active" aria-label="Слайд 1"></button>
+                  <button type="button" class="hero-dot" aria-label="Слайд 2"></button>
+                  <button type="button" class="hero-dot" aria-label="Слайд 3"></button>
+                  <button type="button" class="hero-dot" aria-label="Слайд 4"></button>
+                  <button type="button" class="hero-dot" aria-label="Слайд 5"></button>
+                  <button type="button" class="hero-dot" aria-label="Слайд 6"></button>
+                </div>
+                <button type="button" class="hero-slider-btn next" aria-label="Следующее фото">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+              </div>
             </div>
+
             <div class="hero-floating-card">
               <div class="hero-floating-info">
                 <h4>Команда профильных специалистов</h4>
@@ -205,6 +250,304 @@
               </div>
               <span class="badge badge-gold">5 врачей</span>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция промо-акций (Слайдер в стилистике Denta Keller) -->
+    <section class="section promo-section" id="promotions">
+      <div class="container">
+        <div class="section-header promo-header">
+          <div class="promo-header-left">
+            <span class="section-tag">Специальные предложения</span>
+            <h2 class="section-title">Акции и программы заботы о вашей улыбке</h2>
+            <p class="section-subtitle">
+              Честные цены без скрытых платежей, современные сертифицированные протоколы и выгодные условия на имплантацию, протезирование и комплексное лечение.
+            </p>
+          </div>
+          <div class="promo-slider-arrows">
+            <button type="button" class="promo-nav-btn prev" id="promo-prev-btn" aria-label="Предыдущая акция">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <div class="promo-counter" id="promo-counter">1 / 6</div>
+            <button type="button" class="promo-nav-btn next" id="promo-next-btn" aria-label="Следующая акция">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="promo-slider-container" id="promo-slider">
+          <div class="promo-slider-track">
+            
+            <!-- Слайд 1: Osstem Имплантация -->
+            <div class="promo-slide active">
+              <div class="promo-card">
+                <div class="promo-card-content">
+                  <div class="promo-badge-wrap">
+                    <span class="promo-pill pill-primary">Акция месяца</span>
+                    <span class="promo-tag">Хирургия и имплантация</span>
+                  </div>
+                  <h3 class="promo-title">Дентальная имплантация корейской системой Osstem</h3>
+                  <p class="promo-lead">
+                    Премиальная остеоинтеграция 99.2% с пожизненной гарантией производителя. Восстановление утраченного зуба по международному хирургическому протоколу.
+                  </p>
+                  <ul class="promo-features">
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      <span>Компьютерное 3D-планирование положения имплантата</span>
+                    </li>
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      <span>Атравматичная установка под эффективной анестезией</span>
+                    </li>
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      <span>Официальный паспорт изделия с серийным номером</span>
+                    </li>
+                  </ul>
+                  <div class="promo-price-block">
+                    <div class="promo-price-info">
+                      <span class="promo-price-label">Спеццена за установку</span>
+                      <span class="promo-price-value">от 33 000 руб.</span>
+                    </div>
+                    <div class="promo-actions">
+                      <button class="btn btn-primary cta-booking-btn" data-promo="Имплантация Osstem">Записаться по акции</button>
+                      <a href="services.html" class="btn btn-secondary">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="promo-card-visual">
+                  <img src="images/promo/promo-osstem-implant.jpg" alt="Дентальная имплантация Osstem в клинике Бештау Смайл" loading="lazy">
+                </div>
+              </div>
+            </div>
+
+            <!-- Слайд 2: Скидка до 20% на имплантацию -->
+            <div class="promo-slide">
+              <div class="promo-card">
+                <div class="promo-card-content">
+                  <div class="promo-badge-wrap">
+                    <span class="promo-pill pill-gold">Выгода до 20%</span>
+                    <span class="promo-tag">Комплексное восстановление</span>
+                  </div>
+                  <h3 class="promo-title">Скидка до 20% на комплексную имплантацию зубов</h3>
+                  <p class="promo-lead">
+                    Специальные условия при установке нескольких имплантатов и комплексной реабилитации зубного ряда. Честная прозрачная смета без скрытых доплат.
+                  </p>
+                  <ul class="promo-features">
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      <span>Консультация хирурга-имплантолога и персональный план лечения</span>
+                    </li>
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      <span>Скидка увеличивается пропорционально объему вмешательства</span>
+                    </li>
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      <span>Бесплатный контрольный осмотр после остеоинтеграции</span>
+                    </li>
+                  </ul>
+                  <div class="promo-price-block">
+                    <div class="promo-price-info">
+                      <span class="promo-price-label">Экономия на плане лечения</span>
+                      <span class="promo-price-value">до 20%</span>
+                    </div>
+                    <div class="promo-actions">
+                      <button class="btn btn-primary cta-booking-btn" data-promo="Скидка до 20% на имплантацию">Записаться по акции</button>
+                      <a href="prices.html" class="btn btn-secondary">Прайс-лист</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="promo-card-visual">
+                  <img src="images/promo/promo-implant-discount.jpg" alt="Скидка на имплантацию зубов в Бештау Смайл" loading="lazy">
+                </div>
+              </div>
+            </div>
+
+            <!-- Слайд 3: All-on-4 и All-on-6 -->
+            <div class="promo-slide">
+              <div class="promo-card">
+                <div class="promo-card-content">
+                  <div class="promo-badge-wrap">
+                    <span class="promo-pill pill-primary">Новые зубы за 1–3 дня</span>
+                    <span class="promo-tag">Полная адентия</span>
+                  </div>
+                  <h3 class="promo-title">Протезирование All-on-4 и All-on-6 под ключ</h3>
+                  <p class="promo-lead">
+                    Инновационное восстановление полного зубного ряда челюсти на 4 или 6 имплантатах с установкой несъемного адаптационного протеза в кратчайшие сроки.
+                  </p>
+                  <ul class="promo-features">
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      <span>Полный отказ от съемных протезов и клеящих гелей</span>
+                    </li>
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      <span>Равномерное распределение жевательной нагрузки на костную ткань</span>
+                    </li>
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      <span>Естественная эстетика десневого контура и красивая улыбка</span>
+                    </li>
+                  </ul>
+                  <div class="promo-price-block">
+                    <div class="promo-price-info">
+                      <span class="promo-price-label">Формат протокола</span>
+                      <span class="promo-price-value">Немедленная нагрузка</span>
+                    </div>
+                    <div class="promo-actions">
+                      <button class="btn btn-primary cta-booking-btn" data-promo="Протокол All-on-4 / All-on-6">Получить расчет</button>
+                      <a href="services.html" class="btn btn-secondary">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="promo-card-visual">
+                  <img src="images/promo/promo-all-on-4.jpg" alt="Протезирование All-on-4 и All-on-6 в Лермонтове" loading="lazy">
+                </div>
+              </div>
+            </div>
+
+            <!-- Слайд 4: Терапия и лечение кариеса -->
+            <div class="promo-slide">
+              <div class="promo-card">
+                <div class="promo-card-content">
+                  <div class="promo-badge-wrap">
+                    <span class="promo-pill pill-teal">Здоровье эмали</span>
+                    <span class="promo-tag">Терапевтическая стоматология</span>
+                  </div>
+                  <h3 class="promo-title">Лечение кариеса и эстетическая реставрация зубов</h3>
+                  <p class="promo-lead">
+                    Бережное лечение с сохранением здоровых тканей зуба. Использование японских и немецких нанокомпозитов, точно повторяющих естественную анатомию и оттенок.
+                  </p>
+                  <ul class="promo-features">
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      <span>Изоляция рабочего поля системой коффердам</span>
+                    </li>
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      <span>Точное воспроизведение бугров и фиссур для правильного прикуса</span>
+                    </li>
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      <span>Полировка до зеркального сухого блеска с долговечной защитой</span>
+                    </li>
+                  </ul>
+                  <div class="promo-price-block">
+                    <div class="promo-price-info">
+                      <span class="promo-price-label">Стоимость под ключ</span>
+                      <span class="promo-price-value">от 3 500 руб.</span>
+                    </div>
+                    <div class="promo-actions">
+                      <button class="btn btn-primary cta-booking-btn" data-promo="Лечение кариеса">Записаться на прием</button>
+                      <a href="prices.html" class="btn btn-secondary">Смотреть цены</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="promo-card-visual">
+                  <img src="images/promo/promo-caries-treatment.jpg" alt="Лечение кариеса и реставрация зубов Бештау Смайл" loading="lazy">
+                </div>
+              </div>
+            </div>
+
+            <!-- Слайд 5: Циркониевые коронки -->
+            <div class="promo-slide">
+              <div class="promo-card">
+                <div class="promo-card-content">
+                  <div class="promo-badge-wrap">
+                    <span class="promo-pill pill-gold">Эстетика и прочность</span>
+                    <span class="promo-tag">Ортопедия CAD/CAM</span>
+                  </div>
+                  <h3 class="promo-title">Безметалловые коронки из диоксида циркония</h3>
+                  <p class="promo-lead">
+                    Премиальная эстетика живого зуба и непревзойденная прочность. Идеальная биосовместимость без потемнения десны и риска аллергических реакций.
+                  </p>
+                  <ul class="promo-features">
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      <span>Цифровое сканирование и CAD/CAM фрезерование с микронной точностью</span>
+                    </li>
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      <span>Естественная светопроницаемость и подбор оттенка эмали</span>
+                    </li>
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      <span>Минимальное препарирование и максимальное сохранение зуба</span>
+                    </li>
+                  </ul>
+                  <div class="promo-price-block">
+                    <div class="promo-price-info">
+                      <span class="promo-price-label">Материал конструкции</span>
+                      <span class="promo-price-value">Диоксид циркония</span>
+                    </div>
+                    <div class="promo-actions">
+                      <button class="btn btn-primary cta-booking-btn" data-promo="Циркониевые коронки">Записаться на консультацию</button>
+                      <a href="services.html" class="btn btn-secondary">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="promo-card-visual">
+                  <img src="images/promo/promo-zirconia-crowns.jpg" alt="Коронки из диоксида циркония в Лермонтове" loading="lazy">
+                </div>
+              </div>
+            </div>
+
+            <!-- Слайд 6: Семейная забота -->
+            <div class="promo-slide">
+              <div class="promo-card">
+                <div class="promo-card-content">
+                  <div class="promo-badge-wrap">
+                    <span class="promo-pill pill-primary">Семейная программа</span>
+                    <span class="promo-tag">Забота о близких</span>
+                  </div>
+                  <h3 class="promo-title">Семейная стоматология: прием со скидкой 10%</h3>
+                  <p class="promo-lead">
+                    Комплексное стоматологическое сопровождение родителей и детей в одной клинике. Удобная запись в один день и персональная скидка 10% на семейный план.
+                  </p>
+                  <ul class="promo-features">
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      <span>Адаптационный безболезненный прием для детей любого возраста</span>
+                    </li>
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      <span>Профессиональная гигиена и профилактика для взрослых</span>
+                    </li>
+                    <li>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      <span>Прием 7 дней в неделю без очередей и стресса</span>
+                    </li>
+                  </ul>
+                  <div class="promo-price-block">
+                    <div class="promo-price-info">
+                      <span class="promo-price-label">Скидка на семейный прием</span>
+                      <span class="promo-price-value">10%</span>
+                    </div>
+                    <div class="promo-actions">
+                      <button class="btn btn-primary cta-booking-btn" data-promo="Семейная стоматология 10%">Записаться всей семьей</button>
+                      <a href="about.html" class="btn btn-secondary">О клинике</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="promo-card-visual">
+                  <img src="images/promo/promo-family-care.jpg" alt="Семейная стоматология в Бештау Смайл Клиник" loading="lazy">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Навигационные точки внизу промо-слайдера -->
+          <div class="promo-dots-wrapper" id="promo-dots">
+            <button type="button" class="promo-dot active" aria-label="Акция 1"></button>
+            <button type="button" class="promo-dot" aria-label="Акция 2"></button>
+            <button type="button" class="promo-dot" aria-label="Акция 3"></button>
+            <button type="button" class="promo-dot" aria-label="Акция 4"></button>
+            <button type="button" class="promo-dot" aria-label="Акция 5"></button>
+            <button type="button" class="promo-dot" aria-label="Акция 6"></button>
           </div>
         </div>
       </div>

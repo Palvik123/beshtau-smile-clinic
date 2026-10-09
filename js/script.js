@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initDoctorScheduleModal();
   initPriceFilters();
   initAccessibilityMode();
+  initHeroSlideshow();
+  initPromoSlider();
 });
 
 /**
@@ -80,7 +82,10 @@ function initBookingModal() {
       e.preventDefault();
       const targetDoctor = trigger.getAttribute('data-doctor');
       const targetService = trigger.getAttribute('data-service');
-      const context = targetDoctor || targetService || '';
+      const targetPromo = trigger.getAttribute('data-promo');
+      const context = targetPromo
+        ? ('по акции «' + targetPromo + '»')
+        : (targetDoctor || targetService || '');
       openModal(context);
     }
   });
@@ -540,4 +545,199 @@ function initDoctorScheduleModal() {
     }
   });
 }
+
+/**
+ * 6. Автоматическое слайд-шоу фотографий клиники на главном экране (Hero)
+ */
+function initHeroSlideshow() {
+  const slider = document.getElementById('hero-slider');
+  if (!slider) return;
+
+  const slides = slider.querySelectorAll('.hero-slide');
+  const dots = slider.querySelectorAll('.hero-dot');
+  const prevBtn = slider.querySelector('.hero-slider-btn.prev');
+  const nextBtn = slider.querySelector('.hero-slider-btn.next');
+
+  if (!slides.length) return;
+
+  let currentIndex = 0;
+  let intervalId = null;
+  const slideDuration = 4500;
+
+  const showSlide = (index) => {
+    slides[currentIndex].classList.remove('active');
+    if (dots[currentIndex]) dots[currentIndex].classList.remove('active');
+
+    currentIndex = (index + slides.length) % slides.length;
+
+    slides[currentIndex].classList.add('active');
+    if (dots[currentIndex]) dots[currentIndex].classList.add('active');
+  };
+
+  const nextSlide = () => showSlide(currentIndex + 1);
+  const prevSlide = () => showSlide(currentIndex - 1);
+
+  const startAutoPlay = () => {
+    stopAutoPlay();
+    intervalId = setInterval(nextSlide, slideDuration);
+  };
+
+  const stopAutoPlay = () => {
+    if (intervalId) {
+      clearInterval(intervalId);
+      intervalId = null;
+    }
+  };
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      nextSlide();
+      startAutoPlay();
+    });
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      prevSlide();
+      startAutoPlay();
+    });
+  }
+
+  dots.forEach((dot, idx) => {
+    dot.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showSlide(idx);
+      startAutoPlay();
+    });
+  });
+
+  // Пауза при наведении мыши
+  slider.addEventListener('mouseenter', stopAutoPlay);
+  slider.addEventListener('mouseleave', startAutoPlay);
+
+  // Свайп на мобильных устройствах
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  slider.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+    stopAutoPlay();
+  }, { passive: true });
+
+  slider.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    const diff = touchStartX - touchEndX;
+    if (Math.abs(diff) > 40) {
+      if (diff > 0) nextSlide();
+      else prevSlide();
+    }
+    startAutoPlay();
+  }, { passive: true });
+
+  startAutoPlay();
+}
+
+/**
+ * 7. Интерактивный промо-слайдер акций в стиле Denta Keller
+ */
+function initPromoSlider() {
+  const container = document.getElementById('promo-slider');
+  if (!container) return;
+
+  const track = container.querySelector('.promo-slider-track');
+  const slides = container.querySelectorAll('.promo-slide');
+  const dots = document.querySelectorAll('.promo-dot');
+  const counter = document.getElementById('promo-counter');
+  const prevBtn = document.getElementById('promo-prev-btn');
+  const nextBtn = document.getElementById('promo-next-btn');
+
+  if (!track || !slides.length) return;
+
+  const total = slides.length;
+  let currentIndex = 0;
+  let intervalId = null;
+  const slideDuration = 6000;
+
+  const updateSlider = (index) => {
+    currentIndex = (index + total) % total;
+    track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+
+    slides.forEach((s, idx) => {
+      s.classList.toggle('active', idx === currentIndex);
+    });
+
+    dots.forEach((d, idx) => {
+      d.classList.toggle('active', idx === currentIndex);
+    });
+
+    if (counter) {
+      counter.textContent = (currentIndex + 1) + ' / ' + total;
+    }
+  };
+
+  const nextPromo = () => updateSlider(currentIndex + 1);
+  const prevPromo = () => updateSlider(currentIndex - 1);
+
+  const startAutoPlay = () => {
+    stopAutoPlay();
+    intervalId = setInterval(nextPromo, slideDuration);
+  };
+
+  const stopAutoPlay = () => {
+    if (intervalId) {
+      clearInterval(intervalId);
+      intervalId = null;
+    }
+  };
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      nextPromo();
+      startAutoPlay();
+    });
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      prevPromo();
+      startAutoPlay();
+    });
+  }
+
+  dots.forEach((dot, idx) => {
+    dot.addEventListener('click', () => {
+      updateSlider(idx);
+      startAutoPlay();
+    });
+  });
+
+  // Пауза при наведении мыши
+  container.addEventListener('mouseenter', stopAutoPlay);
+  container.addEventListener('mouseleave', startAutoPlay);
+
+  // Свайп на мобильных устройствах
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  container.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+    stopAutoPlay();
+  }, { passive: true });
+
+  container.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    const diff = touchStartX - touchEndX;
+    if (Math.abs(diff) > 40) {
+      if (diff > 0) nextPromo();
+      else prevPromo();
+    }
+    startAutoPlay();
+  }, { passive: true });
+
+  updateSlider(0);
+  startAutoPlay();
+}
+
 
