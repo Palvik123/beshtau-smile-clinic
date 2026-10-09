@@ -1440,6 +1440,29 @@ body.a11y-active a {
   .price-table .col-action {
     display: none;
   }
+  .schedule-table th,
+  .schedule-table td {
+    padding: 9px 8px;
+    font-size: 0.8rem;
+  }
+  .col-schedule-day {
+    width: auto;
+  }
+  .col-schedule-action {
+    width: auto;
+  }
+  .btn-schedule-day-book {
+    padding: 5px 10px;
+    font-size: 0.76rem;
+  }
+  .schedule-day-label {
+    gap: 6px;
+  }
+  .day-circle {
+    width: 20px;
+    height: 20px;
+    font-size: 0.65rem;
+  }
 }
 
 /* ==========================================================================
@@ -1632,10 +1655,11 @@ body.a11y-active a {
 
 .schedule-table th,
 .schedule-table td {
-  padding: 10px 14px;
+  padding: 11px 14px;
   text-align: left;
   border-bottom: 1px solid var(--border);
   font-size: 0.88rem;
+  vertical-align: middle;
 }
 
 .schedule-table th {
@@ -1664,6 +1688,11 @@ body.a11y-active a {
   gap: 8px;
 }
 
+.schedule-day-name {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
 .day-circle {
   width: 24px;
   height: 24px;
@@ -1675,6 +1704,7 @@ body.a11y-active a {
   font-weight: 700;
   background: #E5E7EB;
   color: var(--text-primary);
+  flex-shrink: 0;
 }
 
 .day-circle.active {
@@ -1693,32 +1723,47 @@ body.a11y-active a {
   font-weight: 400;
 }
 
-.schedule-badge-status {
-  display: inline-block;
-  padding: 3px 8px;
+.col-schedule-day {
+  width: 190px;
+}
+
+.col-schedule-time {
+  /* Автоматическая ширина по центру */
+}
+
+.col-schedule-action {
+  width: 140px;
+  text-align: right;
+}
+
+.btn-schedule-day-book {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  font-family: inherit;
   border-radius: var(--radius-sm);
-  font-size: 0.75rem;
-  font-weight: 500;
+  background-color: var(--primary);
+  color: #FFFFFF;
+  border: 1px solid var(--primary);
+  cursor: pointer;
+  transition: all var(--transition);
+  white-space: nowrap;
+  text-decoration: none;
 }
 
-.schedule-badge-status.shift-morning {
-  background: #EBF5FB;
-  color: #2980B9;
+.btn-schedule-day-book:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  color: #FFFFFF;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(169, 40, 77, 0.25);
 }
 
-.schedule-badge-status.shift-evening {
-  background: #FEF9E7;
-  color: #B7950B;
-}
-
-.schedule-badge-status.shift-full {
-  background: #EAFAF1;
-  color: #27AE60;
-}
-
-.schedule-badge-status.shift-off {
-  background: #F3F4F6;
-  color: #6B7280;
+.btn-schedule-day-book:active {
+  transform: translateY(0);
 }
 
 .schedule-modal-footer {

@@ -196,13 +196,13 @@ const DOCTOR_SCHEDULES = {
     cabinet: "Кабинет № 1 (Хирургия / Имплантология)",
     desc: "Атравматичное удаление зубов, дентальная имплантация, синус-лифтинг и костная пластика.",
     days: [
-      { day: "Пн", dayFull: "Понедельник", time: "09:00 – 15:00", shift: "Утренняя смена", badgeClass: "shift-morning", active: true },
-      { day: "Вт", dayFull: "Вторник", time: "10:00 – 16:00", shift: "Операционный день", badgeClass: "shift-morning", active: true },
-      { day: "Ср", dayFull: "Среда", time: "14:00 – 20:00", shift: "Вечерняя смена", badgeClass: "shift-evening", active: true },
-      { day: "Чт", dayFull: "Четверг", time: "09:00 – 15:00", shift: "Утренняя смена", badgeClass: "shift-morning", active: true },
-      { day: "Пт", dayFull: "Пятница", time: "14:00 – 20:00", shift: "Вечерняя смена", badgeClass: "shift-evening", active: true },
-      { day: "Сб", dayFull: "Суббота", time: "09:00 – 15:00", shift: "Дневная смена", badgeClass: "shift-morning", active: true },
-      { day: "Вс", dayFull: "Воскресенье", time: "10:00 – 18:00", shift: "Прием по записи", badgeClass: "shift-full", active: true }
+      { day: "Пн", dayFull: "Понедельник", time: "09:00 – 15:00", active: true },
+      { day: "Вт", dayFull: "Вторник", time: "10:00 – 16:00", active: true },
+      { day: "Ср", dayFull: "Среда", time: "14:00 – 20:00", active: true },
+      { day: "Чт", dayFull: "Четверг", time: "09:00 – 15:00", active: true },
+      { day: "Пт", dayFull: "Пятница", time: "14:00 – 20:00", active: true },
+      { day: "Сб", dayFull: "Суббота", time: "09:00 – 15:00", active: true },
+      { day: "Вс", dayFull: "Воскресенье", time: "10:00 – 18:00", active: true }
     ]
   },
   gevorkyan: {
@@ -215,13 +215,13 @@ const DOCTOR_SCHEDULES = {
     cabinet: "Кабинет № 2 (Ортопедия / Протезирование)",
     desc: "Тотальная функциональная реабилитация, безметалловая керамика E.max, оксид циркония, протезирование на имплантатах.",
     days: [
-      { day: "Пн", dayFull: "Понедельник", time: "09:00 – 15:00", shift: "Ортопедический прием", badgeClass: "shift-morning", active: true },
-      { day: "Вт", dayFull: "Вторник", time: "14:00 – 20:00", shift: "Вечерняя смена", badgeClass: "shift-evening", active: true },
-      { day: "Ср", dayFull: "Среда", time: "10:00 – 16:00", shift: "Лабораторный прием", badgeClass: "shift-morning", active: true },
-      { day: "Чт", dayFull: "Четверг", time: "09:00 – 15:00", shift: "Ортопедический прием", badgeClass: "shift-morning", active: true },
-      { day: "Пт", dayFull: "Пятница", time: "14:00 – 20:00", shift: "Вечерняя смена", badgeClass: "shift-evening", active: true },
-      { day: "Сб", dayFull: "Суббота", time: "10:00 – 18:00", shift: "Полная смена", badgeClass: "shift-full", active: true },
-      { day: "Вс", dayFull: "Воскресенье", time: "10:00 – 17:00", shift: "Прием по записи", badgeClass: "shift-full", active: true }
+      { day: "Пн", dayFull: "Понедельник", time: "09:00 – 15:00", active: true },
+      { day: "Вт", dayFull: "Вторник", time: "14:00 – 20:00", active: true },
+      { day: "Ср", dayFull: "Среда", time: "10:00 – 16:00", active: true },
+      { day: "Чт", dayFull: "Четверг", time: "09:00 – 15:00", active: true },
+      { day: "Пт", dayFull: "Пятница", time: "14:00 – 20:00", active: true },
+      { day: "Сб", dayFull: "Суббота", time: "10:00 – 18:00", active: true },
+      { day: "Вс", dayFull: "Воскресенье", time: "10:00 – 17:00", active: true }
     ]
   },
   bekisheva: {
@@ -234,13 +234,13 @@ const DOCTOR_SCHEDULES = {
     cabinet: "Кабинет № 3 (Детское отделение / Пародонтология)",
     desc: "Адаптационный прием детей, лечение кариеса без бормашины (ICON), профилактика и терапия патологий пародонта.",
     days: [
-      { day: "Пн", dayFull: "Понедельник", time: "09:00 – 15:00", shift: "Детский прием", badgeClass: "shift-morning", active: true },
-      { day: "Вт", dayFull: "Вторник", time: "13:00 – 19:00", shift: "Пародонтология", badgeClass: "shift-evening", active: true },
-      { day: "Ср", dayFull: "Среда", time: "09:00 – 15:00", shift: "Детский прием", badgeClass: "shift-morning", active: true },
-      { day: "Чт", dayFull: "Четверг", time: "13:00 – 19:00", shift: "Вечерняя смена", badgeClass: "shift-evening", active: true },
-      { day: "Пт", dayFull: "Пятница", time: "09:00 – 15:00", shift: "Терапевтический прием", badgeClass: "shift-morning", active: true },
-      { day: "Сб", dayFull: "Суббота", time: "09:00 – 16:00", shift: "Детский день", badgeClass: "shift-morning", active: true },
-      { day: "Вс", dayFull: "Воскресенье", time: "10:00 – 16:00", shift: "Прием по записи", badgeClass: "shift-full", active: true }
+      { day: "Пн", dayFull: "Понедельник", time: "09:00 – 15:00", active: true },
+      { day: "Вт", dayFull: "Вторник", time: "13:00 – 19:00", active: true },
+      { day: "Ср", dayFull: "Среда", time: "09:00 – 15:00", active: true },
+      { day: "Чт", dayFull: "Четверг", time: "13:00 – 19:00", active: true },
+      { day: "Пт", dayFull: "Пятница", time: "09:00 – 15:00", active: true },
+      { day: "Сб", dayFull: "Суббота", time: "09:00 – 16:00", active: true },
+      { day: "Вс", dayFull: "Воскресенье", time: "10:00 – 16:00", active: true }
     ]
   },
   korolev: {
@@ -253,13 +253,13 @@ const DOCTOR_SCHEDULES = {
     cabinet: "Кабинет № 4 (Терапия / Эндодонтия под микроскопом)",
     desc: "Лечение и перелечивание труднопроходимых корневых каналов под микроскопом, эстетическая анатомическая реставрация.",
     days: [
-      { day: "Пн", dayFull: "Понедельник", time: "14:00 – 20:00", shift: "Вечерняя смена", badgeClass: "shift-evening", active: true },
-      { day: "Вт", dayFull: "Вторник", time: "09:00 – 15:00", shift: "Утренняя смена", badgeClass: "shift-morning", active: true },
-      { day: "Ср", dayFull: "Среда", time: "14:00 – 20:00", shift: "Лечение под микроскопом", badgeClass: "shift-evening", active: true },
-      { day: "Чт", dayFull: "Четверг", time: "09:00 – 15:00", shift: "Эндодонтический прием", badgeClass: "shift-morning", active: true },
-      { day: "Пт", dayFull: "Пятница", time: "09:00 – 15:00", shift: "Эндодонтия и реставрация", badgeClass: "shift-morning", active: true },
-      { day: "Сб", dayFull: "Суббота", time: "10:00 – 17:00", shift: "Терапевтический прием", badgeClass: "shift-full", active: true },
-      { day: "Вс", dayFull: "Воскресенье", time: "10:00 – 18:00", shift: "Прием по записи", badgeClass: "shift-full", active: true }
+      { day: "Пн", dayFull: "Понедельник", time: "14:00 – 20:00", active: true },
+      { day: "Вт", dayFull: "Вторник", time: "09:00 – 15:00", active: true },
+      { day: "Ср", dayFull: "Среда", time: "14:00 – 20:00", active: true },
+      { day: "Чт", dayFull: "Четверг", time: "09:00 – 15:00", active: true },
+      { day: "Пт", dayFull: "Пятница", time: "09:00 – 15:00", active: true },
+      { day: "Сб", dayFull: "Суббота", time: "10:00 – 17:00", active: true },
+      { day: "Вс", dayFull: "Воскресенье", time: "10:00 – 18:00", active: true }
     ]
   },
   avetikova: {
@@ -272,13 +272,13 @@ const DOCTOR_SCHEDULES = {
     cabinet: "Кабинет № 2 (Ортодонтическое отделение)",
     desc: "Исправление прикуса современными брекет-системами Damon, лечение элайнерами, ранняя ортодонтия у детей.",
     days: [
-      { day: "Пн", dayFull: "Понедельник", time: "10:00 – 17:00", shift: "Ортодонтический прием", badgeClass: "shift-morning", active: true },
-      { day: "Вт", dayFull: "Вторник", time: "10:00 – 19:00", shift: "Брекеты и элайнеры", badgeClass: "shift-evening", active: true },
-      { day: "Ср", dayFull: "Среда", time: "10:00 – 16:00", shift: "Ортодонтическая коррекция", badgeClass: "shift-morning", active: true },
-      { day: "Чт", dayFull: "Четверг", time: "11:00 – 18:00", shift: "Прием пациентов", badgeClass: "shift-morning", active: true },
-      { day: "Пт", dayFull: "Пятница", time: "11:00 – 19:00", shift: "Ортодонтия и диагностика", badgeClass: "shift-evening", active: true },
-      { day: "Сб", dayFull: "Суббота", time: "10:00 – 18:00", shift: "Прием детей и взрослых", badgeClass: "shift-full", active: true },
-      { day: "Вс", dayFull: "Воскресенье", time: "11:00 – 17:00", shift: "Консультации по записи", badgeClass: "shift-full", active: true }
+      { day: "Пн", dayFull: "Понедельник", time: "10:00 – 17:00", active: true },
+      { day: "Вт", dayFull: "Вторник", time: "10:00 – 19:00", active: true },
+      { day: "Ср", dayFull: "Среда", time: "10:00 – 16:00", active: true },
+      { day: "Чт", dayFull: "Четверг", time: "11:00 – 18:00", active: true },
+      { day: "Пт", dayFull: "Пятница", time: "11:00 – 19:00", active: true },
+      { day: "Сб", dayFull: "Суббота", time: "10:00 – 18:00", active: true },
+      { day: "Вс", dayFull: "Воскресенье", time: "11:00 – 17:00", active: true }
     ]
   }
 };
@@ -394,18 +394,18 @@ function initDoctorScheduleModal() {
       const isToday = idx === todayIdx;
       return `
         <tr class="${isToday ? 'today-row' : ''}">
-          <td style="width: 140px;">
+          <td class="col-schedule-day">
             <div class="schedule-day-label">
               <span class="day-circle ${item.active ? 'active' : ''}">${item.day}</span>
-              <span>${item.dayFull}</span>
+              <span class="schedule-day-name">${item.dayFull}</span>
               ${isToday ? '<span class="schedule-today-badge">Сегодня</span>' : ''}
             </div>
           </td>
-          <td>
+          <td class="col-schedule-time">
             <span class="schedule-time-val">${item.time}</span>
           </td>
-          <td style="width: 180px; text-align: right;">
-            <span class="schedule-badge-status ${item.badgeClass}">${item.shift}</span>
+          <td class="col-schedule-action" style="text-align: right;">
+            <button type="button" class="btn-schedule-day-book" data-doc-name="${doc.name}" data-day="${item.dayFull}" data-time="${item.time}">Записаться</button>
           </td>
         </tr>
       `;
@@ -423,7 +423,7 @@ function initDoctorScheduleModal() {
           <tr>
             <th>День недели</th>
             <th>Часы приема</th>
-            <th style="text-align: right;">Смена / Формат приема</th>
+            <th style="text-align: right;">Запись</th>
           </tr>
         </thead>
         <tbody>
@@ -496,7 +496,7 @@ function initDoctorScheduleModal() {
     }
   });
 
-  // Кнопка записи из окна расписания
+  // Кнопка записи из окна расписания (общая)
   if (bookBtn) {
     bookBtn.addEventListener('click', () => {
       const activeDoc = DOCTOR_SCHEDULES[currentDoctorKey];
@@ -513,5 +513,31 @@ function initDoctorScheduleModal() {
       }
     });
   }
+
+  // Клик по кнопке быстрой записи рядом с конкретным днем
+  modal.addEventListener('click', (e) => {
+    const dayBtn = e.target.closest('.btn-schedule-day-book');
+    if (dayBtn) {
+      e.preventDefault();
+      const docName = dayBtn.getAttribute('data-doc-name') || '';
+      const dayName = dayBtn.getAttribute('data-day') || '';
+      const timeVal = dayBtn.getAttribute('data-time') || '';
+
+      closeScheduleModal();
+
+      const bookingModal = document.getElementById('booking-modal');
+      if (bookingModal) {
+        const modalTitle = bookingModal.querySelector('#modal-title');
+        if (modalTitle) {
+          modalTitle.textContent = docName
+            ? 'Запись на прием: ' + docName + ' (' + dayName + ', ' + timeVal + ')'
+            : 'Запись на прием (' + dayName + ', ' + timeVal + ')';
+        }
+        bookingModal.classList.add('active');
+        bookingModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+  });
 }
 
