@@ -1,5 +1,11 @@
 User-agent: *
 Allow: /
 
+User-agent: YandexFavicons
+Allow: /favicon.ico
+Allow: /favicon.svg
+Allow: /favicon-*.png
+Allow: /apple-touch-icon.png
+
 Sitemap: https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/sitemap.xml
 Host: https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai
