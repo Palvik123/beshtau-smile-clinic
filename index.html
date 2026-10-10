@@ -926,13 +926,141 @@
             </div>
 
             <div style="margin-top: 30px;">
-              <button class="btn btn-primary cta-booking-btn" style="width: 100%;">Записаться через онлайн-форму</button>
+              <a href="#online-booking" class="btn btn-primary" style="width: 100%; text-align: center; display: inline-flex; justify-content: center; align-items: center;">Записаться через онлайн-форму</a>
             </div>
           </div>
 
           <div class="map-container">
-            <iframe src="https://yandex.ru/map-widget/v1/?ll=42.969850%2C44.103210&z=16&pt=42.969850,44.103210,pm2rdm" allowfullscreen="true" loading="lazy" title="Бештау Смайл Клиник на карте"></iframe>
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=42.982904%2C44.104004&z=17&pt=42.982904,44.104004,pm2rdm&ol=biz&oid=204780512530" allowfullscreen="true" loading="lazy" title="Бештау Смайл Клиник на карте"></iframe>
+            <div class="map-actions-bar">
+              <a href="https://yandex.ru/maps/org/beshtau_smayl_klinik/204780512530/" target="_blank" rel="noopener noreferrer" class="map-action-btn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Открыть в Яндекс Картах
+              </a>
+              <a href="https://yandex.ru/maps/?rtext=~44.104004,42.982904&rtt=auto" target="_blank" rel="noopener noreferrer" class="map-action-btn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+                Построить маршрут
+              </a>
+            </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок онлайн-записи внизу сайта с фирменными цветами -->
+    <section class="section booking-showcase-section" id="online-booking">
+      <div class="container">
+        <div class="booking-showcase-wrapper">
+          
+          <!-- Левое крыло: фирменный бордовый градиент клиники -->
+          <aside class="booking-wing booking-wing-burgundy">
+            <div class="wing-header">
+              <span class="wing-tag">Бештау Смайл Клиник</span>
+              <h3 class="wing-title">Комфортный прием без ожидания</h3>
+              <p class="wing-lead">Запишитесь онлайн в удобное для вас время — администратор перезвонит в течение 15 минут.</p>
+            </div>
+            
+            <ul class="wing-benefits-list">
+              <li class="wing-benefit-item">
+                <div class="wing-benefit-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div class="wing-benefit-text">
+                  <strong>Прием строго по времени</strong>
+                  <span>Без очередей и ожидания</span>
+                </div>
+              </li>
+              <li class="wing-benefit-item">
+                <div class="wing-benefit-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <div class="wing-benefit-text">
+                  <strong>Команда экспертов</strong>
+                  <span>Врачи всех ключевых направлений</span>
+                </div>
+              </li>
+              <li class="wing-benefit-item">
+                <div class="wing-benefit-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div class="wing-benefit-text">
+                  <strong>Гарантия и договор</strong>
+                  <span>Прозрачные цены без скрытых услуг</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="wing-phone-card">
+              <span class="wing-phone-label">Нужна срочная консультация?</span>
+              <a href="tel:+79019314759" class="wing-phone-link">+7 (901) 931-47-59</a>
+              <span class="wing-phone-hours">Ежедневно с 09:00 до 20:00</span>
+            </div>
+          </aside>
+
+          <!-- Центральное окно: форма онлайн-записи -->
+          <div class="booking-main-window">
+            <div class="booking-window-header">
+              <span class="badge badge-primary">Онлайн-запись</span>
+              <h2 class="booking-window-title">Электронная запись на прием</h2>
+              <p class="booking-window-subtitle">Заполните поля формы, и мы забронируем за вами удобный интервал приема</p>
+            </div>
+            
+            <div class="booking-form-frame-container">
+              <script src="https://forms.yandex.ru/_static/embed.js"></script>
+              <iframe src="https://forms.yandex.ru/cloud/694e59d1f47e73e9d3954df8/?iframe=1" frameborder="0" name="ya-form-694e59d1f47e73e9d3954df8-showcase" width="100%" height="560" title="Онлайн-запись в Бештау Смайл Клиник"></iframe>
+            </div>
+          </div>
+
+          <!-- Правое крыло: фирменный золотой / светлый акцент -->
+          <aside class="booking-wing booking-wing-gold">
+            <div class="wing-header">
+              <span class="wing-tag wing-tag-gold">Информация</span>
+              <h3 class="wing-title wing-title-dark">Удобное расположение и график</h3>
+              <p class="wing-lead wing-lead-dark">Ждем вас в современной клинике с удобным подъездом и комфортной зоной ожидания.</p>
+            </div>
+
+            <ul class="wing-info-list">
+              <li class="wing-info-item">
+                <div class="wing-info-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div class="wing-info-text">
+                  <strong>График работы</strong>
+                  <span>Пн — Вс: 09:00 — 20:00</span>
+                  <span class="wing-badge-green">Без выходных</span>
+                </div>
+              </li>
+              <li class="wing-info-item">
+                <div class="wing-info-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="wing-info-text">
+                  <strong>Адрес клиники</strong>
+                  <span>г. Лермонтов, Солнечный проезд, д. 10, корп. 1, этаж 2</span>
+                </div>
+              </li>
+              <li class="wing-info-item">
+                <div class="wing-info-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                </div>
+                <div class="wing-info-text">
+                  <strong>Бесплатная парковка</strong>
+                  <span>Удобная парковочная зона прямо перед входом</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="wing-cities-card">
+              <span class="wing-cities-title">Быстро добраться из городов КМВ:</span>
+              <div class="wing-cities-tags">
+                <span>Пятигорск ~15 мин</span>
+                <span>Ессентуки ~20 мин</span>
+                <span>Железноводск ~25 мин</span>
+                <span>Минводы ~30 мин</span>
+              </div>
+            </div>
+          </aside>
+
         </div>
       </div>
     </section>
