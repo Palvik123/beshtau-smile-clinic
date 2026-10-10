@@ -58,6 +58,30 @@ function initBookingModal() {
   const closeBtn = modal.querySelector('.modal-close-btn');
   const modalTitle = modal.querySelector('#modal-title');
 
+  // Фирменная плашка доверия в шапке модального окна записи
+  if (!modal.querySelector('.modal-trust-bar')) {
+    const modalHeader = modal.querySelector('.modal-header');
+    if (modalHeader) {
+      const trustBar = document.createElement('div');
+      trustBar.className = 'modal-trust-bar';
+      trustBar.innerHTML = `
+        <div class="modal-trust-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Прием по времени</span>
+        </div>
+        <div class="modal-trust-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>Пн–Вс 09:00–20:00</span>
+        </div>
+        <div class="modal-trust-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Солнечный проезд, 10к1</span>
+        </div>
+      `;
+      modalHeader.insertAdjacentElement('afterend', trustBar);
+    }
+  }
+
   const openModal = (contextTitle) => {
     if (contextTitle && modalTitle) {
       modalTitle.textContent = 'Запись на прием: ' + contextTitle;
