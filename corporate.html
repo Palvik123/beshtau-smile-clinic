@@ -35,6 +35,28 @@
   <meta property="og:image" content="https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/images/logo-icon.png">
   <meta property="og:url" content="https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/corporate.html">
   <meta property="og:locale" content="ru_RU">
+
+  <!-- Микроразметка Schema.org (BreadcrumbList) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Главная",
+        "item": "https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Корпоративное обслуживание",
+        "item": "https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/corporate.html"
+      }
+    ]
+  }
+  </script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -97,6 +119,17 @@
     </div>
   </header>
 
+  <!-- Навигационная цепочка (Хлебные крошки) -->
+  <nav class="breadcrumbs-bar" aria-label="Навигационная цепочка">
+    <div class="container">
+      <ol class="breadcrumbs-list">
+        <li class="breadcrumbs-item"><a href="/">Главная</a></li>
+        <li class="breadcrumbs-separator">/</li>
+        <li class="breadcrumbs-item active" aria-current="page">Корпоративным клиентам</li>
+      </ol>
+    </div>
+  </nav>
+
   <main>
     <section class="section section-surface">
       <div class="container">
@@ -114,7 +147,7 @@
             <div class="service-icon-box" style="margin-bottom: 18px;">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>
             </div>
-            <h3>Обслуживание по прямому договору</h3>
+            <h2 style="font-size: 1.25rem;">Обслуживание по прямому договору</h2>
             <p style="margin-bottom: 14px;">Безналичный расчет, гибкая система депозитов и оптимизация налогообложения для юридических лиц. Индивидуальный персональный менеджер для оперативной записи сотрудников.</p>
             <ul style="list-style: disc; padding-left: 20px; color: var(--text-secondary); line-height: 1.7; font-size: 0.92rem;">
               <li>Фиксированный прайс на весь срок действия договора</li>
@@ -128,7 +161,7 @@
             <div class="service-icon-box" style="margin-bottom: 18px;">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
             </div>
-            <h3>Профилактические стоматологические чек-апы</h3>
+            <h2 style="font-size: 1.25rem;">Профилактические стоматологические чек-апы</h2>
             <p style="margin-bottom: 14px;">Организация плановых ежегодных осмотров коллектива для раннего выявления стоматологических патологий и предотвращения потерь рабочего времени из-за острой зубной боли.</p>
             <ul style="list-style: disc; padding-left: 20px; color: var(--text-secondary); line-height: 1.7; font-size: 0.92rem;">
               <li>Диагностический осмотр и составление паспорта здоровья зубов</li>
@@ -142,7 +175,7 @@
             <div class="service-icon-box" style="margin-bottom: 18px;">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
             </div>
-            <h3>Корпоративная программа лояльности</h3>
+            <h2 style="font-size: 1.25rem;">Корпоративная программа лояльности</h2>
             <p style="margin-bottom: 14px;">Предоставление персональных скидок на терапевтическое, ортодонтическое и ортопедическое лечение сотрудникам компаний-партнеров, а также членам их семей.</p>
             <ul style="list-style: disc; padding-left: 20px; color: var(--text-secondary); line-height: 1.7; font-size: 0.92rem;">
               <li>Скидки до 15% на плановые стоматологические услуги</li>

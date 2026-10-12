@@ -35,6 +35,28 @@
   <meta property="og:image" content="https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/images/logo-icon.png">
   <meta property="og:url" content="https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/gallery.html">
   <meta property="og:locale" content="ru_RU">
+
+  <!-- Микроразметка Schema.org (BreadcrumbList) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Главная",
+        "item": "https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Фотогалерея",
+        "item": "https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/gallery.html"
+      }
+    ]
+  }
+  </script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -97,6 +119,17 @@
       </div>
     </div>
   </header>
+
+  <!-- Навигационная цепочка (Хлебные крошки) -->
+  <nav class="breadcrumbs-bar" aria-label="Навигационная цепочка">
+    <div class="container">
+      <ol class="breadcrumbs-list">
+        <li class="breadcrumbs-item"><a href="/">Главная</a></li>
+        <li class="breadcrumbs-separator">/</li>
+        <li class="breadcrumbs-item active" aria-current="page">Фотогалерея</li>
+      </ol>
+    </div>
+  </nav>
 
   <main>
     <section class="section section-surface">

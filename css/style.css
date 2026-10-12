@@ -1305,6 +1305,7 @@ header.site-header {
   align-items: center;
 }
 
+.price-table-header h2,
 .price-table-header h3 {
   font-size: 1.2rem;
   color: var(--text-primary);
@@ -1423,6 +1424,7 @@ header.site-header {
   margin-bottom: 30px;
 }
 
+.legal-card h2,
 .legal-card h3 {
   color: var(--primary);
   margin-bottom: 18px;
@@ -2734,5 +2736,51 @@ body.a11y-active a {
 
 .btn-schedule-open {
   cursor: pointer;
+}
+
+/* Навигационная цепочка (Хлебные крошки) */
+.breadcrumbs-bar {
+  padding: 12px 0;
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border);
+  font-size: 0.84rem;
+}
+
+.breadcrumbs-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 6px;
+}
+
+.breadcrumbs-item {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text-secondary);
+}
+
+.breadcrumbs-item a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.breadcrumbs-item a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.breadcrumbs-separator {
+  margin: 0 4px;
+  color: var(--text-muted);
+  user-select: none;
+}
+
+.breadcrumbs-item.active {
+  color: var(--text-primary);
+  font-weight: 500;
 }
 

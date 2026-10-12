@@ -35,6 +35,45 @@
   <meta property="og:image" content="https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/images/logo-icon.png">
   <meta property="og:url" content="https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/prices.html">
   <meta property="og:locale" content="ru_RU">
+
+  <!-- Микроразметка Schema.org (MedicalWebPage + BreadcrumbList) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalWebPage",
+        "@id": "https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/prices.html#webpage",
+        "name": "Цены на стоматологические услуги — Бештау Смайл Клиник",
+        "description": "Актуальный официальный прайс-лист стоматологии Бештау Смайл Клиник в Лермонтове. 284 медицинские услуги без скрытых платежей.",
+        "url": "https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/prices.html",
+        "medicalSpecialty": "Dentistry",
+        "about": {
+          "@type": "Dentist",
+          "name": "Бештау Смайл Клиник",
+          "url": "https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Главная",
+            "item": "https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Цены",
+            "item": "https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/prices.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -98,6 +137,17 @@
     </div>
   </header>
 
+  <!-- Навигационная цепочка (Хлебные крошки) -->
+  <nav class="breadcrumbs-bar" aria-label="Навигационная цепочка">
+    <div class="container">
+      <ol class="breadcrumbs-list">
+        <li class="breadcrumbs-item"><a href="/">Главная</a></li>
+        <li class="breadcrumbs-separator">/</li>
+        <li class="breadcrumbs-item active" aria-current="page">Цены</li>
+      </ol>
+    </div>
+  </nav>
+
   <main>
     <section class="section section-surface">
       <div class="container">
@@ -131,8 +181,8 @@
 
                 <!-- Категория: Терапевтическая стоматология и эндодонтия -->
         <div class="price-table-card" data-category="therapy">
-          <div class="price-table-header">
-            <h3>Терапевтическая стоматология и эндодонтия</h3>
+          <div class=\"price-table-header\">
+            <h2>Терапевтическая стоматология и эндодонтия</h2>
             <span class="badge badge-mint">Терапия</span>
           </div>
           <table class="price-table">
@@ -385,8 +435,8 @@
 
         <!-- Категория: Профилактика и профессиональная гигиена -->
         <div class="price-table-card" data-category="hygiene">
-          <div class="price-table-header">
-            <h3>Профилактика и профессиональная гигиена</h3>
+          <div class=\"price-table-header\">
+            <h2>Профилактика и профессиональная гигиена</h2>
             <span class="badge badge-mint">Гигиена</span>
           </div>
           <table class="price-table">
@@ -419,8 +469,8 @@
 
         <!-- Категория: Пародонтология и лечение десен -->
         <div class="price-table-card" data-category="periodontics">
-          <div class="price-table-header">
-            <h3>Пародонтология и лечение десен</h3>
+          <div class=\"price-table-header\">
+            <h2>Пародонтология и лечение десен</h2>
             <span class="badge badge-primary">Пародонтология</span>
           </div>
           <table class="price-table">
@@ -573,8 +623,8 @@
 
         <!-- Категория: Хирургическая стоматология и удаление зубов -->
         <div class="price-table-card" data-category="surgery">
-          <div class="price-table-header">
-            <h3>Хирургическая стоматология и удаление зубов</h3>
+          <div class=\"price-table-header\">
+            <h2>Хирургическая стоматология и удаление зубов</h2>
             <span class="badge badge-primary">Хирургия</span>
           </div>
           <table class="price-table">
@@ -782,8 +832,8 @@
 
         <!-- Категория: Дентальная имплантация и костная пластика -->
         <div class="price-table-card" data-category="implantology">
-          <div class="price-table-header">
-            <h3>Дентальная имплантация и костная пластика</h3>
+          <div class=\"price-table-header\">
+            <h2>Дентальная имплантация и костная пластика</h2>
             <span class="badge badge-primary">Имплантология</span>
           </div>
           <table class="price-table">
@@ -951,8 +1001,8 @@
 
         <!-- Категория: Ортопедическая стоматология (коронки, виниры, протезы) -->
         <div class="price-table-card" data-category="orthopedics">
-          <div class="price-table-header">
-            <h3>Ортопедическая стоматология (коронки, виниры, протезы)</h3>
+          <div class=\"price-table-header\">
+            <h2>Ортопедическая стоматология (коронки, виниры, протезы)</h2>
             <span class="badge badge-gold">Ортопедия</span>
           </div>
           <table class="price-table">
@@ -1335,8 +1385,8 @@
 
         <!-- Категория: Ортодонтия и исправление прикуса -->
         <div class="price-table-card" data-category="orthodontics">
-          <div class="price-table-header">
-            <h3>Ортодонтия и исправление прикуса</h3>
+          <div class=\"price-table-header\">
+            <h2>Ортодонтия и исправление прикуса</h2>
             <span class="badge badge-gold">Ортодонтия</span>
           </div>
           <table class="price-table">
@@ -1529,8 +1579,8 @@
 
         <!-- Категория: Детская стоматология -->
         <div class="price-table-card" data-category="pediatric">
-          <div class="price-table-header">
-            <h3>Детская стоматология</h3>
+          <div class=\"price-table-header\">
+            <h2>Детская стоматология</h2>
             <span class="badge badge-mint">Детское отделение</span>
           </div>
           <table class="price-table">

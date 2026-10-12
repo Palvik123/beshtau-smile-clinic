@@ -35,6 +35,68 @@
   <meta property="og:image" content="https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/images/logo-icon.png">
   <meta property="og:url" content="https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/contact.html">
   <meta property="og:locale" content="ru_RU">
+
+  <!-- Микроразметка Schema.org (Dentist + BreadcrumbList) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["Dentist", "MedicalBusiness"],
+        "@id": "https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/contact.html#clinic",
+        "name": "Бештау Смайл Клиник",
+        "legalName": "ООО «Бештау Смайл Клиник»",
+        "url": "https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/",
+        "logo": "https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/images/logo-icon.png",
+        "image": "https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/images/hall.jpg",
+        "telephone": "+7-901-931-47-59",
+        "email": "beshtausmail@yandex.ru",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Солнечный проезд, д. 10, корп. 1, этаж 2",
+          "addressLocality": "Лермонтов",
+          "addressRegion": "Ставропольский край",
+          "postalCode": "357340",
+          "addressCountry": "RU"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 44.104004,
+          "longitude": 42.982904
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "09:00",
+            "closes": "20:00"
+          }
+        ],
+        "sameAs": [
+          "https://prodoctorov.ru/lermontov/lpu/112226-stomatologiya-beshtau-smayl-klinik/",
+          "https://yandex.ru/maps/-/CXuaMJ44"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Главная",
+            "item": "https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Контакты",
+            "item": "https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/contact.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -97,6 +159,17 @@
       </div>
     </div>
   </header>
+
+  <!-- Навигационная цепочка (Хлебные крошки) -->
+  <nav class="breadcrumbs-bar" aria-label="Навигационная цепочка">
+    <div class="container">
+      <ol class="breadcrumbs-list">
+        <li class="breadcrumbs-item"><a href="/">Главная</a></li>
+        <li class="breadcrumbs-separator">/</li>
+        <li class="breadcrumbs-item active" aria-current="page">Контакты</li>
+      </ol>
+    </div>
+  </nav>
 
   <main>
     <section class="section section-surface">
