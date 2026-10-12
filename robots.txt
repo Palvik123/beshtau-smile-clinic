@@ -3,6 +3,12 @@ Allow: /
 Disallow: /googledfd745085d7bf730.html
 Disallow: /yandex_*.html
 
+User-agent: Yandex
+Allow: /
+Disallow: /googledfd745085d7bf730.html
+Disallow: /yandex_*.html
+Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term&yclid&_openstat&from /
+
 User-agent: YandexFavicons
 Allow: /favicon.ico
 Allow: /favicon.svg
@@ -10,4 +16,3 @@ Allow: /favicon-*.png
 Allow: /apple-touch-icon.png
 
 Sitemap: https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/sitemap.xml
-Host: https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai

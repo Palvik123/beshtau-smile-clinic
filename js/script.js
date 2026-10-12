@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initAccessibilityMode();
   initHeroSlideshow();
   initPromoSlider();
+  initYandexMetrikaGoals();
 });
 
 /**
@@ -763,5 +764,58 @@ function initPromoSlider() {
   updateSlider(0);
   startAutoPlay();
 }
+
+/**
+ * 8. Отслеживание коммерческих конверсий в Яндекс.Метрике
+ */
+function initYandexMetrikaGoals() {
+  const ymCounterId = 105891320;
+  const reachGoal = (targetName, params) => {
+    try {
+      if (typeof window.ym === 'function') {
+        window.ym(ymCounterId, 'reachGoal', targetName, params || {});
+      }
+    } catch (e) {
+      // Игнорируем ошибки при наличии блокировщиков рекламы
+    }
+  };
+
+  // 1. Открытие модального окна онлайн-записи
+  document.addEventListener('click', (e) => {
+    const trigger = e.target.closest('[data-open-modal="booking"], .cta-booking-btn, a[href="#booking-modal"]');
+    if (trigger) {
+      const doctor = trigger.getAttribute('data-doctor') || '';
+      const service = trigger.getAttribute('data-service') || '';
+      const promo = trigger.getAttribute('data-promo') || '';
+      reachGoal('booking_open', { doctor, service, promo });
+    }
+  });
+
+  // 2. Клик по номеру телефона (звонок в регистратуру)
+  document.addEventListener('click', (e) => {
+    const phoneLink = e.target.closest('a[href^="tel:"]');
+    if (phoneLink) {
+      reachGoal('phone_click', { phone: phoneLink.getAttribute('href') });
+    }
+  });
+
+  // 3. Переход в Яндекс.Карты или построение маршрута
+  document.addEventListener('click', (e) => {
+    const mapLink = e.target.closest('a[href*="yandex.ru/maps"], a[href*="yandex.com/maps"]');
+    if (mapLink) {
+      reachGoal('route_click', { href: mapLink.getAttribute('href') });
+    }
+  });
+
+  // 4. Открытие графика работы врача
+  document.addEventListener('click', (e) => {
+    const scheduleBtn = e.target.closest('.btn-schedule-open');
+    if (scheduleBtn) {
+      const doc = scheduleBtn.getAttribute('data-doctor') || '';
+      reachGoal('doctor_schedule_open', { doctor: doc });
+    }
+  });
+}
+
 
 
