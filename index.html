@@ -20,8 +20,13 @@
   <meta name="theme-color" content="#A9284D">
   <meta name="yandex-verification" content="ea2eff2f5aa95c5f">
 
-  <!-- Канонический URL -->
+  <!-- Канонический URL и нормализация адреса -->
   <link rel="canonical" href="https://xn----7sbbbuvagjchbiu6cns1g.xn--p1ai/">
+  <script>
+    if (window.location.pathname.endsWith('/index.html')) {
+      window.history.replaceState(null, '', '/' + window.location.search + window.location.hash);
+    }
+  </script>
 
   <!-- Региональные метатеги (Лермонтов, Кавказские Минеральные Воды, Ставропольский край) -->
   <meta name="geo.region" content="RU-STA">
@@ -133,7 +138,7 @@
   <!-- Шапка сайта -->
   <header class="site-header">
     <div class="container navbar">
-      <a href="index.html" class="brand-logo">
+      <a href="/" class="brand-logo">
         <img src="images/logo-icon.png" alt="Бештау Смайл Клиник" class="brand-logo-img">
         <div class="brand-logo-text">
           <span class="brand-name">Бештау Смайл</span>
@@ -142,7 +147,7 @@
       </a>
 
       <nav class="nav-menu" aria-label="Основное меню">
-        <a href="index.html" class="nav-link active">Главная</a>
+        <a href="/" class="nav-link active">Главная</a>
         <a href="#promotions" class="nav-link">Акции</a>
         <a href="services.html" class="nav-link">Услуги</a>
         <a href="prices.html" class="nav-link">Цены</a>

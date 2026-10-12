@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /googledfd745085d7bf730.html
+Disallow: /yandex_*.html
 
 User-agent: YandexFavicons
 Allow: /favicon.ico
