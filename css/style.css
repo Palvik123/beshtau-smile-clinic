@@ -342,6 +342,80 @@ p {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Переключатель языка */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-xs);
+  padding: 2px 4px;
+  gap: 2px;
+}
+
+.lang-btn {
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #D1D5DB;
+  padding: 3px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.lang-btn:hover {
+  color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.lang-btn.active {
+  color: #FFFFFF;
+  background-color: var(--primary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.lang-divider {
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 0.72rem;
+  user-select: none;
+  line-height: 1;
+}
+
+.lang-switch-mobile {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .lang-switch-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 20px 8px;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-sm);
+    padding: 6px;
+    gap: 8px;
+  }
+  .lang-switch-mobile .lang-btn {
+    font-size: 0.88rem;
+    padding: 8px 20px;
+    color: var(--text-secondary);
+    border-radius: var(--radius-xs);
+  }
+  .lang-switch-mobile .lang-btn.active {
+    color: #FFFFFF;
+    background-color: var(--primary);
+  }
+  .lang-switch-mobile .lang-divider {
+    color: var(--border-light);
+  }
+}
+
+
 /* Основная навигация */
 header.site-header {
   background-color: rgba(255, 255, 255, 0.98);
@@ -2152,6 +2226,20 @@ body.a11y-active .btn-primary * {
 body.a11y-active a {
   text-decoration: underline !important;
 }
+
+body.a11y-active .lang-switch {
+  background-color: #000000 !important;
+  border: 2px solid #FFFFFF !important;
+}
+body.a11y-active .lang-btn {
+  color: #FFFFFF !important;
+}
+body.a11y-active .lang-btn.active {
+  background-color: #FFFF00 !important;
+  color: #000000 !important;
+  font-weight: 800 !important;
+}
+
 
 /* ==========================================================================
    АДАПТИВНОСТЬ (RESPONSIVE BREAKPOINTS)
